@@ -1,0 +1,30 @@
+{
+  "name": "shop-a-lot",
+  "version": "1.0.0",
+  "description": "A renaissance fair is a wonderful time to be together with friends and family and enjoy a trip back in time.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/V1brance/shop-a-lot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/V1brance/shop-a-lot/issues"
+  },
+  "homepage": "https://github.com/V1brance/shop-a-lot#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.1",
+    "dotenv": "^10.0.0",
+    "express-handlebars": "^5.3.2",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.2"
+  }
+}
