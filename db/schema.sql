@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS shopAlot_db;
+CREATE DATABASE shopAlot_db;
+
