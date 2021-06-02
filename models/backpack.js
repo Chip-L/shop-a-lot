@@ -29,5 +29,5 @@ Backpack.init(
 );
 
 // the defined model is the class itself
-console.log(User === sequelize.models.Backpack); // true
+// console.log(User === sequelize.models.Backpack); // true
 module.exports = Backpack;

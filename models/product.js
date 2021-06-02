@@ -20,7 +20,12 @@ Product.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    price: {
+    description: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+      defaultValue: "add description",
+    },
+    cost: {
       type: DataTypes.DECIMAL,
       allowNull: false,
       validate: {
@@ -34,6 +39,19 @@ Product.init(
       validate: {
         isNumeric: true,
       },
+    },
+    weight: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      defaultValue: 0,
+    },
+
+    image_link: {
+      type: DataTypes.STRING,
+    },
+    additional_information: {
+      type: DataTypes.TEXT,
+      allowNull: true,
     },
     category_id: {
       type: DataTypes.INTEGER,
