@@ -7,18 +7,18 @@ Backpack.init(
   {
     // Model attributes are defined here
     user_id: {
-      type: DataTypes.STRING,
-      allowNull: false,
+      type: DataTypes.INTEGER,
+      references: {
+        model: "user",
+        key: "user_id",
+      },
     },
     product_id: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      // allowNull defaults to true
-    },
-    paid: {
-      type: DataTypes.BOOLEAN,
-      allowNull: false,
-      // allowNull defaults to true
+      type: DataTypes.INTEGER,
+      references: {
+        model: "products",
+        key: "product_id",
+      },
     },
   },
   {

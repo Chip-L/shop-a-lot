@@ -1,6 +1,6 @@
 const sequelize = require("../config/connection");
 const { bulkCreate } = require("../models/product");
-const { Product, Category, Backpack, User } = require("../models");
+const { Product, Category, User, Backpack } = require("../models");
 
 const categoryData = [
   {

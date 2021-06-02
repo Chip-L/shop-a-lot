@@ -12,38 +12,33 @@ User.init(
   {
     // Model attributes are defined here
     user_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    user_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    product_id: {
+    password: {
       type: DataTypes.STRING,
       allowNull: false,
-      // allowNull defaults to true
+      validate: {
+        len: [8],
+      },
     },
-    paid: {
-      type: DataTypes.BOOLEAN,
+    email: {
+      type: DataTypes.STRING,
+      unique: true,
       allowNull: false,
-      // allowNull defaults to true
+      validate: {
+        isEmail: true,
+      },
     },
-    paid: {
-      type: DataTypes.BOOLEAN,
+    character_name: {
+      type: DataTypes.STRING,
       allowNull: false,
-      // allowNull defaults to true
-    },
-    paid: {
-      type: DataTypes.BOOLEAN,
-      allowNull: false,
-      // allowNull defaults to true
-    },
-    paid: {
-      type: DataTypes.BOOLEAN,
-      allowNull: false,
-      // allowNull defaults to true
-    },
-    paid: {
-      type: DataTypes.BOOLEAN,
-      allowNull: false,
-      // allowNull defaults to true
     },
   },
   {
@@ -52,10 +47,15 @@ User.init(
         newUserData.password = await bcrypt.hash(newUserData.password, 10);
         return newUserData;
       },
+      beforeUpdate: async (userData) => {
+        if (userData.password) {
+          userData.password = await bcrypt.hash(userData.password, 10);
+        }
+        return userData;
+      },
     },
 
     sequelize,
-    timestamps: false,
     underscored: true,
     modelName: "User",
   }
