@@ -94,7 +94,7 @@ main {
 
 .cardImg img {
   height: auto;
-  width: 100%;
+  width: 80%;
 }
 
 .bodyText {
@@ -104,4 +104,38 @@ main {
 
 .cardBody {
   border-top: 1px solid var(--dark-purple);
+}
+
+.categoryTitle {
+  font-size: 40px;
+  font-family: var(--title-font);
+  text-align: center;
+  margin-top: 3vh;
+}
+
+.categories {
+  padding-top: 3vh;
+  width: 90%;
+  margin-left: 5%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.categoryCard {
+  width: 15%;
+  background-color: var(--lemon-meringue);
+  border: 2px solid var(--dark-purple);
+  border-radius: 10px;
+}
+
+footer {
+  background-color: var(--dark-green);
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--dark-purple);
 }
