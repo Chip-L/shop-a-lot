@@ -3,17 +3,15 @@ const Category = require("./category");
 const Backpack = require("./backpack");
 const User = require("./users");
 
-// Backpack.belongsTo(User, {
-//   foreignKey: "user_id",
-//   onDelete: "CASCADE",
-// });
-//Still working on what is through what and when to use the "as" key
-// User.hasOne(Backpack, {});
+// User.hasOne(Backpack,
+//   onDelete: );
+// Backpack.belongsTo(User);
 
-// Backpack.hasMany(Product, {
-//   foreignKey: "backpack_id",
-//   onDelete: "CASCADE",
-// });
+User.belongsToMany(Product, { through: "backpack", unique: false });
+Product.belongsToMany(User, { through: "backpack", unique: false });
+
+// Backpack.belongsToMany(Product);
+// Product.belongsToMany(Backpack);
 
 Product.belongsTo(Category);
 Category.hasMany(Product, {
