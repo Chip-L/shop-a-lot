@@ -1,0 +1,77 @@
+:root {
+  --title-font: "Mate SC", serif;
+  --text-font: "Open Sans", sans-serif;
+  --light-purple: #947bd3;
+  --lemon-meringue: #f9ecc8;
+  --dark-purple: #352d4d;
+  --dark-green: #6c756b;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  padding: 2vh 0;
+  border-bottom: 2px solid var(--dark-purple);
+  background-color: var(--dark-green);
+  box-shadow: 0px 5px 10px var(--light-purple);
+  align-items: center;
+}
+
+.navItem {
+  margin: 0 1.5vw;
+  color: var(--lemon-meringue);
+  font-size: 20px;
+  font-family: var(--title-font);
+}
+
+#pageTitle {
+  font-size: 25px;
+}
+
+nav form {
+  margin: 0 14vw;
+}
+
+nav form input {
+  width: 30vw;
+}
+
+main {
+  width: 100%;
+}
+
+#productAd {
+  width: 70%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 3vh 15%;
+  font-size: 30px;
+  font-family: var(--text-font);
+  border: 3px solid var(--dark-purple);
+  box-shadow: 5px 5px 10px var(--light-purple);
+  border-radius: 5px;
+  background-color: var(--lemon-meringue);
+  color: var(--dark-purple);
+}
+
+#productAd img {
+  height: 90%;
+  width: auto;
+}
+
+.featuredArea {
+  margin-left: 20%;
+  width: 60%;
+}
+
+.featuredProduct {
+  width: 25%;
+}
+
+.cardImg img {
+  height: auto;
+  width: 100%;
+}
