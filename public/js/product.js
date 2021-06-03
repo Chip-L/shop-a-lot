@@ -1,4 +1,4 @@
-const { add, total, list, quantity } = require("ing-simple-cart");
+import { add, total, list, quantity } from ("ing-simple-cart");
 
 const addItem = document.querySelector("form");
 addItem.addEventListener("submit", addItemToCart);

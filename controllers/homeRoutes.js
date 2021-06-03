@@ -24,7 +24,7 @@ router.get("/:categoryId", async (req, res) => {
     data.forEach(
       (data) => (data.add_info = JSON.parse(data.additional_information))
     );
-    console.log(data);
+    // console.log(data);
 
     res.render("category", {
       products: data,
