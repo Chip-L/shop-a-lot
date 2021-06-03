@@ -26,5 +26,80 @@ router.get("/", async (req, res) => {
     res.status(500).json(err);
   }
 });
+//**Armor Route**//
+router.get("/armor", async (req, res) => {
+  try {
+    const rawProductData = await Product.findAll({
+      include: [Category],
+      where: [{ category_id: [2] }],
+    });
+
+    if (!rawProductData) {
+      res.status(404).json({ message: "No products found." });
+    }
+
+    const armorData = rawProductData.map((prod) => prod.get({ plain: true }));
+
+    armorData.forEach(
+      (data) => (data.add_info = JSON.parse(data.additional_information))
+    );
+    console.log(data);
+
+    res.status(200).json(data);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+//**Weapons Route**//
+router.get("/weapons", async (req, res) => {
+  try {
+    const rawProductData = await Product.findAll({
+      include: [Category],
+      where: [{ category_id: [1] }],
+    });
+
+    if (!rawProductData) {
+      res.status(404).json({ message: "No products found." });
+    }
+
+    const weaponData = rawProductData.map((prod) => prod.get({ plain: true }));
+
+    weaponData.forEach(
+      (data) => (data.add_info = JSON.parse(data.additional_information))
+    );
+    console.log(data);
+
+    res.status(200).json(data);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+//**Gear Route**//
+router.get("/gear", async (req, res) => {
+  try {
+    const rawProductData = await Product.findAll({
+      include: [Category],
+      where: [{ category_id: [3] }],
+    });
+
+    if (!rawProductData) {
+      res.status(404).json({ message: "No products found." });
+    }
+
+    const gearData = rawProductData.map((prod) => prod.get({ plain: true }));
+
+    gearData.forEach(
+      (data) => (data.add_info = JSON.parse(data.additional_information))
+    );
+    console.log(data);
+
+    res.status(200).json(data);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
 
 module.exports = router;
