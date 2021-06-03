@@ -31,9 +31,10 @@ router.get("/armor", async (req, res) => {
   try {
     const rawProductData = await Product.findAll({
       include: [Category],
-      where: [{ category_id: [2] }],
+      // where: category_id[2],
+      where: { category_id: 2 },
     });
-
+    console.log(rawProductData);
     if (!rawProductData) {
       res.status(404).json({ message: "No products found." });
     }
@@ -43,9 +44,9 @@ router.get("/armor", async (req, res) => {
     armorData.forEach(
       (data) => (data.add_info = JSON.parse(data.additional_information))
     );
-    console.log(data);
+    console.log(armorData);
 
-    res.status(200).json(data);
+    res.status(200).json(armorData);
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
@@ -56,7 +57,7 @@ router.get("/weapons", async (req, res) => {
   try {
     const rawProductData = await Product.findAll({
       include: [Category],
-      where: [{ category_id: [1] }],
+      where: { category_id: 1 },
     });
 
     if (!rawProductData) {
@@ -68,9 +69,9 @@ router.get("/weapons", async (req, res) => {
     weaponData.forEach(
       (data) => (data.add_info = JSON.parse(data.additional_information))
     );
-    console.log(data);
+    console.log(weaponData);
 
-    res.status(200).json(data);
+    res.status(200).json(weaponData);
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
@@ -81,7 +82,7 @@ router.get("/gear", async (req, res) => {
   try {
     const rawProductData = await Product.findAll({
       include: [Category],
-      where: [{ category_id: [3] }],
+      where: { category_id: 3 },
     });
 
     if (!rawProductData) {
@@ -93,9 +94,9 @@ router.get("/gear", async (req, res) => {
     gearData.forEach(
       (data) => (data.add_info = JSON.parse(data.additional_information))
     );
-    console.log(data);
+    console.log(gearData);
 
-    res.status(200).json(data);
+    res.status(200).json(gearData);
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
