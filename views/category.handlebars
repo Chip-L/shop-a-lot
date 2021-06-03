@@ -1,17 +1,17 @@
-<div class="productRenderArea"></div>
-{{#each products as|product|}}
-    <a href="/product/{{product.id}}">
-    <div class="productCard">
+<div class="productRenderArea">
+  {{#each products}}
+    <a href="/product/{{this.product_id}}">
+      <div class="productCard">
         <div class="cardHeader">
-            <h3>{{product.product_name}}</h3>
+          <h3>{{this.product_name}}</h3>
         </div>
         <div class="cardBody">
-            <img src="{{product.image_link}}" alt="The product image" />
+          <img src="{{this.image_link}}" alt="The product image" />
         </div>
         <div class="cardFooter">
-            <p>{{product.product_name}} - {{product.cost}}</p>
+          <p>{{this.product_name}} - {{this.cost}}</p>
         </div>
-    </div>
+      </div>
     </a>
-{{/each}}
+  {{/each}}
 </div>
