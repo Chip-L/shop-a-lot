@@ -7,10 +7,7 @@ User.belongsToMany(Product, { through: { model: Backpack, unique: false } }); //
 Product.belongsToMany(User, { through: { model: Backpack, unique: false } }); // fixed the "through" formatting so it is an object as expected
 
 Product.belongsTo(Category);
-Category.hasMany(Product, {
-  foreignKey: "id",
-  onDelete: "CASCADE",
-});
+Category.hasMany(Product);
 
 module.exports = {
   Product,

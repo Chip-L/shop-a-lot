@@ -1,8 +1,9 @@
 const router = require("express").Router();
+const { Product, Category } = require("../models");
 
 router.get("/", async (req, res) => {
   res.render("homepage", {
-    // loggedIn: req.session.loggedIn,
+    loggedIn: req.session.loggedIn,
   });
 });
 
@@ -10,7 +11,7 @@ router.get("/:categoryId", async (req, res) => {
   try {
     const rawData = await Product.findAll({
       include: [Category],
-      where: { category_id: req.params.categoryID },
+      where: { category_id: req.params.categoryId },
     });
 
     if (!rawData) {
@@ -26,7 +27,7 @@ router.get("/:categoryId", async (req, res) => {
 
     res.render("category", {
       products: data,
-      // loggedIn: req.session.loggedIn,
+      loggedIn: req.session.loggedIn,
     });
   } catch (err) {
     console.log(err);
@@ -34,7 +35,30 @@ router.get("/:categoryId", async (req, res) => {
   }
 });
 
-router.get("/product/:id", async (req, res) => {});
+router.get("/product/:id", async (req, res) => {
+  try {
+    const rawProduct = Product.findByPk(req.params.id);
+
+    if (!rawProduct) {
+      res.status(404).json({ message: "No products found." });
+    }
+
+    const data = rawProduct.map((prod) => prod.get({ plain: true }));
+
+    data.forEach(
+      (data) => (data.add_info = JSON.parse(data.additional_information))
+    );
+    console.log(data);
+
+    res.render("product", {
+      product: data,
+      loggedIn: req.session.loggedIn,
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
 
 router.get("/backpack", async (req, res) => {
   try {
