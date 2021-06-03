@@ -44,7 +44,6 @@ main {
   padding-bottom: 10vh;
   width: 100%;
   background-color: var(--dark-green);
-  height: 100%;
 }
 
 #productAd {
@@ -231,7 +230,7 @@ footer a {
   background-color: var(--lemon-meringue);
   border-radius: 20px;
   border: 1px var(--dark-purple) solid;
-  margin: 0;
+  margin-bottom: 3vh;
   text-align: center;
 }
 
