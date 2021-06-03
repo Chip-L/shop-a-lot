@@ -40,6 +40,7 @@ main {
   padding-bottom: 10vh;
   width: 100%;
   background-color: var(--dark-green);
+  height: 100%;
 }
 
 #productAd {
@@ -82,7 +83,8 @@ main {
   border-radius: 10px;
 }
 
-.cardTitle {
+.cardTitle,
+.cardHeader {
   border-bottom: 1px solid var(--dark-purple);
 }
 
@@ -92,7 +94,8 @@ main {
   font-family: var(--title-font);
 }
 
-.cardImg img {
+.cardImg img,
+.cardBody img {
   height: auto;
   width: 80%;
 }
@@ -121,7 +124,7 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .categoryCard {
@@ -194,4 +197,35 @@ footer a {
   color: var(--dark-purple);
   text-align: center;
   margin-bottom: 5vh;
+}
+
+.categoryList {
+  text-align: center;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.categoryList h1 {
+  font-family: var(--title-font);
+  font-size: 40px;
+  margin-bottom: 5vh;
+  padding-bottom: 3vh;
+  border-bottom: 2px var(--dark-purple) solid;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.productCard {
+  width: 20%;
+  background-color: var(--lemon-meringue);
+  border-radius: 20px;
+  border: 1px var(--dark-purple) solid;
+  margin: 3vh 1vw;
+}
+
+.productRenderArea {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
