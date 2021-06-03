@@ -34,13 +34,13 @@ router.get("/armor", async (req, res) => {
       // where: category_id[2],
       where: { category_id: 2 },
     });
-    console.log(rawProductData);
+     console.log(rawProductData);
     if (!rawProductData) {
       res.status(404).json({ message: "No products found." });
     }
 
     const armorData = rawProductData.map((prod) => prod.get({ plain: true }));
-
+   
     armorData.forEach(
       (data) => (data.add_info = JSON.parse(data.additional_information))
     );
@@ -82,7 +82,7 @@ router.get("/gear", async (req, res) => {
   try {
     const rawProductData = await Product.findAll({
       include: [Category],
-      where: { category_id: 3 },
+      where:  { category_id: 3 },
     });
 
     if (!rawProductData) {
