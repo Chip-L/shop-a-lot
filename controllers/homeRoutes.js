@@ -12,7 +12,7 @@ router.get("/:categoryId", async (req, res) => {
   try {
     const rawData = await Product.findAll({
       include: [Category],
-      where: { category_id: req.params.categoryID },
+      where: { category_id: req.params.categoryId },
     });
 
     if (!rawData) {
