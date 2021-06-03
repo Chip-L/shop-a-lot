@@ -1,4 +1,5 @@
 const router = require("express").Router();
+const { seedAll } = require("../seeds");
 const { Product, Category } = require("../models");
 
 router.get("/", async (req, res) => {
@@ -53,6 +54,20 @@ router.get("/backpack", async (req, res) => {
       blogs,
       logged_in: req.session.logged_in,
     });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+//**To Auto Seed The DB on Server Start+*//
+router.get("/seeds", async (req, res) => {
+  try {
+    let rawData = await Product.findAll();
+    if (!rawData) {
+      await seedAll();
+      rawData = await Product.findAll();
+    }
+    res.render("databaseSeed", { length: rawData.length });
   } catch (err) {
     res.status(500).json(err);
   }
