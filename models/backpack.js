@@ -17,7 +17,7 @@ Backpack.init(
     product_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: "product",
+        model: "products",
         key: "product_id",
         unique: false,
       },
@@ -26,7 +26,7 @@ Backpack.init(
   {
     // Other model options go here
     sequelize, // We need to pass the connection instance
-    modelName: "Backpack", // We need to choose the model name
+    modelName: "backpack", // We need to choose the model name
   }
 );
 
