@@ -44,7 +44,6 @@ main {
   padding-bottom: 10vh;
   width: 100%;
   background-color: var(--dark-green);
-  height: 100%;
 }
 
 #productAd {
@@ -219,19 +218,34 @@ footer a {
   margin-left: 10%;
 }
 
-.productCard {
-  width: 20%;
-  background-color: var(--lemon-meringue);
-  border-radius: 20px;
-  border: 1px var(--dark-purple) solid;
-  margin: 3vh 1vw;
-}
-
 .productRenderArea {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.productCard {
+  width: 15vw;
+  background-color: var(--lemon-meringue);
+  border-radius: 20px;
+  border: 1px var(--dark-purple) solid;
+  margin-bottom: 3vh;
+  text-align: center;
+}
+
+.cardBody {
+  width: 70%;
+  margin-left: 15%;
+}
+
+.cardBody img {
+  width: 100%;
+  height: 200px;
+}
+
+.cardFooter {
+  padding-bottom: 20px;
 }
 
 .backpackArea {
