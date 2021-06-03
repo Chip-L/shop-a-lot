@@ -1,0 +1,15 @@
+<div class="productRenderArea"></div>
+{{#each product as|product|}}
+    <div class="productCard">
+        <div class="cardHeader">
+            <h3>{{product.product_name}}</h3>
+        </div>
+        <div class="cardBody">
+            <img src="./public/img/"+{{product-type}}+".png" alt="The product image" />
+        </div>
+        <div class="cardFooter">
+            <p>{{product.product_name}} - {{product.cost}}</p>
+        </div>
+    </div>
+{{/each}}
+</div>
