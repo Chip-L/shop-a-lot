@@ -9,9 +9,9 @@ const gearData = [
     stock: 2,
     weight: 1,
     category_id: 3,
-    additional_information: JSON.stringify({
+    additional_information: {
       type: "Special Substances & Items",
-    }),
+    },
   },
   {
     product_name: "Alchemical Sleep Gas",
@@ -29,9 +29,9 @@ const gearData = [
     stock: 0,
     weight: 1,
     category_id: 3,
-    additional_information: JSON.stringify({
+    additional_information: {
       type: "Special Substances & Items",
-    }),
+    },
   },
   {
     product_name: "Alchemists' Lab",
@@ -41,7 +41,7 @@ const gearData = [
     stock: 17,
     weight: 40,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Tools & Skill Kits" }),
+    additional_information: { type: "Tools & Skill Kits" },
   },
   {
     product_name: "Altar Case, Granite",
@@ -117,9 +117,9 @@ const gearData = [
     stock: 0,
     weight: 0.1,
     category_id: 3,
-    additional_information: JSON.stringify({
+    additional_information: {
       type: "Special Substances & Items",
-    }),
+    },
   },
   {
     product_name: "Arcane Lab",
@@ -144,27 +144,27 @@ const gearData = [
     stock: 0,
     weight: 4,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Clothing" }),
+    additional_information: { type: "Clothing" },
   },
   {
     product_name: "Artisan's Tools",
     description:
-      "These special tools include the items needed to pursue any craft. Without them, you have to use improvised tools (-2 penalty on Craft checks), if you can do the job at all.",
+      "These special tools include the items needed to pursue any craft. Without them, you have to use improvised tools (-2 penalty on Craft checks, if you can do the job at all.",
     cost: 5,
     stock: 19,
     weight: 5,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Tools & Skill Kits" }),
+    additional_information: { type: "Tools & Skill Kits" },
   },
   {
     product_name: "Artisan's Tools, Masterwork",
     description:
-      "These tools serve the same purpose as artisan's tools (above), but masterwork artisan's tools are the perfect tools for the job, so you get a +2 circumstance bonus on Craft checks made with them.",
+      "These tools serve the same purpose as artisan's tools (above, but masterwork artisan's tools are the perfect tools for the job, so you get a +2 circumstance bonus on Craft checks made with them.",
     cost: 55,
     stock: 6,
     weight: 5,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Tools & Skill Kits" }),
+    additional_information: { type: "Tools & Skill Kits" },
   },
   {
     product_name: "Aspergillum, Gold",
@@ -205,7 +205,7 @@ const gearData = [
     stock: 10,
     weight: 2,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Bandoleer",
@@ -230,7 +230,7 @@ const gearData = [
     stock: 18,
     weight: 30,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Basket",
@@ -239,7 +239,7 @@ const gearData = [
     stock: 14,
     weight: 1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Bedroll",
@@ -247,7 +247,7 @@ const gearData = [
     stock: 7,
     weight: 5,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Bell",
@@ -255,7 +255,7 @@ const gearData = [
     stock: 8,
     weight: 0,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Bellows Mask",
@@ -278,7 +278,7 @@ const gearData = [
     stock: 17,
     weight: 3,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Block & Tackle",
@@ -286,7 +286,7 @@ const gearData = [
     stock: 11,
     weight: 5,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   { product_name: "Book", cost: 15, stock: 13, weight: 3, category_id: 3 },
   {
@@ -302,7 +302,7 @@ const gearData = [
     stock: 5,
     weight: 0,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   { product_name: "Bracers", cost: 0, stock: 5, weight: 1, category_id: 3 },
   {
@@ -368,17 +368,17 @@ const gearData = [
     stock: 19,
     weight: 2,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Caltrops",
     description:
-      "A caltrop is a four-pronged iron spike crafted so that one prong faces up no matter how the caltrop comes to rest. You scatter caltrops on the ground in the hope that your enemies step on them or are at least forced to slow down to avoid them. One 2- pound bag of caltrops covers an area 5 feet square.\n\nEach time a creature moves into an area covered by caltrops (or spends a round fighting while standing in such an area), it might step on one. The caltrops make an attack roll (base attack bonus +0) against the creature. For this attack, the creature's shield, armor, and deflection bonuses do not count. If the creature is wearing shoes or other footwear, it gets a +2 armor bonus to AC. If the caltrops succeed on the attack, the creature has stepped on one. The caltrop deals 1 point of damage, and the creature's speed is reduced by one-half because its foot is wounded. This movement penalty lasts for 24 hours, or until the creature is successfully treated with a DC 15 Heal check, or until it receives at least 1 point of magical curing. A charging or running creature must immediately stop if it steps on a caltrop. Any creature moving at half speed or slower can pick its way through a bed of caltrops with no trouble.\n\nCaltrops may not be effective against unusual opponents.",
+      "A caltrop is a four-pronged iron spike crafted so that one prong faces up no matter how the caltrop comes to rest. You scatter caltrops on the ground in the hope that your enemies step on them or are at least forced to slow down to avoid them. One 2- pound bag of caltrops covers an area 5 feet square.\n\nEach time a creature moves into an area covered by caltrops (or spends a round fighting while standing in such an area, it might step on one. The caltrops make an attack roll (base attack bonus +0) against the creature. For this attack, the creature's shield, armor, and deflection bonuses do not count. If the creature is wearing shoes or other footwear, it gets a +2 armor bonus to AC. If the caltrops succeed on the attack, the creature has stepped on one. The caltrop deals 1 point of damage, and the creature's speed is reduced by one-half because its foot is wounded. This movement penalty lasts for 24 hours, or until the creature is successfully treated with a DC 15 Heal check, or until it receives at least 1 point of magical curing. A charging or running creature must immediately stop if it steps on a caltrop. Any creature moving at half speed or slower can pick its way through a bed of caltrops with no trouble.\n\nCaltrops may not be effective against unusual opponents.",
     cost: 1,
     stock: 0,
     weight: 2,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Candelabra, 16-candle, Gold",
@@ -420,7 +420,7 @@ const gearData = [
     stock: 15,
     weight: 0,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Candle, 12-hour",
@@ -486,7 +486,7 @@ const gearData = [
     stock: 15,
     weight: 1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Carriage",
@@ -496,7 +496,7 @@ const gearData = [
     stock: 13,
     weight: -1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Transport" }),
+    additional_information: { type: "Transport" },
   },
   {
     product_name: "Cart",
@@ -506,7 +506,7 @@ const gearData = [
     stock: 9,
     weight: 200,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Transport" }),
+    additional_information: { type: "Transport" },
   },
   {
     product_name: "Case, Map or Scroll",
@@ -514,7 +514,7 @@ const gearData = [
     stock: 0,
     weight: 0.5,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Castle",
@@ -553,7 +553,7 @@ const gearData = [
     stock: 15,
     weight: 2,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Chalk, 1 piece",
@@ -561,7 +561,7 @@ const gearData = [
     stock: 15,
     weight: 0,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Chess Set (Common)",
@@ -584,7 +584,7 @@ const gearData = [
     stock: 11,
     weight: 25,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Cleric's Vestments",
@@ -594,7 +594,7 @@ const gearData = [
     stock: 2,
     weight: 6,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Clothing" }),
+    additional_information: { type: "Clothing" },
   },
   {
     product_name: "Climber's Kit",
@@ -604,7 +604,7 @@ const gearData = [
     stock: 12,
     weight: 5,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Tools & Skill Kits" }),
+    additional_information: { type: "Tools & Skill Kits" },
   },
   {
     product_name: "Coins Stored: Copper",
@@ -642,17 +642,17 @@ const gearData = [
     stock: 19,
     weight: 7,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Clothing" }),
+    additional_information: { type: "Clothing" },
   },
   {
     product_name: "Courtier's Outfit",
     description:
-      "This outfit includes fancy, tailored clothes in whatever fashion happens to be the current style in the courts of the nobles. Anyone trying to influence nobles or courtiers while wearing street dress will have a hard time of it (-2 penalty on Charisma-based skill checks to influence such individuals). If you wear this outfit without jewelry (costing an additional 50 gp), you look like an out-of-place commoner.",
+      "This outfit includes fancy, tailored clothes in whatever fashion happens to be the current style in the courts of the nobles. Anyone trying to influence nobles or courtiers while wearing street dress will have a hard time of it (-2 penalty on Charisma-based skill checks to influence such individuals). If you wear this outfit without jewelry (costing an additional 50 gp, you look like an out-of-place commoner.",
     cost: 30,
     stock: 4,
     weight: 6,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Clothing" }),
+    additional_information: { type: "Clothing" },
   },
   {
     product_name: "Crowbar",
@@ -662,7 +662,7 @@ const gearData = [
     stock: 5,
     weight: 5,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Disappearing Ink",
@@ -680,7 +680,7 @@ const gearData = [
     stock: 4,
     weight: 8,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Tools & Skill Kits" }),
+    additional_information: { type: "Tools & Skill Kits" },
   },
   {
     product_name: "Dog, Guard",
@@ -688,7 +688,7 @@ const gearData = [
     stock: 13,
     weight: -1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Mounts & Related Gear" }),
+    additional_information: { type: "Mounts & Related Gear" },
   },
   {
     product_name: "Dog, Riding",
@@ -698,7 +698,7 @@ const gearData = [
     stock: 19,
     weight: -1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Mounts & Related Gear" }),
+    additional_information: { type: "Mounts & Related Gear" },
   },
   {
     product_name: "Donkey",
@@ -708,7 +708,7 @@ const gearData = [
     stock: 8,
     weight: -1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Mounts & Related Gear" }),
+    additional_information: { type: "Mounts & Related Gear" },
   },
   {
     product_name: "Draughts set",
@@ -733,17 +733,17 @@ const gearData = [
     stock: 18,
     weight: 4,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Clothing" }),
+    additional_information: { type: "Clothing" },
   },
   {
     product_name: "Explorer's Outfit",
     description:
-      "This is a full set of clothes for someone who never knows what to expect. It includes sturdy boots, leather breeches or a skirt, a belt, a shirt (perhaps with a vest or jacket), gloves, and a cloak. Rather than a leather skirt, a leather over-tunic may be worn over a cloth skirt. The clothes have plenty of pockets (especially the cloak). The outfit also includes any extra items you might need, such as a scarf or a wide-brimmed hat.",
+      "This is a full set of clothes for someone who never knows what to expect. It includes sturdy boots, leather breeches or a skirt, a belt, a shirt (perhaps with a vest or jacket, gloves, and a cloak. Rather than a leather skirt, a leather over-tunic may be worn over a cloth skirt. The clothes have plenty of pockets (especially the cloak). The outfit also includes any extra items you might need, such as a scarf or a wide-brimmed hat.",
     cost: 1,
     stock: 13,
     weight: 8,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Clothing" }),
+    additional_information: { type: "Clothing" },
   },
   {
     product_name: "Familiar Carrier (Diminutive)",
@@ -791,7 +791,7 @@ const gearData = [
     stock: 17,
     weight: 20,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Fishhook",
@@ -799,7 +799,7 @@ const gearData = [
     stock: 14,
     weight: 0,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Fishing net, 25'sq.",
@@ -807,7 +807,7 @@ const gearData = [
     stock: 11,
     weight: 5,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Flashpellet",
@@ -823,7 +823,7 @@ const gearData = [
     stock: 16,
     weight: 0,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Flint & Steel",
@@ -833,7 +833,7 @@ const gearData = [
     stock: 2,
     weight: 0,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Galley",
@@ -843,7 +843,7 @@ const gearData = [
     stock: 18,
     weight: -1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Transport" }),
+    additional_information: { type: "Transport" },
   },
   {
     product_name: "Gloves",
@@ -876,7 +876,7 @@ const gearData = [
     stock: 6,
     weight: 4,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Hammer",
@@ -886,7 +886,7 @@ const gearData = [
     stock: 17,
     weight: 2,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   { product_name: "Hammock", cost: 0.1, stock: 11, weight: 2, category_id: 3 },
   { product_name: "Headlamp", cost: -1, stock: 8, weight: 3, category_id: 3 },
@@ -905,7 +905,7 @@ const gearData = [
     stock: 14,
     weight: 1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Tools & Skill Kits" }),
+    additional_information: { type: "Tools & Skill Kits" },
   },
   {
     product_name: "Healing Salve",
@@ -952,7 +952,7 @@ const gearData = [
     stock: 17,
     weight: 0,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Tools & Skill Kits" }),
+    additional_information: { type: "Tools & Skill Kits" },
   },
   {
     product_name: "Holy Symbol, Bronze",
@@ -976,7 +976,7 @@ const gearData = [
     stock: 3,
     weight: 1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Tools & Skill Kits" }),
+    additional_information: { type: "Tools & Skill Kits" },
   },
   {
     product_name: "Holy Symbol, Wooden",
@@ -986,7 +986,7 @@ const gearData = [
     stock: 5,
     weight: 0.1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Tools & Skill Kits" }),
+    additional_information: { type: "Tools & Skill Kits" },
   },
   {
     product_name: "Holy Water, Flask of",
@@ -996,9 +996,9 @@ const gearData = [
     stock: 2,
     weight: 1,
     category_id: 3,
-    additional_information: JSON.stringify({
+    additional_information: {
       type: "Special Substances & Items",
-    }),
+    },
   },
   {
     product_name: "Horse, heavy",
@@ -1006,7 +1006,7 @@ const gearData = [
     stock: 6,
     weight: -1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Mounts & Related Gear" }),
+    additional_information: { type: "Mounts & Related Gear" },
   },
   {
     product_name: "Horse, light",
@@ -1014,7 +1014,7 @@ const gearData = [
     stock: 14,
     weight: -1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Mounts & Related Gear" }),
+    additional_information: { type: "Mounts & Related Gear" },
   },
   {
     product_name: "Hourglass",
@@ -1022,7 +1022,7 @@ const gearData = [
     stock: 19,
     weight: 1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Tools & Skill Kits" }),
+    additional_information: { type: "Tools & Skill Kits" },
   },
   {
     product_name: "Huge Castle",
@@ -1054,7 +1054,7 @@ const gearData = [
     stock: 17,
     weight: 0,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Inkpen",
@@ -1062,7 +1062,7 @@ const gearData = [
     stock: 11,
     weight: 0,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Insect Netting",
@@ -1088,7 +1088,7 @@ const gearData = [
     stock: 7,
     weight: 9,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Keelboat",
@@ -1098,7 +1098,7 @@ const gearData = [
     stock: 8,
     weight: -1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Transport" }),
+    additional_information: { type: "Transport" },
   },
   {
     product_name: "Keep",
@@ -1114,7 +1114,7 @@ const gearData = [
     stock: 14,
     weight: 20,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Lamp, Common",
@@ -1124,7 +1124,7 @@ const gearData = [
     stock: 16,
     weight: 1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Lantern, Bullseye",
@@ -1134,7 +1134,7 @@ const gearData = [
     stock: 17,
     weight: 3,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Lantern, Hooded",
@@ -1144,7 +1144,7 @@ const gearData = [
     stock: 3,
     weight: 2,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Lock, average",
@@ -1153,7 +1153,7 @@ const gearData = [
     stock: 7,
     weight: 1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Lock, good",
@@ -1162,7 +1162,7 @@ const gearData = [
     stock: 17,
     weight: 1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Lock, simple",
@@ -1171,7 +1171,7 @@ const gearData = [
     stock: 3,
     weight: 1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Lock, superior",
@@ -1180,7 +1180,7 @@ const gearData = [
     stock: 11,
     weight: 1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Longship",
@@ -1190,7 +1190,7 @@ const gearData = [
     stock: 13,
     weight: -1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Transport" }),
+    additional_information: { type: "Transport" },
   },
   {
     product_name: "Magnifying Glass",
@@ -1200,7 +1200,7 @@ const gearData = [
     stock: 10,
     weight: 0,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Tools & Skill Kits" }),
+    additional_information: { type: "Tools & Skill Kits" },
   },
   {
     product_name: "Manacles",
@@ -1209,7 +1209,7 @@ const gearData = [
     stock: 13,
     weight: 2,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Manacles, Masterwork",
@@ -1218,7 +1218,7 @@ const gearData = [
     stock: 2,
     weight: 2,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Mansion",
@@ -1243,7 +1243,7 @@ const gearData = [
     stock: 2,
     weight: 0.5,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Moat and Bridge",
@@ -1268,7 +1268,7 @@ const gearData = [
     stock: 9,
     weight: 2,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Clothing" }),
+    additional_information: { type: "Clothing" },
   },
   {
     product_name: "Mug/Tankard, clay",
@@ -1276,7 +1276,7 @@ const gearData = [
     stock: 6,
     weight: 1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Mule",
@@ -1286,7 +1286,7 @@ const gearData = [
     stock: 6,
     weight: -1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Mounts & Related Gear" }),
+    additional_information: { type: "Mounts & Related Gear" },
   },
   {
     product_name: "Musical Instrument, Common",
@@ -1294,7 +1294,7 @@ const gearData = [
     stock: 8,
     weight: 3,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Tools & Skill Kits" }),
+    additional_information: { type: "Tools & Skill Kits" },
   },
   {
     product_name: "Musical Instrument, Masterwork",
@@ -1304,7 +1304,7 @@ const gearData = [
     stock: 3,
     weight: 3,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Tools & Skill Kits" }),
+    additional_information: { type: "Tools & Skill Kits" },
   },
   {
     product_name: "Noble's Outfit",
@@ -1314,7 +1314,7 @@ const gearData = [
     stock: 12,
     weight: 10,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Clothing" }),
+    additional_information: { type: "Clothing" },
   },
   { product_name: "Oar", cost: 2, stock: 12, weight: -1, category_id: 3 },
   {
@@ -1325,7 +1325,7 @@ const gearData = [
     stock: 14,
     weight: 1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Old men's bones set",
@@ -1340,7 +1340,7 @@ const gearData = [
     stock: 19,
     weight: 0,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Parchment (sheet)",
@@ -1348,7 +1348,7 @@ const gearData = [
     stock: 11,
     weight: 0,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Peasant's Outfit",
@@ -1358,7 +1358,7 @@ const gearData = [
     stock: 8,
     weight: 2,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Clothing" }),
+    additional_information: { type: "Clothing" },
   },
   {
     product_name: "Phantom Ink (Firelight)",
@@ -1398,7 +1398,7 @@ const gearData = [
     stock: 3,
     weight: 10,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Pipes",
@@ -1414,7 +1414,7 @@ const gearData = [
     stock: 8,
     weight: 5,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Piton",
@@ -1422,7 +1422,7 @@ const gearData = [
     stock: 3,
     weight: 0.5,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Pole, 10'",
@@ -1430,7 +1430,7 @@ const gearData = [
     stock: 9,
     weight: 8,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Pony",
@@ -1438,7 +1438,7 @@ const gearData = [
     stock: 2,
     weight: -1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Mounts & Related Gear" }),
+    additional_information: { type: "Mounts & Related Gear" },
   },
   {
     product_name: "Portable Writing Desk",
@@ -1453,7 +1453,7 @@ const gearData = [
     stock: 0,
     weight: 10,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Potion",
@@ -1486,7 +1486,7 @@ const gearData = [
     stock: 15,
     weight: 3,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Powderhorn",
@@ -1526,7 +1526,7 @@ const gearData = [
     stock: 2,
     weight: 20,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Rations, Trail (per day)",
@@ -1534,7 +1534,7 @@ const gearData = [
     stock: 5,
     weight: 1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Reading Lamp",
@@ -1582,7 +1582,7 @@ const gearData = [
     stock: 9,
     weight: 10,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Rope, Silk",
@@ -1592,7 +1592,7 @@ const gearData = [
     stock: 8,
     weight: 5,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Rowboat",
@@ -1602,7 +1602,7 @@ const gearData = [
     stock: 8,
     weight: -1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Transport" }),
+    additional_information: { type: "Transport" },
   },
   {
     product_name: "Royal Outfit",
@@ -1612,7 +1612,7 @@ const gearData = [
     stock: 14,
     weight: 15,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Clothing" }),
+    additional_information: { type: "Clothing" },
   },
   {
     product_name: "Sack",
@@ -1621,7 +1621,7 @@ const gearData = [
     stock: 3,
     weight: 0.5,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Saddle, Exotic Military",
@@ -1631,7 +1631,7 @@ const gearData = [
     stock: 13,
     weight: 40,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Mounts & Related Gear" }),
+    additional_information: { type: "Mounts & Related Gear" },
   },
   {
     product_name: "Saddle, Exotic Pack",
@@ -1641,7 +1641,7 @@ const gearData = [
     stock: 14,
     weight: 20,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Mounts & Related Gear" }),
+    additional_information: { type: "Mounts & Related Gear" },
   },
   {
     product_name: "Saddle, Exotic Riding",
@@ -1651,7 +1651,7 @@ const gearData = [
     stock: 5,
     weight: 30,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Mounts & Related Gear" }),
+    additional_information: { type: "Mounts & Related Gear" },
   },
   {
     product_name: "Saddle, Military",
@@ -1661,7 +1661,7 @@ const gearData = [
     stock: 7,
     weight: 30,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Mounts & Related Gear" }),
+    additional_information: { type: "Mounts & Related Gear" },
   },
   {
     product_name: "Saddle, Pack",
@@ -1671,7 +1671,7 @@ const gearData = [
     stock: 15,
     weight: 15,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Mounts & Related Gear" }),
+    additional_information: { type: "Mounts & Related Gear" },
   },
   {
     product_name: "Saddle, Riding",
@@ -1680,7 +1680,7 @@ const gearData = [
     stock: 5,
     weight: 25,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Mounts & Related Gear" }),
+    additional_information: { type: "Mounts & Related Gear" },
   },
   {
     product_name: "Saddlebags",
@@ -1688,7 +1688,7 @@ const gearData = [
     stock: 14,
     weight: 8,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Mounts & Related Gear" }),
+    additional_information: { type: "Mounts & Related Gear" },
   },
   { product_name: "Saddlebags", cost: 8, stock: 1, weight: 4, category_id: 3 },
   {
@@ -1699,7 +1699,7 @@ const gearData = [
     stock: 2,
     weight: -1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Transport" }),
+    additional_information: { type: "Transport" },
   },
   {
     product_name: "Scale, Merchant's",
@@ -1709,7 +1709,7 @@ const gearData = [
     stock: 6,
     weight: 1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Tools & Skill Kits" }),
+    additional_information: { type: "Tools & Skill Kits" },
   },
   {
     product_name: "Scentbreaker",
@@ -1727,7 +1727,7 @@ const gearData = [
     stock: 19,
     weight: 6,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Clothing" }),
+    additional_information: { type: "Clothing" },
   },
   { product_name: "Scripture", cost: 10, stock: 3, weight: 3, category_id: 3 },
   {
@@ -1759,7 +1759,7 @@ const gearData = [
     stock: 17,
     weight: 1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Secret component compartment",
@@ -1783,7 +1783,7 @@ const gearData = [
     stock: 14,
     weight: 0,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Signal Whistle",
@@ -1791,7 +1791,7 @@ const gearData = [
     stock: 10,
     weight: 0.1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Signet Ring",
@@ -1799,7 +1799,7 @@ const gearData = [
     stock: 19,
     weight: 0,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Simple House",
@@ -1817,7 +1817,7 @@ const gearData = [
     stock: 17,
     weight: 300,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Transport" }),
+    additional_information: { type: "Transport" },
   },
   {
     product_name: "Sledge",
@@ -1825,7 +1825,7 @@ const gearData = [
     stock: 11,
     weight: 10,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Smokestick",
@@ -1835,9 +1835,9 @@ const gearData = [
     stock: 2,
     weight: 0.5,
     category_id: 3,
-    additional_information: JSON.stringify({
+    additional_information: {
       type: "Special Substances & Items",
-    }),
+    },
   },
   {
     product_name: "Snuffing Bell",
@@ -1852,7 +1852,7 @@ const gearData = [
     stock: 9,
     weight: 1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Songbook, Bard's",
@@ -1867,7 +1867,7 @@ const gearData = [
     stock: 5,
     weight: 8,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Spell Component Pouch",
@@ -1877,7 +1877,7 @@ const gearData = [
     stock: 13,
     weight: 3,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Tools & Skill Kits" }),
+    additional_information: { type: "Tools & Skill Kits" },
   },
   {
     product_name: "Spellbook, Wizard's (blank)",
@@ -1887,7 +1887,7 @@ const gearData = [
     stock: 10,
     weight: 3,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Tools & Skill Kits" }),
+    additional_information: { type: "Tools & Skill Kits" },
   },
   {
     product_name: "Spyglass",
@@ -1897,7 +1897,7 @@ const gearData = [
     stock: 5,
     weight: 1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Staff",
@@ -1915,9 +1915,9 @@ const gearData = [
     stock: 9,
     weight: 1,
     category_id: 3,
-    additional_information: JSON.stringify({
+    additional_information: {
       type: "Special Substances & Items",
-    }),
+    },
   },
   { product_name: "Suregrip", cost: 20, stock: 5, weight: 0, category_id: 3 },
   {
@@ -1930,14 +1930,14 @@ const gearData = [
   {
     product_name: "Tanglefoot Bag",
     description:
-      "When you throw a tanglefoot bag at a creature (as a ranged touch attack with a range increment of 10 feet), the bag comes apart and the goo bursts out, entangling the target and then becoming tough and resilient upon exposure to air. An entangled creature takes a -2 penalty on attack rolls and a -4 penalty to Dexterity and must make a DC 15 Reflex save or be glued to the floor, unable to move. Even on a successful save, it can move only at half speed. Huge or larger creatures are unaffected by a tanglefoot bag. A flying creature is not stuck to the floor, but it must make a DC 15 Reflex save or be unable to fly (assuming it uses its wings to fly) and fall to the ground. A tanglefoot bag does not function underwater.\n\nA creature that is glued to the floor (or unable to fly) can break free by making a DC 17 Strength check or by dealing 15 points of damage to the goo with a slashing weapon. A creature trying to scrape goo off itself, or another creature assisting, does not need to make an attack roll; hitting the goo is automatic, after which the creature that hit makes a damage roll to see how much of the goo was scraped off. Once free, the creature can move (including flying) at half speed. A character capable of spellcasting who is bound by the goo must make a DC 15 Concentration check to cast a spell. The goo becomes brittle and fragile after 2d4 rounds, cracking apart and losing its effectiveness. An application of universal solvent to a stuck creature dissolves the alchemical goo immediately.",
+      "When you throw a tanglefoot bag at a creature (as a ranged touch attack with a range increment of 10 feet, the bag comes apart and the goo bursts out, entangling the target and then becoming tough and resilient upon exposure to air. An entangled creature takes a -2 penalty on attack rolls and a -4 penalty to Dexterity and must make a DC 15 Reflex save or be glued to the floor, unable to move. Even on a successful save, it can move only at half speed. Huge or larger creatures are unaffected by a tanglefoot bag. A flying creature is not stuck to the floor, but it must make a DC 15 Reflex save or be unable to fly (assuming it uses its wings to fly) and fall to the ground. A tanglefoot bag does not function underwater.\n\nA creature that is glued to the floor (or unable to fly) can break free by making a DC 17 Strength check or by dealing 15 points of damage to the goo with a slashing weapon. A creature trying to scrape goo off itself, or another creature assisting, does not need to make an attack roll; hitting the goo is automatic, after which the creature that hit makes a damage roll to see how much of the goo was scraped off. Once free, the creature can move (including flying) at half speed. A character capable of spellcasting who is bound by the goo must make a DC 15 Concentration check to cast a spell. The goo becomes brittle and fragile after 2d4 rounds, cracking apart and losing its effectiveness. An application of universal solvent to a stuck creature dissolves the alchemical goo immediately.",
     cost: 50,
     stock: 11,
     weight: 4,
     category_id: 3,
-    additional_information: JSON.stringify({
+    additional_information: {
       type: "Special Substances & Items",
-    }),
+    },
   },
   {
     product_name: "Tent",
@@ -1945,7 +1945,7 @@ const gearData = [
     stock: 12,
     weight: 20,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Thieves' Tools",
@@ -1955,7 +1955,7 @@ const gearData = [
     stock: 8,
     weight: 1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Tools & Skill Kits" }),
+    additional_information: { type: "Tools & Skill Kits" },
   },
   {
     product_name: "Thieves' Tools, Masterwork",
@@ -1965,31 +1965,31 @@ const gearData = [
     stock: 9,
     weight: 2,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Tools & Skill Kits" }),
+    additional_information: { type: "Tools & Skill Kits" },
   },
   {
     product_name: "Thunderstone",
     description:
-      "You can throw this stone as a ranged attack with a range increment of 20 feet. When it strikes a hard surface (or is struck hard), it creates a deafening bang that is treated as a sonic attack. Each creature within a 10-foot-radius spread must make a DC 15 Fortitude save or be deafened for 1 hour. A deafened creature, in addition to the obvious effects, takes a -4 penalty on initiative and has a 20% chance to miscast and lose any spell with a verbal component that it tries to cast.\n\nSince you don't need to hit a specific target, you can simply aim at a particular 5-foot square. Treat the target square as AC 5.",
+      "You can throw this stone as a ranged attack with a range increment of 20 feet. When it strikes a hard surface (or is struck hard, it creates a deafening bang that is treated as a sonic attack. Each creature within a 10-foot-radius spread must make a DC 15 Fortitude save or be deafened for 1 hour. A deafened creature, in addition to the obvious effects, takes a -4 penalty on initiative and has a 20% chance to miscast and lose any spell with a verbal component that it tries to cast.\n\nSince you don't need to hit a specific target, you can simply aim at a particular 5-foot square. Treat the target square as AC 5.",
     cost: 30,
     stock: 0,
     weight: 1,
     category_id: 3,
-    additional_information: JSON.stringify({
+    additional_information: {
       type: "Special Substances & Items",
-    }),
+    },
   },
   {
     product_name: "Tindertwig",
     description:
-      "The alchemical substance on the end of this small, wooden stick ignites when struck against a rough surface. Creating a flame with a tindertwig is much faster than creating a flame with flint and steel (or a magnifying glass) and tinder. Lighting a torch with a tindertwig is a standard action (rather than a full-round action), and lighting any other fire with one is at least a standard action.",
+      "The alchemical substance on the end of this small, wooden stick ignites when struck against a rough surface. Creating a flame with a tindertwig is much faster than creating a flame with flint and steel (or a magnifying glass) and tinder. Lighting a torch with a tindertwig is a standard action (rather than a full-round action, and lighting any other fire with one is at least a standard action.",
     cost: 1,
     stock: 11,
     weight: 0,
     category_id: 3,
-    additional_information: JSON.stringify({
+    additional_information: {
       type: "Special Substances & Items",
-    }),
+    },
   },
   {
     product_name: "Tool, Masterwork",
@@ -1999,7 +1999,7 @@ const gearData = [
     stock: 12,
     weight: -1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Tools & Skill Kits" }),
+    additional_information: { type: "Tools & Skill Kits" },
   },
   {
     product_name: "Torch",
@@ -2009,7 +2009,7 @@ const gearData = [
     stock: 16,
     weight: 1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Torch, Everburning",
@@ -2019,9 +2019,9 @@ const gearData = [
     stock: 15,
     weight: -1,
     category_id: 3,
-    additional_information: JSON.stringify({
+    additional_information: {
       type: "Special Substances & Items",
-    }),
+    },
   },
   {
     product_name: "Tower",
@@ -2034,12 +2034,12 @@ const gearData = [
   {
     product_name: "Traveler's Outfit",
     description:
-      "This set of clothes consists of boots, a wool skirt or breeches, a sturdy belt, a shirt (perhaps with a vest or jacket), and an ample cloak with a hood.",
+      "This set of clothes consists of boots, a wool skirt or breeches, a sturdy belt, a shirt (perhaps with a vest or jacket, and an ample cloak with a hood.",
     cost: 1,
     stock: 13,
     weight: 5,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Clothing" }),
+    additional_information: { type: "Clothing" },
   },
   {
     product_name: "Vial",
@@ -2049,7 +2049,7 @@ const gearData = [
     stock: 0,
     weight: 0,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Wagon",
@@ -2059,7 +2059,7 @@ const gearData = [
     stock: 15,
     weight: 400,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Transport" }),
+    additional_information: { type: "Transport" },
   },
   {
     product_name: "Wand",
@@ -2075,7 +2075,7 @@ const gearData = [
     stock: 10,
     weight: -1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Mounts & Related Gear" }),
+    additional_information: { type: "Mounts & Related Gear" },
   },
   {
     product_name: "Warhorse, light",
@@ -2083,7 +2083,7 @@ const gearData = [
     stock: 16,
     weight: -1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Mounts & Related Gear" }),
+    additional_information: { type: "Mounts & Related Gear" },
   },
   {
     product_name: "Warpony",
@@ -2091,7 +2091,7 @@ const gearData = [
     stock: 7,
     weight: -1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Mounts & Related Gear" }),
+    additional_information: { type: "Mounts & Related Gear" },
   },
   {
     product_name: "Warship",
@@ -2101,7 +2101,7 @@ const gearData = [
     stock: 19,
     weight: -1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Transport" }),
+    additional_information: { type: "Transport" },
   },
   {
     product_name: "Water Clock",
@@ -2111,7 +2111,7 @@ const gearData = [
     stock: 14,
     weight: 200,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Tools & Skill Kits" }),
+    additional_information: { type: "Tools & Skill Kits" },
   },
   {
     product_name: "Waterskin",
@@ -2120,7 +2120,7 @@ const gearData = [
     stock: 1,
     weight: 4,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
   {
     product_name: "Whetstone",
@@ -2128,7 +2128,7 @@ const gearData = [
     stock: 5,
     weight: 1,
     category_id: 3,
-    additional_information: JSON.stringify({ type: "Adventuring Gear" }),
+    additional_information: { type: "Adventuring Gear" },
   },
 ];
 

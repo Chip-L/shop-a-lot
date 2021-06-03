@@ -7,7 +7,7 @@ router.get("/", async (req, res) => {
   });
 });
 
-router.get("/:categoryId", async (req, res) => {
+router.get("/:categoryID", async (req, res) => {
   try {
     const rawData = await Product.findAll({
       include: [Category],
@@ -20,9 +20,7 @@ router.get("/:categoryId", async (req, res) => {
 
     const data = rawData.map((prod) => prod.get({ plain: true }));
 
-    data.forEach(
-      (data) => (data.add_info = JSON.parse(data.additional_information))
-    );
+    data.forEach((data) => (data.add_info = data.additional_information));
     console.log(data);
 
     res.render("category", {

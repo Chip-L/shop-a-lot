@@ -8,7 +8,7 @@ const productData = [
     stock: 11,
     weight: 1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Grenade",
       ua_weapon_group: "Alchemical",
       damage: "d6",
@@ -21,7 +21,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Aiguchi",
@@ -29,7 +29,7 @@ const productData = [
     stock: 13,
     weight: 1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       damage: "d4",
       damage_type: "Piercing",
@@ -39,7 +39,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Alchemical Sleep Gas",
@@ -47,7 +47,7 @@ const productData = [
     stock: 7,
     weight: 1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Grenade",
       ua_weapon_group: "Alchemical",
       damage: "d",
@@ -60,7 +60,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Alchemist's Fire",
@@ -68,7 +68,7 @@ const productData = [
     stock: 13,
     weight: 1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Grenade",
       ua_weapon_group: "Alchemical",
       damage: "d6",
@@ -81,7 +81,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Armor, Spiked",
@@ -91,7 +91,7 @@ const productData = [
     stock: 16,
     weight: -1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Armor",
       damage: "d6",
@@ -102,7 +102,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Arrow",
@@ -112,7 +112,7 @@ const productData = [
     stock: 9,
     weight: 1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       ua_weapon_group: "Improvised",
       damage: "d4",
@@ -123,7 +123,7 @@ const productData = [
       melee_penalty: -4,
       is_finesse: true,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Axe, Battle",
@@ -131,7 +131,7 @@ const productData = [
     stock: 10,
     weight: 7,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Axe",
       damage: "d8",
@@ -142,7 +142,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Axe, Dwarven Buckler",
@@ -150,7 +150,7 @@ const productData = [
     stock: 2,
     weight: 6,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Shield",
       damage: "d6",
@@ -161,7 +161,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Axe, Dwarven War",
@@ -171,7 +171,7 @@ const productData = [
     stock: 13,
     weight: 15,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Axe",
       damage: "d10",
@@ -182,7 +182,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Axe, Great",
@@ -190,7 +190,7 @@ const productData = [
     stock: 11,
     weight: 20,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Axe",
       damage: "d12",
@@ -201,7 +201,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Axe, Hand",
@@ -209,7 +209,7 @@ const productData = [
     stock: 7,
     weight: 5,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Axe",
       damage: "d6",
@@ -220,7 +220,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Axe, Orc Double",
@@ -230,7 +230,7 @@ const productData = [
     stock: 6,
     weight: 25,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Axe",
       damage: "d8",
@@ -241,7 +241,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Axe, Throwing",
@@ -249,7 +249,7 @@ const productData = [
     stock: 6,
     weight: 4,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Axe",
       damage: "d6",
@@ -261,7 +261,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Battlepick, Gnome",
@@ -269,7 +269,7 @@ const productData = [
     stock: 7,
     weight: 5,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d6",
       damage_type: "Piercing",
@@ -279,7 +279,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Bite",
@@ -287,7 +287,7 @@ const productData = [
     stock: 11,
     weight: -1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Natural",
       ua_weapon_group: "Natural",
       damage: "d1",
@@ -298,7 +298,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Blade Boot",
@@ -306,7 +306,7 @@ const productData = [
     stock: 14,
     weight: 1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Dagger",
       damage: "d4",
@@ -317,7 +317,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Blowgun",
@@ -325,7 +325,7 @@ const productData = [
     stock: 18,
     weight: 2,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       ua_weapon_group: "Other",
       damage: "d1",
@@ -337,7 +337,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Blowgun, Greater",
@@ -345,7 +345,7 @@ const productData = [
     stock: 19,
     weight: 4,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Other",
       damage: "d3",
@@ -357,7 +357,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Bo",
@@ -365,7 +365,7 @@ const productData = [
     stock: 7,
     weight: 4,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       damage: "d6",
       damage_type: "Bludgeoning",
@@ -375,7 +375,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Bolas",
@@ -383,7 +383,7 @@ const productData = [
     stock: 15,
     weight: 3,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Other",
       damage: "d6",
@@ -396,7 +396,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Bolas, Barbed",
@@ -404,7 +404,7 @@ const productData = [
     stock: 14,
     weight: 4,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Other",
       damage: "d6",
@@ -416,7 +416,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Bolas, Two-ball",
@@ -426,7 +426,7 @@ const productData = [
     stock: 14,
     weight: 2,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Other",
       damage: "d4",
@@ -438,7 +438,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Bolt, Normal",
@@ -448,7 +448,7 @@ const productData = [
     stock: 4,
     weight: 1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       ua_weapon_group: "Improvised",
       damage: "d4",
@@ -459,7 +459,7 @@ const productData = [
       melee_penalty: -4,
       is_finesse: true,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Bolt, Repeating",
@@ -469,7 +469,7 @@ const productData = [
     stock: 9,
     weight: 1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       ua_weapon_group: "Improvised",
       damage: "d4",
@@ -480,7 +480,7 @@ const productData = [
       melee_penalty: -4,
       is_finesse: true,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Boomerang",
@@ -488,7 +488,7 @@ const productData = [
     stock: 5,
     weight: 2,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Other",
       damage: "d4",
@@ -501,7 +501,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Bottle",
@@ -509,7 +509,7 @@ const productData = [
     stock: 7,
     weight: 1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       ua_weapon_group: "Improvised",
       damage: "d6",
@@ -521,7 +521,7 @@ const productData = [
       melee_penalty: -4,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Bow, Composite Long",
@@ -531,7 +531,7 @@ const productData = [
     stock: 13,
     weight: 3,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Bow",
       damage: "d8",
@@ -543,7 +543,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Bow, Composite Short",
@@ -553,7 +553,7 @@ const productData = [
     stock: 12,
     weight: 2,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Bow",
       damage: "d6",
@@ -565,7 +565,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Bow, Long",
@@ -575,7 +575,7 @@ const productData = [
     stock: 12,
     weight: 3,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Bow",
       damage: "d8",
@@ -587,7 +587,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Bow, Mighty Composite Long (+1)",
@@ -597,7 +597,7 @@ const productData = [
     stock: 13,
     weight: 3,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Bow",
       damage: "d8",
@@ -609,7 +609,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Bow, Mighty Composite Long (+2)",
@@ -619,7 +619,7 @@ const productData = [
     stock: 18,
     weight: 3,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Bow",
       damage: "d8",
@@ -631,7 +631,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Bow, Mighty Composite Long (+3)",
@@ -641,7 +641,7 @@ const productData = [
     stock: 7,
     weight: 3,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Bow",
       damage: "d8",
@@ -653,7 +653,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Bow, Mighty Composite Long (+4)",
@@ -663,7 +663,7 @@ const productData = [
     stock: 16,
     weight: 3,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Bow",
       damage: "d8",
@@ -675,7 +675,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Bow, Mighty Composite Short (+1)",
@@ -685,7 +685,7 @@ const productData = [
     stock: 2,
     weight: 2,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Bow",
       damage: "d6",
@@ -697,7 +697,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Bow, Mighty Composite Short (+2)",
@@ -707,7 +707,7 @@ const productData = [
     stock: 10,
     weight: 2,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Bow",
       damage: "d6",
@@ -719,7 +719,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Bow, Short",
@@ -729,7 +729,7 @@ const productData = [
     stock: 19,
     weight: 2,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Bow",
       damage: "d6",
@@ -741,7 +741,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Chain",
@@ -749,7 +749,7 @@ const productData = [
     stock: 5,
     weight: 5,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Whip",
       damage: "d6",
@@ -760,7 +760,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: true,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Chain, Spiked",
@@ -770,7 +770,7 @@ const productData = [
     stock: 19,
     weight: 15,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Whip",
       damage: "2d4",
@@ -781,7 +781,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: true,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Chain-and-Dagger",
@@ -789,7 +789,7 @@ const productData = [
     stock: 3,
     weight: 4,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Whip",
       damage: "d4",
@@ -800,7 +800,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Chakram",
@@ -808,7 +808,7 @@ const productData = [
     stock: 15,
     weight: 2,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Other",
       damage: "d4",
@@ -820,7 +820,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Chatkcha",
@@ -828,7 +828,7 @@ const productData = [
     stock: 2,
     weight: 0.5,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d6",
       damage_type: "Slashing",
@@ -839,7 +839,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Chijiriki",
@@ -847,7 +847,7 @@ const productData = [
     stock: 19,
     weight: 6,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d6",
       damage_type: "Piercing",
@@ -857,7 +857,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Claw Bracer",
@@ -865,7 +865,7 @@ const productData = [
     stock: 0,
     weight: 2,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Other",
       damage: "d4",
@@ -876,7 +876,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Claw or Rake",
@@ -884,7 +884,7 @@ const productData = [
     stock: 2,
     weight: -1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Natural",
       ua_weapon_group: "Natural",
       damage: "d1",
@@ -895,7 +895,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: true,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Claw, Panther",
@@ -903,7 +903,7 @@ const productData = [
     stock: 14,
     weight: 3,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Other",
       damage: "d4",
@@ -914,7 +914,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Club",
@@ -922,7 +922,7 @@ const productData = [
     stock: 13,
     weight: 3,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       ua_weapon_group: "Impact",
       damage: "d6",
@@ -934,7 +934,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Club, Great",
@@ -942,7 +942,7 @@ const productData = [
     stock: 5,
     weight: 10,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Impact",
       damage: "d10",
@@ -953,7 +953,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Crossbow, Great",
@@ -961,7 +961,7 @@ const productData = [
     stock: 9,
     weight: 15,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Crossbow",
       damage: "d12",
@@ -973,7 +973,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Crossbow, Hand",
@@ -983,7 +983,7 @@ const productData = [
     stock: 14,
     weight: 3,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Crossbow",
       damage: "d4",
@@ -995,7 +995,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Crossbow, Heavy",
@@ -1005,7 +1005,7 @@ const productData = [
     stock: 8,
     weight: 9,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       ua_weapon_group: "Crossbow",
       damage: "d10",
@@ -1017,7 +1017,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Crossbow, Light",
@@ -1027,7 +1027,7 @@ const productData = [
     stock: 1,
     weight: 6,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       ua_weapon_group: "Crossbow",
       damage: "d8",
@@ -1039,7 +1039,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Crossbow, Repeating Heavy",
@@ -1049,7 +1049,7 @@ const productData = [
     stock: 15,
     weight: 16,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Crossbow",
       damage: "d8",
@@ -1061,7 +1061,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Crossbow, Repeating Light",
@@ -1071,7 +1071,7 @@ const productData = [
     stock: 14,
     weight: 16,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Crossbow",
       damage: "d6",
@@ -1083,7 +1083,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Crusher, Orc",
@@ -1091,7 +1091,7 @@ const productData = [
     stock: 14,
     weight: 15,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d8",
       damage_type: "Bludgeoning",
@@ -1101,7 +1101,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Cutlass",
@@ -1109,7 +1109,7 @@ const productData = [
     stock: 13,
     weight: 3,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Sword",
       damage: "d6",
@@ -1120,7 +1120,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Dagger",
@@ -1130,7 +1130,7 @@ const productData = [
     stock: 13,
     weight: 1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       ua_weapon_group: "Dagger",
       damage: "d4",
@@ -1142,7 +1142,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: true,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Dagger, Punching",
@@ -1150,7 +1150,7 @@ const productData = [
     stock: 5,
     weight: 2,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       ua_weapon_group: "Dagger",
       damage: "d4",
@@ -1161,7 +1161,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Dagger, Triple",
@@ -1169,7 +1169,7 @@ const productData = [
     stock: 11,
     weight: 1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Dagger",
       damage: "d4",
@@ -1180,7 +1180,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Dai-kyu",
@@ -1188,7 +1188,7 @@ const productData = [
     stock: 3,
     weight: 3,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Bow",
       damage: "d8",
@@ -1200,7 +1200,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Dart",
@@ -1208,7 +1208,7 @@ const productData = [
     stock: 5,
     weight: 0.5,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       ua_weapon_group: "Other",
       damage: "d4",
@@ -1220,7 +1220,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Die Tsuchi",
@@ -1228,7 +1228,7 @@ const productData = [
     stock: 13,
     weight: 12,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       damage: "d8",
       damage_type: "Bludgeoning",
@@ -1238,7 +1238,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Duom",
@@ -1246,7 +1246,7 @@ const productData = [
     stock: 11,
     weight: 8,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d8",
       damage_type: "Piercing",
@@ -1256,7 +1256,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Falchion",
@@ -1264,7 +1264,7 @@ const productData = [
     stock: 17,
     weight: 16,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Sword",
       damage: "2d4",
@@ -1275,7 +1275,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Fan, War",
@@ -1283,7 +1283,7 @@ const productData = [
     stock: 14,
     weight: 3,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d6",
       damage_type: "Slashing",
@@ -1293,7 +1293,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Flail, Dire",
@@ -1303,7 +1303,7 @@ const productData = [
     stock: 2,
     weight: 20,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Impact",
       damage: "d8",
@@ -1314,7 +1314,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Flail, Heavy",
@@ -1324,7 +1324,7 @@ const productData = [
     stock: 4,
     weight: 20,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Impact",
       damage: "d10",
@@ -1335,7 +1335,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Flail, Light",
@@ -1345,7 +1345,7 @@ const productData = [
     stock: 13,
     weight: 5,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Impact",
       damage: "d8",
@@ -1356,7 +1356,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Fukimi-Bari (Mouth Darts)",
@@ -1364,7 +1364,7 @@ const productData = [
     stock: 13,
     weight: 0.1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d1",
       damage_type: "Piercing",
@@ -1375,7 +1375,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Fullblade",
@@ -1383,7 +1383,7 @@ const productData = [
     stock: 10,
     weight: 23,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Sword",
       damage: "2d8",
@@ -1394,7 +1394,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Gauntlet",
@@ -1404,7 +1404,7 @@ const productData = [
     stock: 5,
     weight: 1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       ua_weapon_group: "Armor",
       damage: "d3",
@@ -1415,7 +1415,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Gauntlet, Bladed",
@@ -1423,7 +1423,7 @@ const productData = [
     stock: 2,
     weight: 4,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Armor",
       damage: "d6",
@@ -1434,7 +1434,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Gauntlet, Spiked",
@@ -1444,7 +1444,7 @@ const productData = [
     stock: 18,
     weight: 2,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       ua_weapon_group: "Armor",
       damage: "d4",
@@ -1455,7 +1455,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Gauntlet, Spring-Loaded",
@@ -1463,7 +1463,7 @@ const productData = [
     stock: 19,
     weight: 4,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Armor",
       damage: "d4",
@@ -1475,7 +1475,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Glaive",
@@ -1485,7 +1485,7 @@ const productData = [
     stock: 6,
     weight: 15,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Polearm",
       damage: "d10",
@@ -1496,7 +1496,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: true,
-    }),
+    },
   },
   {
     product_name: "Gore",
@@ -1504,7 +1504,7 @@ const productData = [
     stock: 6,
     weight: -1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Natural",
       ua_weapon_group: "Natural",
       damage: "d1",
@@ -1515,7 +1515,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Guisarme",
@@ -1525,7 +1525,7 @@ const productData = [
     stock: 9,
     weight: 15,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Polearm",
       damage: "2d4",
@@ -1536,7 +1536,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: true,
-    }),
+    },
   },
   {
     product_name: "Gyrspike",
@@ -1544,7 +1544,7 @@ const productData = [
     stock: 3,
     weight: 20,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Other",
       damage: "d8",
@@ -1555,7 +1555,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Gythka",
@@ -1563,7 +1563,7 @@ const productData = [
     stock: 16,
     weight: 12,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Other",
       damage: "d8",
@@ -1574,7 +1574,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Halberd",
@@ -1584,7 +1584,7 @@ const productData = [
     stock: 15,
     weight: 15,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Polearm",
       damage: "d10",
@@ -1595,7 +1595,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: true,
-    }),
+    },
   },
   {
     product_name: "Hammer, Gnome Hooked",
@@ -1605,7 +1605,7 @@ const productData = [
     stock: 9,
     weight: 6,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d6",
       damage_type: "Bludgeoning",
@@ -1615,7 +1615,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Hammer, Light",
@@ -1623,7 +1623,7 @@ const productData = [
     stock: 19,
     weight: 2,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Impact",
       damage: "d4",
@@ -1635,7 +1635,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Hammer, War",
@@ -1643,7 +1643,7 @@ const productData = [
     stock: 0,
     weight: 8,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Impact",
       damage: "d8",
@@ -1654,7 +1654,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Harpoon",
@@ -1662,7 +1662,7 @@ const productData = [
     stock: 19,
     weight: 10,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Polearm",
       damage: "d10",
@@ -1674,7 +1674,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Holy Water",
@@ -1682,7 +1682,7 @@ const productData = [
     stock: 10,
     weight: 1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Grenade",
       ua_weapon_group: "Alchemical",
       damage: "2d4",
@@ -1695,7 +1695,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Javelin",
@@ -1705,7 +1705,7 @@ const productData = [
     stock: 0,
     weight: 2,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       ua_weapon_group: "Polearm",
       damage: "d6",
@@ -1717,7 +1717,7 @@ const productData = [
       melee_penalty: -4,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Javelin, Spinning",
@@ -1725,7 +1725,7 @@ const productData = [
     stock: 4,
     weight: 2,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Polearm",
       damage: "d8",
@@ -1737,7 +1737,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Jitte",
@@ -1745,7 +1745,7 @@ const productData = [
     stock: 15,
     weight: 2,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d4",
       damage_type: "Bludgeoning",
@@ -1755,7 +1755,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Jo",
@@ -1763,7 +1763,7 @@ const productData = [
     stock: 2,
     weight: 2,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       damage: "d6",
       damage_type: "Bludgeoning",
@@ -1773,7 +1773,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Kama",
@@ -1783,7 +1783,7 @@ const productData = [
     stock: 0,
     weight: 2,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Sword, Light",
       damage: "d6",
@@ -1794,7 +1794,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Katana",
@@ -1802,7 +1802,7 @@ const productData = [
     stock: 17,
     weight: 6,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Sword",
       damage: "d10",
@@ -1813,7 +1813,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Kau Sin Ke",
@@ -1821,7 +1821,7 @@ const productData = [
     stock: 15,
     weight: 4,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d8",
       damage_type: "Bludgeoning",
@@ -1831,7 +1831,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Kawanaga",
@@ -1839,7 +1839,7 @@ const productData = [
     stock: 14,
     weight: 1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d3",
       damage_type: "Slashing",
@@ -1849,7 +1849,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: true,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Khopesh",
@@ -1857,7 +1857,7 @@ const productData = [
     stock: 18,
     weight: 12,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Sword",
       damage: "d8",
@@ -1868,7 +1868,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Knife, Crescent",
@@ -1876,7 +1876,7 @@ const productData = [
     stock: 7,
     weight: 1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Dagger",
       damage: "d3",
@@ -1887,7 +1887,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Knife, Stump",
@@ -1895,7 +1895,7 @@ const productData = [
     stock: 4,
     weight: 2,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Dagger",
       damage: "d4",
@@ -1906,7 +1906,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Kukri",
@@ -1914,7 +1914,7 @@ const productData = [
     stock: 14,
     weight: 3,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d4",
       damage_type: "Slashing",
@@ -1924,7 +1924,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Kusari-gama",
@@ -1932,7 +1932,7 @@ const productData = [
     stock: 8,
     weight: 3,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d6",
       damage_type: "Slashing",
@@ -1942,7 +1942,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: true,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Lajatang",
@@ -1950,7 +1950,7 @@ const productData = [
     stock: 3,
     weight: 7,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d8",
       damage_type: "Slashing",
@@ -1960,7 +1960,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Lance, Heavy",
@@ -1970,7 +1970,7 @@ const productData = [
     stock: 6,
     weight: 10,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Polearm",
       damage: "d8",
@@ -1981,7 +1981,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: true,
-    }),
+    },
   },
   {
     product_name: "Lance, Light",
@@ -1991,7 +1991,7 @@ const productData = [
     stock: 8,
     weight: 5,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Polearm",
       damage: "d6",
@@ -2002,7 +2002,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: true,
-    }),
+    },
   },
   {
     product_name: "Mace, Heavy",
@@ -2010,7 +2010,7 @@ const productData = [
     stock: 15,
     weight: 12,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       ua_weapon_group: "Impact",
       damage: "d8",
@@ -2021,7 +2021,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Mace, Light",
@@ -2029,7 +2029,7 @@ const productData = [
     stock: 11,
     weight: 6,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       ua_weapon_group: "Impact",
       damage: "d6",
@@ -2040,7 +2040,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Mancatcher",
@@ -2048,7 +2048,7 @@ const productData = [
     stock: 15,
     weight: 8,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Polearm",
       damage: "d4",
@@ -2060,7 +2060,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Manti",
@@ -2068,7 +2068,7 @@ const productData = [
     stock: 1,
     weight: 9,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d8",
       damage_type: "Piercing",
@@ -2078,7 +2078,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Masa-kari",
@@ -2086,7 +2086,7 @@ const productData = [
     stock: 10,
     weight: 5,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       damage: "d6",
       damage_type: "Slashing",
@@ -2096,7 +2096,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Maul",
@@ -2104,7 +2104,7 @@ const productData = [
     stock: 15,
     weight: 20,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Impact",
       damage: "d10",
@@ -2115,7 +2115,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Morningstar",
@@ -2123,7 +2123,7 @@ const productData = [
     stock: 13,
     weight: 8,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       ua_weapon_group: "Impact",
       damage: "d8",
@@ -2134,7 +2134,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Naga Blade",
@@ -2142,7 +2142,7 @@ const productData = [
     stock: 13,
     weight: 8,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Sword",
       damage: "d10",
@@ -2153,7 +2153,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Nagamaki",
@@ -2161,7 +2161,7 @@ const productData = [
     stock: 1,
     weight: 10,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       damage: "2d4",
       damage_type: "Slashing",
@@ -2171,7 +2171,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Nage-yari",
@@ -2179,7 +2179,7 @@ const productData = [
     stock: 11,
     weight: 3,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       damage: "d6",
       damage_type: "Piercing",
@@ -2190,7 +2190,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Naginata",
@@ -2198,7 +2198,7 @@ const productData = [
     stock: 15,
     weight: 15,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Polearm",
       damage: "d10",
@@ -2209,7 +2209,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Nekode",
@@ -2217,7 +2217,7 @@ const productData = [
     stock: 10,
     weight: 2,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d4",
       damage_type: "Piercing",
@@ -2227,7 +2227,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Net",
@@ -2237,7 +2237,7 @@ const productData = [
     stock: 4,
     weight: 10,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Other",
       damage: "d",
@@ -2250,7 +2250,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Ninja-to",
@@ -2258,7 +2258,7 @@ const productData = [
     stock: 8,
     weight: 3,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Sword",
       damage: "d6",
@@ -2269,7 +2269,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "No-dachi",
@@ -2277,7 +2277,7 @@ const productData = [
     stock: 5,
     weight: 12,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Sword",
       damage: "2d6",
@@ -2288,7 +2288,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Nunchaku",
@@ -2298,7 +2298,7 @@ const productData = [
     stock: 8,
     weight: 2,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d6",
       damage_type: "Bludgeoning",
@@ -2308,7 +2308,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Ono",
@@ -2316,7 +2316,7 @@ const productData = [
     stock: 15,
     weight: 10,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       damage: "d10",
       damage_type: "Slashing",
@@ -2326,7 +2326,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Pick, Heavy",
@@ -2334,7 +2334,7 @@ const productData = [
     stock: 5,
     weight: 6,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Impact",
       damage: "d6",
@@ -2345,7 +2345,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Pick, Light",
@@ -2353,7 +2353,7 @@ const productData = [
     stock: 0,
     weight: 4,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Impact",
       damage: "d4",
@@ -2364,7 +2364,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Pipe, Machi-kanshisha",
@@ -2372,7 +2372,7 @@ const productData = [
     stock: 11,
     weight: 4,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Impact",
       damage: "d6",
@@ -2383,7 +2383,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Ranseur",
@@ -2393,7 +2393,7 @@ const productData = [
     stock: 12,
     weight: 15,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Polearm",
       damage: "2d4",
@@ -2404,7 +2404,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: true,
-    }),
+    },
   },
   {
     product_name: "Rapier",
@@ -2414,7 +2414,7 @@ const productData = [
     stock: 3,
     weight: 3,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Sword",
       damage: "d6",
@@ -2425,7 +2425,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: true,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Rock",
@@ -2433,7 +2433,7 @@ const productData = [
     stock: 4,
     weight: 0.5,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       ua_weapon_group: "Improvised",
       damage: "d2",
@@ -2445,7 +2445,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Saber",
@@ -2453,7 +2453,7 @@ const productData = [
     stock: 2,
     weight: 4,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Sword",
       damage: "d8",
@@ -2464,7 +2464,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Sai",
@@ -2474,7 +2474,7 @@ const productData = [
     stock: 10,
     weight: 2,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Dagger",
       damage: "d4",
@@ -2485,7 +2485,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Sang Kauw",
@@ -2493,7 +2493,7 @@ const productData = [
     stock: 4,
     weight: 10,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d8",
       damage_type: "Piercing",
@@ -2503,7 +2503,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Sap",
@@ -2511,7 +2511,7 @@ const productData = [
     stock: 4,
     weight: 3,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Other",
       damage: "d6",
@@ -2523,7 +2523,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Sasumata",
@@ -2531,7 +2531,7 @@ const productData = [
     stock: 11,
     weight: 8,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d4",
       damage_type: "Bludgeoning",
@@ -2542,7 +2542,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Scimitar",
@@ -2550,7 +2550,7 @@ const productData = [
     stock: 19,
     weight: 4,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Sword",
       damage: "d6",
@@ -2561,7 +2561,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Scimitar, Double",
@@ -2569,7 +2569,7 @@ const productData = [
     stock: 18,
     weight: 15,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Sword",
       damage: "d6",
@@ -2580,7 +2580,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Scourge",
@@ -2588,7 +2588,7 @@ const productData = [
     stock: 14,
     weight: 2,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Whip",
       damage: "d8",
@@ -2599,7 +2599,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Scythe",
@@ -2609,7 +2609,7 @@ const productData = [
     stock: 13,
     weight: 12,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Polearm",
       damage: "2d4",
@@ -2620,7 +2620,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Shield, Heavy",
@@ -2630,7 +2630,7 @@ const productData = [
     stock: 11,
     weight: 15,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Shield",
       damage: "d4",
@@ -2641,7 +2641,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Shield, Light",
@@ -2651,7 +2651,7 @@ const productData = [
     stock: 14,
     weight: 6,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Shield",
       damage: "d3",
@@ -2662,7 +2662,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Shield, Spiked Heavy",
@@ -2672,7 +2672,7 @@ const productData = [
     stock: 14,
     weight: 5,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Shield",
       damage: "d6",
@@ -2683,7 +2683,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Shield, Spiked Light",
@@ -2693,7 +2693,7 @@ const productData = [
     stock: 9,
     weight: 5,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Shield",
       damage: "d3",
@@ -2704,7 +2704,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Shikomi-zue",
@@ -2712,7 +2712,7 @@ const productData = [
     stock: 10,
     weight: 5,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d8",
       damage_type: "Piercing",
@@ -2722,7 +2722,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Shotput, Orc",
@@ -2730,7 +2730,7 @@ const productData = [
     stock: 2,
     weight: 15,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "2d6",
       damage_type: "Bludgeoning",
@@ -2741,7 +2741,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Shuriken",
@@ -2751,7 +2751,7 @@ const productData = [
     stock: 1,
     weight: 0.1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d1",
       damage_type: "Piercing",
@@ -2762,7 +2762,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Siangham",
@@ -2772,7 +2772,7 @@ const productData = [
     stock: 9,
     weight: 1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d6",
       damage_type: "Piercing",
@@ -2782,7 +2782,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Sickle",
@@ -2792,7 +2792,7 @@ const productData = [
     stock: 9,
     weight: 3,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       ua_weapon_group: "Other",
       damage: "d6",
@@ -2803,7 +2803,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Skiprock, Halfling",
@@ -2811,7 +2811,7 @@ const productData = [
     stock: 11,
     weight: 0.25,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d3",
       damage_type: "Bludgeoning",
@@ -2822,7 +2822,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Slam",
@@ -2830,7 +2830,7 @@ const productData = [
     stock: 4,
     weight: -1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Natural",
       ua_weapon_group: "Natural",
       damage: "d1",
@@ -2841,7 +2841,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: true,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Slap",
@@ -2849,7 +2849,7 @@ const productData = [
     stock: 2,
     weight: -1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Natural",
       ua_weapon_group: "Natural",
       damage: "d1",
@@ -2860,7 +2860,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: true,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Sling",
@@ -2870,7 +2870,7 @@ const productData = [
     stock: 15,
     weight: -1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       ua_weapon_group: "Other",
       damage: "d4",
@@ -2882,7 +2882,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Sodegarami",
@@ -2890,7 +2890,7 @@ const productData = [
     stock: 5,
     weight: 5,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d4",
       damage_type: "Piercing",
@@ -2900,7 +2900,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Spear",
@@ -2910,7 +2910,7 @@ const productData = [
     stock: 10,
     weight: 3,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       ua_weapon_group: "Polearm",
       damage: "d6",
@@ -2922,7 +2922,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Spear, Long",
@@ -2932,7 +2932,7 @@ const productData = [
     stock: 17,
     weight: 9,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Polearm",
       damage: "d8",
@@ -2943,7 +2943,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: true,
-    }),
+    },
   },
   {
     product_name: "Spear, Short",
@@ -2953,7 +2953,7 @@ const productData = [
     stock: 6,
     weight: 5,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       ua_weapon_group: "Polearm",
       damage: "d8",
@@ -2965,7 +2965,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Spike, Manticore Tail",
@@ -2973,7 +2973,7 @@ const productData = [
     stock: 1,
     weight: -1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Natural",
       ua_weapon_group: "Natural",
       damage: "d8",
@@ -2985,7 +2985,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Spikes, Ratling Tail",
@@ -2993,7 +2993,7 @@ const productData = [
     stock: 15,
     weight: 0.5,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d4",
       damage_type: "Piercing",
@@ -3003,7 +3003,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Staff, Bladed",
@@ -3011,7 +3011,7 @@ const productData = [
     stock: 4,
     weight: 10,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Polearm",
       damage: "d8",
@@ -3023,7 +3023,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Staff, Quarter",
@@ -3033,7 +3033,7 @@ const productData = [
     stock: 8,
     weight: 4,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       ua_weapon_group: "Polearm",
       damage: "d6",
@@ -3044,7 +3044,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Staff, Three-Section",
@@ -3052,7 +3052,7 @@ const productData = [
     stock: 10,
     weight: 8,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d8",
       damage_type: "Bludgeoning",
@@ -3062,7 +3062,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Standard Unarmed",
@@ -3072,7 +3072,7 @@ const productData = [
     stock: 10,
     weight: -1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       ua_weapon_group: "Natural",
       damage: "d3",
@@ -3084,7 +3084,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: true,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Sting",
@@ -3092,7 +3092,7 @@ const productData = [
     stock: 17,
     weight: -1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Natural",
       ua_weapon_group: "Natural",
       damage: "d1",
@@ -3103,7 +3103,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Strike, Unarmed",
@@ -3113,7 +3113,7 @@ const productData = [
     stock: 14,
     weight: -1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       ua_weapon_group: "Natural",
       damage: "d3",
@@ -3125,7 +3125,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: true,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Sword, Bastard",
@@ -3135,7 +3135,7 @@ const productData = [
     stock: 8,
     weight: 10,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Sword",
       damage: "d10",
@@ -3146,7 +3146,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Sword, Butterfly",
@@ -3154,7 +3154,7 @@ const productData = [
     stock: 18,
     weight: 2,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Sword",
       damage: "d6",
@@ -3165,7 +3165,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Sword, Great",
@@ -3173,7 +3173,7 @@ const productData = [
     stock: 1,
     weight: 15,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Sword",
       damage: "2d6",
@@ -3184,7 +3184,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Sword, Long",
@@ -3192,7 +3192,7 @@ const productData = [
     stock: 4,
     weight: 4,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Sword",
       damage: "d8",
@@ -3203,7 +3203,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Sword, Short",
@@ -3211,7 +3211,7 @@ const productData = [
     stock: 1,
     weight: 3,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Sword",
       damage: "d6",
@@ -3222,7 +3222,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Sword, Two-Bladed",
@@ -3232,7 +3232,7 @@ const productData = [
     stock: 6,
     weight: 30,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Sword",
       damage: "d8",
@@ -3243,7 +3243,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Tanglefoot Bag",
@@ -3251,7 +3251,7 @@ const productData = [
     stock: 15,
     weight: 4,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Grenade",
       ua_weapon_group: "Alchemical",
       damage: "d",
@@ -3264,7 +3264,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Tankard",
@@ -3272,7 +3272,7 @@ const productData = [
     stock: 3,
     weight: 1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       ua_weapon_group: "Improvised",
       damage: "d6",
@@ -3283,7 +3283,7 @@ const productData = [
       melee_penalty: -4,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Tanto",
@@ -3291,7 +3291,7 @@ const productData = [
     stock: 6,
     weight: 1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       damage: "d4",
       damage_type: "Piercing",
@@ -3301,7 +3301,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Tetsubo",
@@ -3309,7 +3309,7 @@ const productData = [
     stock: 1,
     weight: 15,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Impact",
       damage: "d8",
@@ -3320,7 +3320,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Thinblade, Elvin",
@@ -3328,7 +3328,7 @@ const productData = [
     stock: 0,
     weight: 3,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Sword",
       damage: "d8",
@@ -3339,7 +3339,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Thunderstone",
@@ -3347,7 +3347,7 @@ const productData = [
     stock: 6,
     weight: 1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Grenade",
       ua_weapon_group: "Alchemical",
       damage: "d",
@@ -3360,7 +3360,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Tonfa",
@@ -3368,7 +3368,7 @@ const productData = [
     stock: 18,
     weight: 2,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Impact",
       damage: "d6",
@@ -3379,7 +3379,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Tortoise Blade, Gnome",
@@ -3387,7 +3387,7 @@ const productData = [
     stock: 7,
     weight: 1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d4",
       damage_type: "Piercing",
@@ -3397,7 +3397,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Trident",
@@ -3407,7 +3407,7 @@ const productData = [
     stock: 1,
     weight: 5,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Polearm",
       damage: "d8",
@@ -3419,7 +3419,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Urgrosh, Dwarven ",
@@ -3429,7 +3429,7 @@ const productData = [
     stock: 0,
     weight: 15,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d8",
       damage_type: "Slashing",
@@ -3439,7 +3439,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Vajra",
@@ -3447,7 +3447,7 @@ const productData = [
     stock: 13,
     weight: 6,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       damage: "d8",
       damage_type: "Piercing",
@@ -3457,7 +3457,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Wakizashi",
@@ -3465,7 +3465,7 @@ const productData = [
     stock: 3,
     weight: 3,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Sword",
       damage: "d6",
@@ -3476,7 +3476,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Whip",
@@ -3486,7 +3486,7 @@ const productData = [
     stock: 18,
     weight: 2,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Whip",
       damage: "d2",
@@ -3498,7 +3498,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: true,
-    }),
+    },
   },
   {
     product_name: "Whip Dagger",
@@ -3506,7 +3506,7 @@ const productData = [
     stock: 6,
     weight: 3,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Whip",
       damage: "d6",
@@ -3517,7 +3517,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: true,
-    }),
+    },
   },
   {
     product_name: "Whip Dagger, Mighty (+1)",
@@ -3525,7 +3525,7 @@ const productData = [
     stock: 9,
     weight: 4,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Whip",
       damage: "d6",
@@ -3536,7 +3536,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: true,
-    }),
+    },
   },
   {
     product_name: "Whip Dagger, Mighty (+2)",
@@ -3544,7 +3544,7 @@ const productData = [
     stock: 14,
     weight: 5,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Whip",
       damage: "d6",
@@ -3555,7 +3555,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: true,
-    }),
+    },
   },
   {
     product_name: "Whip Dagger, Mighty (+3)",
@@ -3563,7 +3563,7 @@ const productData = [
     stock: 6,
     weight: 6,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Whip",
       damage: "d6",
@@ -3574,7 +3574,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: true,
-    }),
+    },
   },
   {
     product_name: "Whip Dagger, Mighty (+4)",
@@ -3582,7 +3582,7 @@ const productData = [
     stock: 11,
     weight: 7,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Whip",
       damage: "d6",
@@ -3593,7 +3593,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: true,
-    }),
+    },
   },
   {
     product_name: "Whip, Mighty (+1)",
@@ -3603,7 +3603,7 @@ const productData = [
     stock: 19,
     weight: 3,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Whip",
       damage: "d2",
@@ -3615,7 +3615,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: true,
-    }),
+    },
   },
   {
     product_name: "Whip, Mighty (+2)",
@@ -3625,7 +3625,7 @@ const productData = [
     stock: 3,
     weight: 4,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Whip",
       damage: "d2",
@@ -3637,7 +3637,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: true,
-    }),
+    },
   },
   {
     product_name: "Whip, Mighty (+3)",
@@ -3647,7 +3647,7 @@ const productData = [
     stock: 15,
     weight: 5,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Whip",
       damage: "d2",
@@ -3659,7 +3659,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: true,
-    }),
+    },
   },
   {
     product_name: "Whip, Mighty (+4)",
@@ -3669,7 +3669,7 @@ const productData = [
     stock: 10,
     weight: 6,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Exotic",
       ua_weapon_group: "Whip",
       damage: "d2",
@@ -3681,7 +3681,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: true,
-    }),
+    },
   },
   {
     product_name: "Wing Buffet",
@@ -3689,7 +3689,7 @@ const productData = [
     stock: 0,
     weight: -1,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Natural",
       ua_weapon_group: "Natural",
       damage: "d1",
@@ -3700,7 +3700,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Yari",
@@ -3708,7 +3708,7 @@ const productData = [
     stock: 13,
     weight: 5,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Simple",
       damage: "d8",
       damage_type: "Piercing",
@@ -3718,7 +3718,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Yumi, Long",
@@ -3726,7 +3726,7 @@ const productData = [
     stock: 16,
     weight: 3,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Bow",
       damage: "d8",
@@ -3738,7 +3738,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
   {
     product_name: "Yumi, Short",
@@ -3746,7 +3746,7 @@ const productData = [
     stock: 11,
     weight: 2,
     category_id: 1,
-    additional_information: JSON.stringify({
+    additional_information:{
       weapon_type: "Martial",
       ua_weapon_group: "Bow",
       damage: "d6",
@@ -3758,7 +3758,7 @@ const productData = [
       melee_penalty: -1,
       is_finesse: false,
       has_reach: false,
-    }),
+    },
   },
 ];
 
