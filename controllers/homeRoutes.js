@@ -1,7 +1,9 @@
 const router = require("express").Router();
 
 router.get("/", async (req, res) => {
-  res.render("homepage");
+  res.render("homepage", {
+    loggedIn = req.session.loggedIn
+  });
 });
 
 router.get("/backpack", async (req, res) => {
