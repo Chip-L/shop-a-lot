@@ -1,4 +1,5 @@
 const router = require("express").Router();
+const { Product, Category } = require("../models");
 
 router.get("/", async (req, res) => {
   res.render("homepage", {
