@@ -2,6 +2,7 @@ const sequelize = require("../config/connection");
 const seedWeapons = require("./seedWeapon");
 const seedArmor = require("./seedArmor");
 const seedGear = require("./seedGear");
+const seedUsers = require("./seedUsers");
 
 const { Product, Category, User, Backpack } = require("../models");
 
@@ -27,6 +28,8 @@ const seedAll = async () => {
   await seedWeapons();
   await seedArmor();
   await seedGear();
+
+  await seedUsers();
 };
 
 seedAll();
