@@ -7,17 +7,31 @@
     />
   </div>
   <div class="productInfoArea">
-    <h2>{{product.product_name}}</h2>
+    <h2 id="product_name">{{product.product_name}}</h2>
     <p>{{product.category}}</p>
     <p>{{product.stock}}</p>
-    <p>{{product.cost}}</p>
+    <p id="cost">{{product.cost}}</p>
   </div>
   <div class="productDescArea">
     <p>{{product.description}}</p>
     <ul>
       {{#each product.additional_information}}
-        <li>{{formatAddedData(this)}}</li>
+        <li>{{formatAddedData this}}</li>
       {{/each}}
     </ul>
   </div>
 </div>
+
+<form id="{{product.prod_id}}">
+  <label for="quantity">quantity</label>
+  <input
+    type="range"
+    id="quantity"
+    name="quantity"
+    min="1"
+    max="{{product.stock}}"
+  />
+  <button type="submit">Add To Cart </button>
+
+</form>
+<script src="/js/product.js"> </script>
