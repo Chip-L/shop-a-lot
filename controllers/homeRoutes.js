@@ -24,7 +24,7 @@ router.get("/:categoryId", async (req, res) => {
     data.forEach(
       (data) => (data.add_info = JSON.parse(data.additional_information))
     );
-    console.log(data);
+    // console.log(data);
 
     res.render("category", {
       products: data,
@@ -38,18 +38,16 @@ router.get("/:categoryId", async (req, res) => {
 
 router.get("/product/:id", async (req, res) => {
   try {
-    const rawProduct = Product.findByPk(req.params.id);
+    const rawProduct = await Product.findByPk(req.params.id);
 
     if (!rawProduct) {
       res.status(404).json({ message: "No products found." });
     }
 
-    const data = rawProduct.map((prod) => prod.get({ plain: true }));
+    const data = rawProduct.get({ plain: true });
 
-    data.forEach(
-      (data) => (data.add_info = JSON.parse(data.additional_information))
-    );
-    console.log(data);
+    data.add_info = JSON.parse(data.additional_information);
+    console.log("data:/n", data);
 
     res.render("product", {
       product: data,
