@@ -9,15 +9,17 @@ Backpack.init(
     user_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: "user",
+        model: "users",
         key: "user_id",
+        unique: false,
       },
     },
     product_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: "products",
+        model: "product",
         key: "product_id",
+        unique: false,
       },
     },
   },
