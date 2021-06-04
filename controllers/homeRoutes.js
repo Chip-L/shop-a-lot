@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { seedAll } = require("../seeds");
+// const { seedAll } = require("../seeds");
 const { Product, Category } = require("../models");
 const { doPagination } = require("../utils/queryHelpers");
 
@@ -23,11 +23,6 @@ router.get("/:categoryId", async (req, res) => {
 
     const data = rawData.map((prod) => prod.get({ plain: true }));
 
-    // data.forEach(
-    //   (data) => (data.add_info = JSON.parse(data.additional_information))
-    // );
-    // console.log(data);
-
     res.render("category", {
       products: data,
       loggedIn: req.session.loggedIn,
@@ -50,8 +45,8 @@ router.get("/product/:id", async (req, res) => {
 
     const data = rawProduct.get({ plain: true });
 
-    data.add_info = JSON.parse(data.additional_information);
-    // console.log("data:\n", data);
+    // data.add_info = JSON.parse(data.additional_information);
+    console.log("data:\n", data);
 
     res.render("product", {
       ...data,
