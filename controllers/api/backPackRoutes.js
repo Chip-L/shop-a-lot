@@ -1,5 +1,19 @@
 const router = require("express").Router();
-const { Category, Product } = require("../../models");
+const { Category, Product, Backpack, User } = require("../../models");
+
+/** expecting body to contain an object {user_id: integer, cart: [{product_id: int, quantity: integer}] } */
+router.post("/", async (req, res) => {
+  try {
+    const { user_id, cart } = req.body;
+    // add to cart
+
+    console.log(cart);
+
+    // todo: decrement stock
+  } catch (err) {
+    console.log(err);
+  }
+});
 
 router.delete("/:id", async (req, res) => {
   // delete a category by its `id` value

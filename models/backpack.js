@@ -6,6 +6,10 @@ class Backpack extends Model {}
 Backpack.init(
   {
     // Model attributes are defined here
+    quantity: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
