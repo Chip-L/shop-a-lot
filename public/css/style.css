@@ -7,6 +7,10 @@
   --dark-green: #6c756b;
 }
 
+a {
+  text-decoration: none;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -82,7 +86,8 @@ main {
   border-radius: 10px;
 }
 
-.cardTitle {
+.cardTitle,
+.cardHeader {
   border-bottom: 1px solid var(--dark-purple);
 }
 
@@ -92,7 +97,8 @@ main {
   font-family: var(--title-font);
 }
 
-.cardImg img {
+.cardImg img,
+.cardBody img {
   height: auto;
   width: 80%;
 }
@@ -121,7 +127,7 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .categoryCard {
@@ -194,4 +200,97 @@ footer a {
   color: var(--dark-purple);
   text-align: center;
   margin-bottom: 5vh;
+}
+
+.categoryList {
+  text-align: center;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.categoryList h1 {
+  font-family: var(--title-font);
+  font-size: 40px;
+  margin-bottom: 5vh;
+  padding-bottom: 3vh;
+  border-bottom: 2px var(--dark-purple) solid;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.productRenderArea {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.productCard {
+  width: 15vw;
+  background-color: var(--lemon-meringue);
+  border-radius: 20px;
+  border: 1px var(--dark-purple) solid;
+  margin-bottom: 3vh;
+  text-align: center;
+}
+
+.cardBody {
+  width: 70%;
+  margin-left: 15%;
+}
+
+.cardBody img {
+  width: 100%;
+  height: 200px;
+}
+
+.cardFooter {
+  padding-bottom: 20px;
+}
+
+.backpackArea {
+  background-color: var(--lemon-meringue);
+  width: 60%;
+  height: 800px;
+  margin-left: 20%;
+}
+
+.backpackArea h1 {
+  font-family: var(--title-font);
+  font-size: 40px;
+  text-align: center;
+  padding-top: 3vh;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.backpackArea p {
+  font-family: var(--text-font);
+  font-size: 20px;
+  padding-bottom: 2vh;
+  border-bottom: 2px solid var(--dark-purple);
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.productList {
+  width: 100%;
+  height: 100%;
+}
+
+.productList ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 80%;
+}
+
+.productList li {
+  width: 30%;
+  padding: 3vh 0;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
 }

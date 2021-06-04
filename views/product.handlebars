@@ -1,13 +1,35 @@
+{{{product}}}
+
 <div class="productArea">
-  <h1 id="productTitle">Product Title</h1>
+  <h1 id="productTitle">{{product_name}}</h1>
   <div class="productImageArea">
-    <img src="./public/img/shield.png" alt="An image of a shield" />
+    <img src="/img/{{category.category_name}}.png" alt="An image of a shield" />
   </div>
   <div class="productInfoArea">
-    <h2>Product Area</h2>
-    <p>Product Tag</p>
+    <h2 id="product_name">{{product_name}}</h2>
+    <p>{{category}}</p>
+    <p>{{stock}}</p>
+    <p id="cost">{{cost}}</p>
   </div>
   <div class="productDescArea">
-    <p>Product description area</p>
+    <p>{{description}}</p>
+    <ul>
+      {{#each additional_information}}
+        <li>{{formatAddedData this}}</li>
+      {{/each}}
+    </ul>
   </div>
 </div>
+
+<form id="{{prod_id}}">
+  <label for="quantity">quantity</label>
+  <input type="range" id="quantity" name="quantity" min="1" max="{{stock}}" />
+  <button type="submit">Add To Cart </button>
+
+</form>
+
+<!-- <script
+  src="https://unpkg.com/ing-simple-cart@1.0.21/index.js"
+  type="text/javascript"
+></script>
+<script src="/js/product.js"> </script> -->

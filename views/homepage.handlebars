@@ -1,7 +1,7 @@
 <div id="productAd">
-  <img src="./public/img/magic_potion.png" alt="A purple healing potion" />
+  <img src="/img/magic_potion.png" alt="A purple healing potion" />
   <p>Healing Potions by Shop a Lot Basics</p>
-  <img src="./public/img/magic_potion.png" alt="A purple healing potion" />
+  <img src="/img/magic_potion.png" alt="A purple healing potion" />
 </div>
 {{#if loggedIn}}
   <div class="featuredArea">
@@ -10,7 +10,7 @@
         <h3 class="cardTitleText">Featured for You</h3>
       </div>
       <div class="cardImg">
-        <img src="./public/img/magic_potion.png" alt="A healing potion" />
+        <img src="/img/magic_potion.png" alt="A healing potion" />
       </div>
       <div class="cardBody">
         <p class="bodyText">Healing Potion</p>
@@ -21,69 +21,47 @@
         <h3 class="cardTitleText">Your Previous Order</h3>
       </div>
       <div class="cardImg">
-        <img src="./public/img/magic_potion.png" alt="A healing potion" />
+        <img src="/img/magic_potion.png" alt="A healing potion" />
       </div>
       <div class="cardBody">
-        <p class="bodyText">Placed 06/02/2021</p>
+        <p class="bodyText">Placed {{last_purchase}}</p>
       </div>
     </div>
   </div>
 {{/if}}
 <h2 class="categoryTitle">Categories</h2>
 <div class="categories">
-  <div class="categoryCard">
-    <div class="cardtitle">
-      <h3 class="cardTitleText">Potions</h3>
-    </div>
-    <div class="cardImg">
-      <img src="./public/img/magic_potion.png" alt="A healing potion" />
-    </div>
-    <div class="cardBody">
-      <p class="bodyText">All your liquid needs!</p>
-    </div>
-  </div>
-  <div class="categoryCard">
+  <a href="/1" class="categoryCard">
     <div class="cardtitle">
       <h3 class="cardTitleText">Weapons</h3>
     </div>
     <div class="cardImg">
-      <img src="./public/img/sword.png" alt="A healing potion" />
+      <img src="/img/sword.png" alt="A healing potion" />
     </div>
     <div class="cardBody">
       <p class="bodyText">Poke Stab Slash Shoot!</p>
     </div>
-  </div>
-  <div class="categoryCard">
+  </a>
+  <a href="/2" class="categoryCard">
     <div class="cardtitle">
       <h3 class="cardTitleText">Shields and Armor</h3>
     </div>
     <div class="cardImg">
-      <img src="./public/img/shield.png" alt="A healing potion" />
+      <img src="/img/shield.png" alt="A healing potion" />
     </div>
     <div class="cardBody">
       <p class="bodyText">Health Insurance not Included</p>
     </div>
-  </div>
-  <div class="categoryCard">
+  </a>
+  <a href="/3" class="categoryCard">
     <div class="cardtitle">
-      <h3 class="cardTitleText">Magic Items</h3>
+      <h3 class="cardTitleText">Gear</h3>
     </div>
     <div class="cardImg">
-      <img src="./public/img/magic_circle.png" alt="A healing potion" />
+      <img src="/img/rope.png" alt="A healing potion" />
     </div>
     <div class="cardBody">
-      <p class="bodyText">Wizard Approved</p>
+      <p class="bodyText">Everything else AND the kitchen sink!</p>
     </div>
-  </div>
-  <div class="categoryCard">
-    <div class="cardtitle">
-      <h3 class="cardTitleText">Utility Items</h3>
-    </div>
-    <div class="cardImg">
-      <img src="./public/img/rope.png" alt="A healing potion" />
-    </div>
-    <div class="cardBody">
-      <p class="bodyText">Put the Ball Bearings on Stairs</p>
-    </div>
-  </div>
+  </a>
 </div>
