@@ -356,3 +356,13 @@ footer a {
   border-top: 1px solid var(--dark-purple);
   padding-top: 2%;
 }
+
+footer {
+  height: 5%;
+  background-color: var(--lemon-meringue);
+  color: var(--dark-purple);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid var(--dark-purple);
+}
