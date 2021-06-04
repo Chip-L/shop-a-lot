@@ -17,6 +17,5 @@ const seedAll = async () => {
   await seedUsers();
 };
 
-seedAll(); // <== use route now.
 
-// module.exports = seedAll;
+seedAll();
