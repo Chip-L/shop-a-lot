@@ -89,25 +89,23 @@ router.get("/cart", async (req, res) => {
   }
 });
 
-//**To Auto Seed The DB on Server Start+*//
 router.get("/search", async (req, res) => {
   try {
-    console.log(
-      req.params.value,
-      "------------------------------------------------"
-    );
+    const value = req.query.value;
     const rawData = await Product.findAll({
       include: [Category],
       ...doPagination(req.query),
-      where: { product_name: { [Op.like]: `%${req.params.value}%` } },
+      // where: { product_name: { [Op.like]: value } },
+      where: { product_name: { [Op.like]: `%${value}%` } },
     });
-    console.log(rawData, "------------------------------------------------");
+    console.log({ [Op.like]: `%${value}%` });
     if (!rawData) {
       res.status(404).json({ message: "No products found." });
     }
 
     const data = rawData.map((prod) => prod.get({ plain: true }));
-    console.log(data, "------------------------------------------------");
+
+    console.log(data, "\n ------------------------------------------------");
     res.render("category", {
       products: data,
       loggedIn: req.session.loggedIn,
