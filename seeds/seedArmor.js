@@ -9,7 +9,7 @@ const productData = [
     stock: 8,
     weight: 20,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Light",
       base_ac: 3,
@@ -18,7 +18,7 @@ const productData = [
       spell_failure: 0.15,
       has_gauntlets: false,
       can_run: true,
-    }),
+    },
   },
   {
     product_name: "Banded Mail",
@@ -27,7 +27,7 @@ const productData = [
     stock: 0,
     weight: 35,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Heavy",
       base_ac: 6,
@@ -36,7 +36,7 @@ const productData = [
       spell_failure: 0.35,
       has_gauntlets: true,
       can_run: false,
-    }),
+    },
   },
   {
     product_name: "Bark",
@@ -44,7 +44,7 @@ const productData = [
     stock: 0,
     weight: 15,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Light",
       base_ac: 2,
@@ -53,7 +53,7 @@ const productData = [
       spell_failure: 0.15,
       has_gauntlets: false,
       can_run: true,
-    }),
+    },
   },
   {
     product_name: "Bone",
@@ -61,7 +61,7 @@ const productData = [
     stock: 2,
     weight: 20,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Light",
       base_ac: 3,
@@ -70,7 +70,7 @@ const productData = [
       spell_failure: 0.15,
       has_gauntlets: false,
       can_run: true,
-    }),
+    },
   },
   {
     product_name: "Bracers",
@@ -78,7 +78,7 @@ const productData = [
     stock: 8,
     weight: 1,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       base_ac: 0,
       max_dex_bonus: 99,
@@ -86,7 +86,7 @@ const productData = [
       spell_failure: 0,
       has_gauntlets: false,
       can_run: true,
-    }),
+    },
   },
   {
     product_name: "Breastplate",
@@ -95,7 +95,7 @@ const productData = [
     stock: 0,
     weight: 30,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Medium",
       base_ac: 5,
@@ -104,7 +104,7 @@ const productData = [
       spell_failure: 0.25,
       has_gauntlets: false,
       can_run: false,
-    }),
+    },
   },
   {
     product_name: "Brigandine",
@@ -112,7 +112,7 @@ const productData = [
     stock: 11,
     weight: 40,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Medium",
       base_ac: 4,
@@ -121,7 +121,7 @@ const productData = [
       spell_failure: 0.3,
       has_gauntlets: false,
       can_run: false,
-    }),
+    },
   },
   {
     product_name: "Chain Shirt",
@@ -130,7 +130,7 @@ const productData = [
     stock: 19,
     weight: 25,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Light",
       base_ac: 4,
@@ -139,7 +139,7 @@ const productData = [
       spell_failure: 0.2,
       has_gauntlets: false,
       can_run: true,
-    }),
+    },
   },
   {
     product_name: "Chainmail",
@@ -148,7 +148,7 @@ const productData = [
     stock: 14,
     weight: 40,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Medium",
       base_ac: 5,
@@ -157,7 +157,7 @@ const productData = [
       spell_failure: 0.3,
       has_gauntlets: true,
       can_run: true,
-    }),
+    },
   },
   {
     product_name: "Cord",
@@ -165,7 +165,7 @@ const productData = [
     stock: 12,
     weight: 15,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Light",
       base_ac: 2,
@@ -174,7 +174,7 @@ const productData = [
       spell_failure: 0.05,
       has_gauntlets: false,
       can_run: true,
-    }),
+    },
   },
   {
     product_name: "Dhenuka",
@@ -182,7 +182,7 @@ const productData = [
     stock: 1,
     weight: 25,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Medium",
       base_ac: 4,
@@ -191,7 +191,7 @@ const productData = [
       spell_failure: 0.25,
       has_gauntlets: false,
       can_run: false,
-    }),
+    },
   },
   {
     product_name: "Full Plate",
@@ -201,7 +201,7 @@ const productData = [
     stock: 13,
     weight: 50,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Heavy",
       base_ac: 8,
@@ -210,7 +210,7 @@ const productData = [
       spell_failure: 0.35,
       has_gauntlets: true,
       can_run: false,
-    }),
+    },
   },
   {
     product_name: "Great",
@@ -218,7 +218,7 @@ const productData = [
     stock: 2,
     weight: 45,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Heavy",
       base_ac: 7,
@@ -227,7 +227,7 @@ const productData = [
       spell_failure: 0.4,
       has_gauntlets: true,
       can_run: false,
-    }),
+    },
   },
   {
     product_name: "Half-Plate",
@@ -236,7 +236,7 @@ const productData = [
     stock: 15,
     weight: 50,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Heavy",
       base_ac: 7,
@@ -245,7 +245,7 @@ const productData = [
       spell_failure: 0.4,
       has_gauntlets: true,
       can_run: false,
-    }),
+    },
   },
   {
     product_name: "Hard Leather",
@@ -253,7 +253,7 @@ const productData = [
     stock: 13,
     weight: 15,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Light",
       base_ac: 2,
@@ -262,7 +262,7 @@ const productData = [
       spell_failure: 0.15,
       has_gauntlets: false,
       can_run: true,
-    }),
+    },
   },
   {
     product_name: "Heavy Chain Mail",
@@ -270,7 +270,7 @@ const productData = [
     stock: 8,
     weight: 48,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Medium",
       base_ac: 5,
@@ -279,7 +279,7 @@ const productData = [
       spell_failure: 0.4,
       has_gauntlets: true,
       can_run: false,
-    }),
+    },
   },
   {
     product_name: "Heavy Clothing",
@@ -287,7 +287,7 @@ const productData = [
     stock: 6,
     weight: 10,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       base_ac: 0,
       max_dex_bonus: 6,
@@ -295,7 +295,7 @@ const productData = [
       spell_failure: 0.08,
       has_gauntlets: false,
       can_run: true,
-    }),
+    },
   },
   {
     product_name: "Hide",
@@ -303,7 +303,7 @@ const productData = [
     stock: 19,
     weight: 25,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Medium",
       base_ac: 3,
@@ -312,7 +312,7 @@ const productData = [
       spell_failure: 0.2,
       has_gauntlets: false,
       can_run: true,
-    }),
+    },
   },
   {
     product_name: "Lamellar",
@@ -320,7 +320,7 @@ const productData = [
     stock: 11,
     weight: 35,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Medium",
       base_ac: 5,
@@ -329,7 +329,7 @@ const productData = [
       spell_failure: 0.3,
       has_gauntlets: false,
       can_run: false,
-    }),
+    },
   },
   {
     product_name: "Leather",
@@ -337,7 +337,7 @@ const productData = [
     stock: 19,
     weight: 15,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Light",
       base_ac: 2,
@@ -346,7 +346,7 @@ const productData = [
       spell_failure: 0.1,
       has_gauntlets: false,
       can_run: true,
-    }),
+    },
   },
   {
     product_name: "Leather Scale",
@@ -354,7 +354,7 @@ const productData = [
     stock: 4,
     weight: 20,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Light",
       base_ac: 3,
@@ -363,7 +363,7 @@ const productData = [
       spell_failure: 0.15,
       has_gauntlets: false,
       can_run: true,
-    }),
+    },
   },
   {
     product_name: "Light Hide",
@@ -371,7 +371,7 @@ const productData = [
     stock: 19,
     weight: 20,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Light",
       base_ac: 3,
@@ -380,7 +380,7 @@ const productData = [
       spell_failure: 0.1,
       has_gauntlets: false,
       can_run: true,
-    }),
+    },
   },
   {
     product_name: "Mage Armor",
@@ -388,7 +388,7 @@ const productData = [
     stock: 12,
     weight: 0,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       base_ac: 4,
       max_dex_bonus: 99,
@@ -396,7 +396,7 @@ const productData = [
       spell_failure: 0,
       has_gauntlets: false,
       can_run: true,
-    }),
+    },
   },
   {
     product_name: "Naga",
@@ -404,7 +404,7 @@ const productData = [
     stock: 9,
     weight: 40,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Medium",
       base_ac: 4,
@@ -413,7 +413,7 @@ const productData = [
       spell_failure: 0.2,
       has_gauntlets: false,
       can_run: false,
-    }),
+    },
   },
   {
     product_name: "None",
@@ -421,7 +421,7 @@ const productData = [
     stock: 0,
     weight: 0,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       base_ac: 0,
       max_dex_bonus: 99,
@@ -429,7 +429,7 @@ const productData = [
       spell_failure: 0,
       has_gauntlets: false,
       can_run: true,
-    }),
+    },
   },
   {
     product_name: "Padded",
@@ -437,7 +437,7 @@ const productData = [
     stock: 11,
     weight: 10,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Light",
       base_ac: 1,
@@ -446,7 +446,7 @@ const productData = [
       spell_failure: 0.05,
       has_gauntlets: false,
       can_run: true,
-    }),
+    },
   },
   {
     product_name: "Partial",
@@ -454,7 +454,7 @@ const productData = [
     stock: 18,
     weight: 30,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Medium",
       base_ac: 4,
@@ -463,7 +463,7 @@ const productData = [
       spell_failure: 0.25,
       has_gauntlets: true,
       can_run: false,
-    }),
+    },
   },
   {
     product_name: "Scale Mail",
@@ -472,7 +472,7 @@ const productData = [
     stock: 6,
     weight: 30,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Medium",
       base_ac: 4,
@@ -481,7 +481,7 @@ const productData = [
       spell_failure: 0.25,
       has_gauntlets: true,
       can_run: false,
-    }),
+    },
   },
   {
     product_name: "Splint Mail",
@@ -490,7 +490,7 @@ const productData = [
     stock: 19,
     weight: 45,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Heavy",
       base_ac: 6,
@@ -499,7 +499,7 @@ const productData = [
       spell_failure: 0.4,
       has_gauntlets: true,
       can_run: false,
-    }),
+    },
   },
   {
     product_name: "Studded Leather",
@@ -507,7 +507,7 @@ const productData = [
     stock: 14,
     weight: 20,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Light",
       base_ac: 3,
@@ -516,7 +516,7 @@ const productData = [
       spell_failure: 0.15,
       has_gauntlets: false,
       can_run: true,
-    }),
+    },
   },
   {
     product_name: "Wicker",
@@ -524,7 +524,7 @@ const productData = [
     stock: 7,
     weight: 5,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Light",
       base_ac: 1,
@@ -533,7 +533,7 @@ const productData = [
       spell_failure: 0.1,
       has_gauntlets: false,
       can_run: true,
-    }),
+    },
   },
   {
     product_name: "Wood",
@@ -541,7 +541,7 @@ const productData = [
     stock: 13,
     weight: 20,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Light",
       base_ac: 3,
@@ -550,7 +550,7 @@ const productData = [
       spell_failure: 0.15,
       has_gauntlets: false,
       can_run: true,
-    }),
+    },
   },
   {
     product_name: "Buckler",
@@ -560,7 +560,7 @@ const productData = [
     stock: 11,
     weight: 5,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Tiny",
       armor_type: "Light",
       base_ac: 1,
@@ -569,7 +569,7 @@ const productData = [
       spell_failure: 0.05,
       has_gauntlets: false,
       can_run: true,
-    }),
+    },
   },
   {
     product_name: "Grasping Shield",
@@ -577,7 +577,7 @@ const productData = [
     stock: 18,
     weight: 10,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Small",
       armor_type: "Light",
       base_ac: 1,
@@ -586,7 +586,7 @@ const productData = [
       spell_failure: 0.05,
       has_gauntlets: false,
       can_run: true,
-    }),
+    },
   },
   {
     product_name: "Kappa Shell",
@@ -594,7 +594,7 @@ const productData = [
     stock: 5,
     weight: 45,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Light",
       base_ac: 0,
@@ -603,7 +603,7 @@ const productData = [
       spell_failure: 0.5,
       has_gauntlets: false,
       can_run: true,
-    }),
+    },
   },
   {
     product_name: "Shield, Heavy Steel",
@@ -613,7 +613,7 @@ const productData = [
     stock: 9,
     weight: 15,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Small",
       armor_type: "Light",
       base_ac: 2,
@@ -622,7 +622,7 @@ const productData = [
       spell_failure: 0.15,
       has_gauntlets: false,
       can_run: true,
-    }),
+    },
   },
   {
     product_name: "Shield, Heavy Wooden",
@@ -632,7 +632,7 @@ const productData = [
     stock: 8,
     weight: 15,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Small",
       armor_type: "Light",
       base_ac: 2,
@@ -641,7 +641,7 @@ const productData = [
       spell_failure: 0.15,
       has_gauntlets: false,
       can_run: true,
-    }),
+    },
   },
   {
     product_name: "Shield, Light Steel",
@@ -651,7 +651,7 @@ const productData = [
     stock: 12,
     weight: 6,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Small",
       armor_type: "Light",
       base_ac: 1,
@@ -660,7 +660,7 @@ const productData = [
       spell_failure: 0.05,
       has_gauntlets: false,
       can_run: true,
-    }),
+    },
   },
   {
     product_name: "Shield, Light Wooden",
@@ -670,7 +670,7 @@ const productData = [
     stock: 9,
     weight: 6,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Small",
       armor_type: "Light",
       base_ac: 1,
@@ -679,7 +679,7 @@ const productData = [
       spell_failure: 0.05,
       has_gauntlets: false,
       can_run: true,
-    }),
+    },
   },
   {
     product_name: "Shield, Tower",
@@ -689,7 +689,7 @@ const productData = [
     stock: 19,
     weight: 45,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Medium",
       armor_type: "Light",
       base_ac: 0,
@@ -698,7 +698,7 @@ const productData = [
       spell_failure: 0.5,
       has_gauntlets: false,
       can_run: true,
-    }),
+    },
   },
   {
     product_name: "Tessen",
@@ -706,7 +706,7 @@ const productData = [
     stock: 17,
     weight: 1,
     category_id: 2,
-    additional_information: JSON.stringify({
+    additional_information: {
       base_size: "Tiny",
       armor_type: "Light",
       base_ac: 1,
@@ -715,7 +715,7 @@ const productData = [
       spell_failure: 0.05,
       has_gauntlets: false,
       can_run: true,
-    }),
+    },
   },
 ];
 
