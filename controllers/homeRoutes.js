@@ -1,5 +1,4 @@
 const router = require("express").Router();
-// const { seedAll } = require("../seeds");
 const { Product, Category } = require("../models");
 const { doPagination } = require("../utils/queryHelpers");
 const { Op } = require("sequelize");
