@@ -1,5 +1,3 @@
-{{{product}}}
-
 <div class="productArea">
   <h1 id="productTitle">{{product_name}}</h1>
   <div class="productImageArea">
@@ -7,16 +5,15 @@
   </div>
   <div class="productInfoArea">
     <h2 id="product_name">{{product_name}}</h2>
-    <p>{{category}}</p>
-    <p>{{stock}}</p>
-    <p id="cost">{{cost}}</p>
+    <p>{{category.category_name}}</p>
+    <p id="cost">cost: {{cost}} gp</p>
   </div>
   <div class="productDescArea">
     <p>{{description}}</p>
     <ul>
-      {{#each additional_information}}
-        <li>{{formatAddedData this}}</li>
-      {{/each}}
+      {{#formatAddedData add_info}}
+        <li>{{property}}: {{value}}</li>
+      {{/formatAddedData}}
     </ul>
   </div>
 </div>
