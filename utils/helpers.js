@@ -1,4 +1,4 @@
-const titleCase = function (str) {
+const titleCase = (str) => {
   return str
     .toLowerCase()
     .split(" ")
@@ -6,9 +6,27 @@ const titleCase = function (str) {
     .join(" ");
 };
 
+/** poor man's copy of the String.replaceAll() prototype method that is missing in NodeJS */
+const replaceAll = (replaceWhat, withThis, inString) => {
+  console.log(inString);
+  let newString = String(inString);
+  console.log(typeof newString);
+  newString3 = newString.replaceAll("_", " ");
+  console.log(typeof newString3);
+
+  console.log(newString); //.split(replaceWhat)); //.join(withThis);
+};
+
 module.exports = {
-  formatAddedData: ({ key, value }) => {
+  formatAddedData: (context, options) => {
+    let ret = "";
     let attributeName;
+
+    for (let prop in context) {
+      // console.log(options.fn({ property: prop, value: context[prop] }));
+      ret = ret + options.fn({ property: prop, value: context[prop] });
+
+      /*
 
     switch (key) {
       case "ua_weapon_group":
@@ -32,7 +50,7 @@ module.exports = {
       case "can_run":
         attributeName = "Can be run in";
       default:
-        attributeName = key.replaceAll("_", " ");
+        attributeName = replaceAll("_", " ", key);
         attributeName = titleCase(attributeName);
         break;
     }
@@ -50,5 +68,8 @@ module.exports = {
     }
 
     return `${attributeName}: ${value}`;
+    */
+    }
+    return ret;
   },
 };
