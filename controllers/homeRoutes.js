@@ -88,15 +88,11 @@ router.get("/cart", async (req, res) => {
   }
 });
 
-//**To Auto Seed The DB on Server Start+*//
-router.get("/seeds", async (req, res) => {
+router.get("/browse", async (req, res) => {
   try {
-    let rawData = await Product.findAll();
-    if (!rawData) {
-      await seedAll();
-      rawData = await Product.findAll();
-    }
-    res.render("databaseSeed", { length: rawData.length });
+    res.render("homepage", {
+      logged_in: req.session.logged_in,
+    });
   } catch (err) {
     res.status(500).json(err);
   }
