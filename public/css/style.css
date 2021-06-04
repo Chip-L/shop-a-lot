@@ -366,3 +366,8 @@ footer {
   align-items: center;
   border-top: 2px solid var(--dark-purple);
 }
+
+.stockWarn {
+  color: red;
+  font-family: var(--text-font);
+}
