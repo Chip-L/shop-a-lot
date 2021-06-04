@@ -17,6 +17,5 @@ const seedAll = async () => {
   await seedUsers();
 };
 
-seedAll();
 
-// module.exports = seedAll;
+seedAll();
