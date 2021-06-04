@@ -2,6 +2,7 @@ const router = require("express").Router();
 // const { seedAll } = require("../seeds");
 const { Product, Category } = require("../models");
 const { doPagination } = require("../utils/queryHelpers");
+const { Op } = require("sequelize");
 
 router.get("/", async (req, res) => {
   res.render("homepage", {
@@ -88,16 +89,29 @@ router.get("/cart", async (req, res) => {
   }
 });
 
-//**To Auto Seed The DB on Server Start+*//
-router.get("/seeds", async (req, res) => {
+router.get("/search", async (req, res) => {
   try {
-    let rawData = await Product.findAll();
+    const value = req.query.value;
+    const rawData = await Product.findAll({
+      include: [Category],
+      ...doPagination(req.query),
+      // where: { product_name: { [Op.like]: value } },
+      where: { product_name: { [Op.like]: `%${value}%` } },
+    });
+    console.log({ [Op.like]: `%${value}%` });
     if (!rawData) {
-      await seedAll();
-      rawData = await Product.findAll();
+      res.status(404).json({ message: "No products found." });
     }
-    res.render("databaseSeed", { length: rawData.length });
+
+    const data = rawData.map((prod) => prod.get({ plain: true }));
+
+    console.log(data, "\n ------------------------------------------------");
+    res.render("category", {
+      products: data,
+      loggedIn: req.session.loggedIn,
+    });
   } catch (err) {
+    console.log(err);
     res.status(500).json(err);
   }
 });
