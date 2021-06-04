@@ -1,20 +1,14 @@
 <h1 class="cart">Your Cart</h1>
 <div class="cartArea">
-  <div class="itemDisplay">
-    {{#each item}}
-    <div class="singleItem">
-        <h3 class='itemName'>{{this.product_name}}</h2>
-        <p class='itemCost'>Cost: {{this.item_cost * this.item_quantity}}GP</p>
-        <p class='itemQuantity'>Quantity: {{this.item_quantity}}</p>
-    </div>
-    {{/each}}
-  </div>
+  <div class="itemDisplay"></div>
   <div class="priceDisplay">
-    <p class='priceLine total subTotal'>Subtotal: 0</p>
-    <p class='priceLine'>Delivery Fee: 0</p>
-    <p class='priceLine'>Taxes: 0</p>
-    <p class='priceLine'>Discount: 0</p>
-    <p class='priceLine'>Coupons: 0</p>
-    <p class='priceLine total grandTotal'>Grand Total: 0</p>
+    <p class="priceLine total subTotal">Subtotal: 0</p>
+    <p class="priceLine">Delivery Fee: 0</p>
+    <p class="priceLine">Taxes: 0</p>
+    <p class="priceLine">Discount: 0</p>
+    <p class="priceLine">Coupons: 0</p>
+    <p class="priceLine total grandTotal">Grand Total: 0</p>
   </div>
 </div>
+
+<script src="/js/cartRender.js"></script>

@@ -9,7 +9,7 @@ router.get("/", async (req, res) => {
   });
 });
 
-router.get("/:categoryId", async (req, res) => {
+router.get("/category/:categoryId", async (req, res) => {
   try {
     const rawData = await Product.findAll({
       include: [Category],
@@ -71,6 +71,16 @@ router.get("/backpack", async (req, res) => {
 
     res.render("backpack", {
       blogs,
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get("/cart", async (req, res) => {
+  try {
+    res.render("cart", {
       logged_in: req.session.logged_in,
     });
   } catch (err) {
