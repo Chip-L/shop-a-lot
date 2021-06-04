@@ -51,7 +51,7 @@ router.get("/product/:id", async (req, res) => {
     const data = rawProduct.get({ plain: true });
 
     data.add_info = JSON.parse(data.additional_information);
-    console.log("data:\n", data);
+    // console.log("data:\n", data);
 
     res.render("product", {
       ...data,
