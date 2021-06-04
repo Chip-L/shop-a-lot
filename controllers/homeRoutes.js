@@ -54,8 +54,8 @@ router.get("/product/:id", async (req, res) => {
     console.log("data:\n", data);
 
     res.render("product", {
-      product: data,
-      // loggedIn: req.session.loggedIn,
+      ...data,
+      loggedIn: req.session.loggedIn,
     });
   } catch (err) {
     console.log(err);
