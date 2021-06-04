@@ -23,7 +23,7 @@ module.exports = {
     let attributeName;
 
     for (let prop in context) {
-      // console.log(options.fn({ property: prop, value: context[prop] }));
+      console.log(options.fn({ property: prop, value: context[prop] }));
       ret = ret + options.fn({ property: prop, value: context[prop] });
 
       /*
