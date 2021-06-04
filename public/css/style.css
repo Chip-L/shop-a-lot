@@ -44,6 +44,7 @@ main {
   padding-bottom: 10vh;
   width: 100%;
   background-color: var(--dark-green);
+  min-height: 100%;
 }
 
 #productAd {
@@ -293,4 +294,65 @@ footer a {
   text-align: center;
   text-decoration: none;
   list-style: none;
+}
+
+.cartArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.itemDisplay,
+.priceDisplay {
+  background-color: var(--lemon-meringue);
+  border-radius: 20px;
+  border: 1px solid var(--dark-purple);
+}
+
+.itemDisplay {
+  width: 45%;
+}
+
+.priceDisplay {
+  width: 30%;
+}
+
+.cart {
+  font-family: var(--title-font);
+  font-size: 40px;
+  margin-left: 10%;
+  margin-bottom: 3%;
+}
+
+.singleItem {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 3%;
+  font-family: var(--text-font);
+}
+
+.priceDisplay {
+  font-family: var(--text-font);
+}
+
+.priceLine {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.total {
+  font-size: 25px;
+  font-family: var(--title-font);
+}
+
+.subTotal {
+  border-bottom: 1px solid var(--dark-purple);
+  padding-bottom: 2%;
+}
+
+.grandTotal {
+  border-top: 1px solid var(--dark-purple);
+  padding-top: 2%;
 }
