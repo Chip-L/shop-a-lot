@@ -1,10 +1,11 @@
 const router = require("express").Router();
 const { seedAll } = require("../seeds");
 const { Product, Category } = require("../models");
+const { doPagination } = require("../utils/queryHelpers");
 
 router.get("/", async (req, res) => {
   res.render("homepage", {
-    // loggedIn: req.session.loggedIn,
+    loggedIn: req.session.loggedIn,
   });
 });
 
@@ -12,6 +13,7 @@ router.get("/:categoryId", async (req, res) => {
   try {
     const rawData = await Product.findAll({
       include: [Category],
+      ...doPagination(req.query),
       where: { category_id: req.params.categoryId },
     });
 
@@ -24,11 +26,11 @@ router.get("/:categoryId", async (req, res) => {
     data.forEach(
       (data) => (data.add_info = JSON.parse(data.additional_information))
     );
-    console.log(data);
+    // console.log(data);
 
     res.render("category", {
       products: data,
-      // loggedIn: req.session.loggedIn,
+      loggedIn: req.session.loggedIn,
     });
   } catch (err) {
     console.log(err);
@@ -36,7 +38,30 @@ router.get("/:categoryId", async (req, res) => {
   }
 });
 
-router.get("/product/:id", async (req, res) => {});
+router.get("/product/:id", async (req, res) => {
+  try {
+    const rawProduct = await Product.findByPk(req.params.id, {
+      include: Category,
+    });
+
+    if (!rawProduct) {
+      res.status(404).json({ message: "No products found." });
+    }
+
+    const data = rawProduct.get({ plain: true });
+
+    data.add_info = JSON.parse(data.additional_information);
+    console.log("data:\n", data);
+
+    res.render("product", {
+      product: data,
+      // loggedIn: req.session.loggedIn,
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
 
 router.get("/backpack", async (req, res) => {
   try {
