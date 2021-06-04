@@ -50,7 +50,7 @@ Product.init(
       type: DataTypes.STRING,
     },
     additional_information: {
-      type: DataTypes.TEXT,
+      type: DataTypes.JSON,
       allowNull: true,
     },
     category_id: {
