@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { seedAll } = require("../seeds");
+// const { seedAll } = require("../seeds");
 const { Product, Category } = require("../models");
 
 router.get("/", async (req, res) => {
@@ -9,32 +9,33 @@ router.get("/", async (req, res) => {
 });
 
 router.get("/:categoryID", async (req, res) => {
-  try {
-    const rawData = await Product.findAll({
-      include: [Category],
-      where: { category_id: req.params.categoryId },
-    });
+  // try {
+  const rawData = await Product.findAll({
+    include: [Category],
+    where: { category_id: req.params.categoryID },
+  });
 
-    if (!rawData) {
-      res.status(404).json({ message: "No products found." });
-    }
-
-    const data = rawData.map((prod) => prod.get({ plain: true }));
-
-    data.forEach((data) => (data.add_info = data.additional_information));
-    console.log(data);
-
-    res.render("category", {
-      products: data,
-      // loggedIn: req.session.loggedIn,
-    });
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
+  if (!rawData) {
+    res.status(404).json({ message: "No products found." });
   }
+
+  const data = rawData.map((prod) => prod.get({ plain: true }));
+
+  // data.forEach((data) => (data.add_info = data.additional_information));
+  console.log(data);
+
+  res.render("category", {
+    products: data,
+    // loggedIn: req.session.loggedIn,
+  });
+
+  // } catch (err) {
+  //   console.log(err);
+  //   res.status(500).json(err);
+  // }
 });
 
-router.get("/product/:id", async (req, res) => {});
+// router.get("/product/:id", async (req, res) => {});
 
 router.get("/backpack", async (req, res) => {
   try {
@@ -58,17 +59,17 @@ router.get("/backpack", async (req, res) => {
 });
 
 //**To Auto Seed The DB on Server Start+*//
-router.get("/seeds", async (req, res) => {
-  try {
-    let rawData = await Product.findAll();
-    if (!rawData) {
-      await seedAll();
-      rawData = await Product.findAll();
-    }
-    res.render("databaseSeed", { length: rawData.length });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
+// router.get("/seeds", async (req, res) => {
+//   // try {
+//     let rawData = await Product.findAll();
+//     if (!rawData) {
+//       await seedAll();
+//       rawData = await Product.findAll();
+//     }
+//     res.render("databaseSeed", { length: rawData.length });
+//   // } catch (err) {
+//   //   res.status(500).json(err);
+//   // }
+// });
 
 module.exports = router;

@@ -19,4 +19,4 @@ const seedAll = async () => {
 
 seedAll();
 
-module.exports = seedAll;
+// module.exports = seedAll;

@@ -1,13 +1,13 @@
 <div class="productArea">
-  <h1 id="productTitle">{{product.product_name}}</h1>
+  <h1 id="productTitle">{{product_name}}</h1>
   <div class="productImageArea">
     <img
-      src="./public/img/{{product.category}}.png"
+      src="./public/img/{{category}}.png"
       alt="An image of a shield"
     />
   </div>
   <div class="productInfoArea">
-    <h2 id="product_name">{{product.product_name}}</h2>
+    <h2 id="product_name">{{product_name}}</h2>
     <p>{{product.category}}</p>
     <p>{{product.stock}}</p>
     <p id="cost">{{product.cost}}</p>
@@ -15,8 +15,8 @@
   <div class="productDescArea">
     <p>{{product.description}}</p>
     <ul>
-      {{#each product.additional_information}}
-        <li>{{formatAddedData this}}</li>
+      {{#each additional_information}}
+        {{!-- <li>{{formatAddedData this}}</li> --
       {{/each}}
     </ul>
   </div>
