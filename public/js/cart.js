@@ -4,7 +4,8 @@ if (!cart) {
 }
 
 class item {
-  constructor(item_name, item_price, item_quantity, category) {
+  constructor(item_id, item_name, item_price, item_quantity, category) {
+    this.item_id = item_id;
     this.item_name = item_name;
     this.item_price = item_price;
     this.item_quantity = item_quantity;
@@ -25,7 +26,8 @@ quantitySelect.addEventListener("submit", (event) => {
   const cost = document.querySelector("#cost").innerHTML;
   const category = document.querySelector("#category_name").innerHTML;
   const item_quantity = document.querySelector("#quantity").value;
-  const newItem = new item(itemName, cost, item_quantity, category);
+  const item_id = document.querySelector("#productTitle").dataset.id;
+  const newItem = new item(item_id, itemName, cost, item_quantity, category);
   cart.push(newItem);
   localStorage.setItem("cart", JSON.stringify(cart));
 });

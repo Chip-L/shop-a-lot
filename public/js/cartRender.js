@@ -45,6 +45,10 @@ try {
   sendButton.addEventListener("click", (event) => {
     event.preventDefault();
     // Need to post backpack info to the right route
+    fetch("/user/backpack", {
+      method: "POST",
+      body: cart,
+    });
   });
 } catch (err) {
   console.log("Not logged in");
