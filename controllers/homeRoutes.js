@@ -3,6 +3,8 @@ const { Product, Category } = require("../models");
 const { doPagination } = require("../utils/queryHelpers");
 const { Op } = require("sequelize");
 
+// http://localhost:3001+
+
 router.get("/", async (req, res) => {
   res.render("homepage", {
     loggedIn: req.session.loggedIn,
@@ -44,21 +46,23 @@ router.get("/category/:categoryId", async (req, res) => {
 
 router.get("/product/:id", async (req, res) => {
   try {
+    let noProductFound = false;
+    let data;
     const rawProduct = await Product.findByPk(req.params.id, {
       include: Category,
     });
 
-    if (!rawProduct) {
-      res.status(404).json({ message: "No products found." });
+    noProductFound = !rawProduct;
+    if (rawProduct) {
+      data = rawProduct.get({ plain: true });
     }
 
-    const data = rawProduct.get({ plain: true });
-
-    // data.add_info = JSON.parse(data.additional_information);
-    console.log("data:\n", data);
+    // console.log(noProductFound);
+    // console.log("data:\n", data);
     res.render("product", {
       ...data,
-      loggedIn: req.session.loggedIn,
+      loggedIn: req.session.logged_in,
+      noProductFound: noProductFound,
     });
   } catch (err) {
     console.log(err);
