@@ -23,14 +23,19 @@
         <a href="/"><h3 class="navItem" id="pageTitle">Shop A Lot</h3></a>
         <a href="/#categories"><p class="navItem">Browse Categories</p></a>
         <div id="searchArea" class="navItem">
-          <form class="search-form" id = "search">
+          <form class="search-form" id="search">
             <input type="text" id="productSearch" name="productSearch" />
             <button type="submit">Search</button>
           </form>
         </div>
-        <a href="/login"><p class="navItem">Login</p></a>
-        <a href="/backpack"><p class="navItem">Backpack</p></a>
-        <a href="/cart"><p class="navItem">Cart</p></a>
+        {{#if logged_in}}
+          <a href="/logout"><p class="navItem">Logout</p></a>
+          <a href="/backpack"><p class="navItem">Backpack</p></a>
+          <a href="/cart"><p class="navItem">Cart</p></a>
+        {{else}}
+          <a href="/login"><p class="navItem">Login</p></a>
+          <a href="/newUsers"><p class="navItem">Sign Up</p></a>
+        {{/if}}
       </nav>
     </header>
     <main>
@@ -46,6 +51,7 @@
       <a href="https://icons8.com/icon/MfxutvOVx8n4/castle">Castle icon by
         Icons8</a>
     </footer>
+    <script src="/js/searchBar.js"></script>
     <script src="/js/searchBar.js"></script>
   </body>
 </html>
