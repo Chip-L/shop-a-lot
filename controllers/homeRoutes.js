@@ -97,16 +97,15 @@ router.get("/cart", async (req, res) => {
   }
 });
 
-router.get("/search", async (req, res) => {
+router.get("/search/:value", async (req, res) => {
   try {
-    const value = req.query.value;
+    const value = req.params.value;
     const rawData = await Product.findAll({
       include: [Category],
       ...doPagination(req.query),
-      // where: { product_name: { [Op.like]: value } },
       where: { product_name: { [Op.like]: `%${value}%` } },
     });
-    console.log({ [Op.like]: `%${value}%` });
+    console.log({ [Op.like]: value });
     if (!rawData) {
       res.status(404).json({ message: "No products found." });
     }
