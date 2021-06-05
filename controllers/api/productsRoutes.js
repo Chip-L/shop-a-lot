@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const { Product, Category, Backpack, User } = require("../../models");
-
+const { doPagination } = require("../../utils/queryHelpers");
+const { Op } = require("sequelize");
 // http://localhost/apo/products/+
 
 router.get("/", async (req, res) => {
@@ -26,81 +27,28 @@ router.get("/", async (req, res) => {
     res.status(500).json(err);
   }
 });
-//**Armor Route**//
-router.get("/armor", async (req, res) => {
+
+router.get("/:value", async (req, res) => {
+  console.log(req.params.value);
   try {
-    const rawProductData = await Product.findAll({
+    const value = req.params.value;
+    const rawData = await Product.findAll({
       include: [Category],
-      // where: category_id[2],
-      where: { category_id: 2 },
+      ...doPagination(req.params.value),
+      where: { product_name: { [Op.like]: value } },
     });
-     console.log(rawProductData);
-    if (!rawProductData) {
+    console.log({ [Op.like]: value });
+    if (!rawData) {
       res.status(404).json({ message: "No products found." });
     }
 
-    const armorData = rawProductData.map((prod) => prod.get({ plain: true }));
-   
-    armorData.forEach(
-      (data) => (data.add_info = JSON.parse(data.additional_information))
-    );
-    console.log(armorData);
+    const data = rawData.map((prod) => prod.get({ plain: true }));
 
-    res.status(200).json(armorData);
+    console.log(data, "\n ------------------------------------------------");
+    res.status(200).json(data);
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
   }
 });
-//**Weapons Route**//
-router.get("/weapons", async (req, res) => {
-  try {
-    const rawProductData = await Product.findAll({
-      include: [Category],
-      where: { category_id: 1 },
-    });
-
-    if (!rawProductData) {
-      res.status(404).json({ message: "No products found." });
-    }
-
-    const weaponData = rawProductData.map((prod) => prod.get({ plain: true }));
-
-    weaponData.forEach(
-      (data) => (data.add_info = JSON.parse(data.additional_information))
-    );
-    console.log(weaponData);
-
-    res.status(200).json(weaponData);
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
-  }
-});
-//**Gear Route**//
-router.get("/gear", async (req, res) => {
-  try {
-    const rawProductData = await Product.findAll({
-      include: [Category],
-      where:  { category_id: 3 },
-    });
-
-    if (!rawProductData) {
-      res.status(404).json({ message: "No products found." });
-    }
-
-    const gearData = rawProductData.map((prod) => prod.get({ plain: true }));
-
-    gearData.forEach(
-      (data) => (data.add_info = JSON.parse(data.additional_information))
-    );
-    console.log(gearData);
-
-    res.status(200).json(gearData);
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
-  }
-});
-
 module.exports = router;
