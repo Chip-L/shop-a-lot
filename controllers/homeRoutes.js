@@ -2,7 +2,6 @@ const router = require("express").Router();
 const { Product, Category, Backpack, User } = require("../models");
 const { doPagination, withAuth } = require("../utils/queryHelpers");
 const { Op } = require("sequelize");
-const { compareSync } = require("bcrypt");
 
 // http://localhost:3001+
 
@@ -75,29 +74,34 @@ router.get("/product/:id", async (req, res) => {
 
 router.get("/backpack", withAuth, async (req, res) => {
   try {
-    console.log("\n\n ------------------ Backpack  Start ------------------\n");
-    console.log("userUserId: ", req.session.user_id);
+    let noProductFound = false;
+    let itemList;
 
     const user = await User.findByPk(req.session.user_id);
 
-    console.log(user.get({ plain: true }));
-
     const rawProducts = await user.getProducts();
 
-    const products = rawProducts.map((product) => product.get({ plain: true }));
+    noProductFound = rawProducts.length < 1;
 
-    const itemList = products.map((product) => {
-      return {
-        product_name: product.product_name,
-        product_id: product.product_id,
-        quantity: product.backpack.quantity,
-      };
-    });
+    if (rawProducts) {
+      const products = rawProducts.map((product) =>
+        product.get({ plain: true })
+      );
 
-    console.log(itemList);
+      // include fields for the page display
+      itemList = products.map((product) => {
+        return {
+          product_name: product.product_name,
+          product_id: product.product_id,
+          quantity: product.backpack.quantity,
+        };
+      });
+    }
+
     res.render("backpack", {
       items: itemList,
       logged_in: req.session.logged_in,
+      noProductFound: noProductFound,
     });
   } catch (err) {
     console.log(err);
