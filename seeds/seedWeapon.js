@@ -5,7 +5,7 @@ const productData = [
   {
     product_name: "Acid",
     cost: 10,
-    stock: 6,
+    stock: 19,
     weight: 1,
     image_link: "/img/acid.png",
     image_alt_text: "Acid",
@@ -28,8 +28,10 @@ const productData = [
   {
     product_name: "Aiguchi",
     cost: -1,
-    stock: 9,
+    stock: 3,
     weight: 1,
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Simple",
@@ -46,7 +48,7 @@ const productData = [
   {
     product_name: "Alchemical Sleep Gas",
     cost: 30,
-    stock: 7,
+    stock: 1,
     weight: 1,
     image_link: "/img/sleepGas.png",
     image_alt_text: "Sleep Gas",
@@ -54,7 +56,7 @@ const productData = [
     additional_information: {
       weapon_type: "Grenade",
       ua_weapon_group: "Alchemical",
-      damage: "d",
+      damage: "special",
       damage_type: "Sleep",
       special_damage: "Fortitude DC (15)",
       critical_range: -1,
@@ -69,7 +71,7 @@ const productData = [
   {
     product_name: "Alchemist's Fire",
     cost: 20,
-    stock: 5,
+    stock: 0,
     weight: 1,
     image_link: "/img/acid.png",
     image_alt_text: "Acid",
@@ -94,7 +96,7 @@ const productData = [
     description:
       "An arrow used as a melee weapon is treated as a light improvised weapon (–4 penalty on attack rolls) and deals damage as a dagger of its size (critical multiplier x2). Arrows come in a leather quiver that holds 20 arrows. An arrow that hits its target is destroyed; one that misses has a 50% chance of being destroyed or lost.",
     cost: 0.05,
-    stock: 4,
+    stock: 16,
     weight: 1,
     image_link: "/img/arrow.png",
     image_alt_text: "Arrow",
@@ -115,7 +117,7 @@ const productData = [
   {
     product_name: "Axe, Battle",
     cost: 10,
-    stock: 14,
+    stock: 4,
     weight: 7,
     image_link: "/img/axe.png",
     image_alt_text: "Axe",
@@ -136,7 +138,7 @@ const productData = [
   {
     product_name: "Axe, Dwarven Buckler",
     cost: -1,
-    stock: 4,
+    stock: 6,
     weight: 6,
     image_link: "/img/axe.png",
     image_alt_text: "Axe",
@@ -159,7 +161,7 @@ const productData = [
     description:
       "A dwarven waraxe is too large to use in one hand without special training; thus, it is an exotic weapon. A Medium character can use a dwarven waraxe two-handed as a martial weapon, or a Large creature can use it one-handed in the same way. A dwarf treats a dwarven waraxe as a martial weapon even when using it in one hand.",
     cost: 30,
-    stock: 2,
+    stock: 11,
     weight: 15,
     image_link: "/img/axe.png",
     image_alt_text: "Axe",
@@ -180,7 +182,7 @@ const productData = [
   {
     product_name: "Axe, Great",
     cost: 20,
-    stock: 0,
+    stock: 4,
     weight: 20,
     image_link: "/img/axe.png",
     image_alt_text: "Axe",
@@ -201,7 +203,7 @@ const productData = [
   {
     product_name: "Axe, Hand",
     cost: 6,
-    stock: 19,
+    stock: 1,
     weight: 5,
     image_link: "/img/axe.png",
     image_alt_text: "Axe",
@@ -224,7 +226,7 @@ const productData = [
     description:
       "An orc double axe is a double weapon. You can fight with it as if fighting with two weapons, but if you do, you incur all the normal attack penalties associated with fighting with two weapons, just as if you were using a one-handed weapon and a light weapon.\nA creature wielding an orc double axe in one hand can’t use it as a double weapon—only one end of the weapon can be used in any given round.\n",
     cost: 60,
-    stock: 0,
+    stock: 15,
     weight: 25,
     image_link: "/img/axe.png",
     image_alt_text: "Axe",
@@ -245,7 +247,7 @@ const productData = [
   {
     product_name: "Axe, Throwing",
     cost: 8,
-    stock: 10,
+    stock: 6,
     weight: 4,
     image_link: "/img/axe.png",
     image_alt_text: "Axe",
@@ -267,7 +269,7 @@ const productData = [
   {
     product_name: "Battlepick, Gnome",
     cost: -1,
-    stock: 1,
+    stock: 7,
     weight: 5,
     image_link: "/img/axe.png",
     image_alt_text: "Axe",
@@ -287,10 +289,10 @@ const productData = [
   {
     product_name: "Blade Boot",
     cost: 15,
-    stock: 0,
+    stock: 19,
     weight: 1,
-    image_link: "/img/armorMedium.png",
-    image_alt_text: "Medium Armor",
+    image_link: "/img/gloves.png",
+    image_alt_text: "Gloves",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -310,8 +312,8 @@ const productData = [
     cost: 1,
     stock: 10,
     weight: 2,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Simple",
@@ -330,10 +332,10 @@ const productData = [
   {
     product_name: "Blowgun, Greater",
     cost: 10,
-    stock: 7,
+    stock: 3,
     weight: 4,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -352,10 +354,10 @@ const productData = [
   {
     product_name: "Bo",
     cost: -1,
-    stock: 6,
+    stock: 9,
     weight: 4,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Simple",
@@ -372,10 +374,10 @@ const productData = [
   {
     product_name: "Bolas",
     cost: -1,
-    stock: 2,
+    stock: 9,
     weight: 3,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -395,10 +397,10 @@ const productData = [
   {
     product_name: "Bolas, Barbed",
     cost: -1,
-    stock: 17,
+    stock: 8,
     weight: 4,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -419,10 +421,10 @@ const productData = [
     description:
       "You can use this weapon to make a ranged trip attack against an opponent. You can’t be tripped during your own trip attempt when using a set of bolas.",
     cost: -1,
-    stock: 6,
+    stock: 8,
     weight: 2,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -443,10 +445,10 @@ const productData = [
     description:
       "A crossbow bolt used as a melee weapon is treated as a light improvised weapon (–4 penalty on attack rolls) and deals damage as a dagger of its size (crit x2). Bolts come in a wooden case that holds 10 bolts (or 5, for a repeating crossbow). A bolt that hits its target is destroyed; one that misses has a 50% chance of being destroyed or lost.",
     cost: 0.2,
-    stock: 11,
+    stock: 2,
     weight: 1,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/arrow.png",
+    image_alt_text: "Arrow",
     category_id: 1,
     additional_information: {
       weapon_type: "Simple",
@@ -466,10 +468,10 @@ const productData = [
     description:
       "A crossbow bolt used as a melee weapon is treated as a light improvised weapon (–4 penalty on attack rolls) and deals damage as a dagger of its size (crit x2). Bolts come in a wooden case that holds 10 bolts (or 5, for a repeating crossbow). A bolt that hits its target is destroyed; one that misses has a 50% chance of being destroyed or lost.",
     cost: 0.1,
-    stock: 10,
+    stock: 15,
     weight: 1,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/arrow.png",
+    image_alt_text: "Arrow",
     category_id: 1,
     additional_information: {
       weapon_type: "Simple",
@@ -487,10 +489,10 @@ const productData = [
   {
     product_name: "Boomerang",
     cost: -1,
-    stock: 8,
+    stock: 12,
     weight: 2,
-    image_link: "/img/armorLight.png",
-    image_alt_text: "Light Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -510,7 +512,7 @@ const productData = [
   {
     product_name: "Bottle",
     cost: 2,
-    stock: 12,
+    stock: 19,
     weight: 1,
     image_link: "/img/emptybottle.png",
     image_alt_text: "Empty bottle",
@@ -534,7 +536,7 @@ const productData = [
     description:
       "You need at least two hands to use a bow, regardless of its size. You can use a composite longbow while mounted. All composite bows are made with a particular strength rating (that is, each requires a minimum Strength modifier to use with proficiency). If your Strength bonus is less than the strength rating of the composite bow, you can’t effectively use it, so you take a –2 penalty on attacks with it. The default composite longbow requires a Strength modifier of +0 or higher to use with proficiency. A composite longbow can be made with a high strength rating to take advantage of an above-average Strength score; this feature allows you to add your Strength bonus to damage, up to the maximum bonus indicated for the bow. Each point of Strength bonus granted by the bow adds 100 gp to its cost.\nFor purposes of weapon proficiency and similar feats, a composite longbow is treated as if it were a longbow.",
     cost: 100,
-    stock: 17,
+    stock: 12,
     weight: 3,
     image_link: "/img/Bow.png",
     image_alt_text: "Bow",
@@ -558,7 +560,7 @@ const productData = [
     description:
       "You need at least two hands to use a bow, regardless of its size. You can use a composite shortbow while mounted. All composite bows are made with a particular strength rating (that is, each requires a minimum Strength modifier to use with proficiency). If your Strength bonus is lower than the strength rating of the composite bow, you can’t effectively use it, so you take a –2 penalty on attacks with it. The default composite shortbow requires a Strength modifier of +0 or higher to use with proficiency. A composite shortbow can be made with a high strength rating to take advantage of an above-average Strength score; this feature allows you to add your Strength bonus to damage, up to the maximum bonus indicated for the bow. Each point of Strength bonus granted by the bow adds 75 gp to its cost. \nFor purposes of weapon proficiency and similar feats, a composite shortbow is treated as if it were a shortbow.",
     cost: 75,
-    stock: 19,
+    stock: 15,
     weight: 2,
     image_link: "/img/Bow.png",
     image_alt_text: "Bow",
@@ -582,7 +584,7 @@ const productData = [
     description:
       "You need at least two hands to use a bow, regardless of its size. A longbow is too unwieldy to use while you are mounted. If you have a penalty for low Strength, apply it to damage rolls when you use a longbow. If you have a bonus for high Strength, you can apply it to damage rolls when you use a composite longbow (see below) but not a regular longbow.",
     cost: 75,
-    stock: 10,
+    stock: 4,
     weight: 3,
     image_link: "/img/Bow.png",
     image_alt_text: "Bow",
@@ -606,7 +608,7 @@ const productData = [
     description:
       "You need at least two hands to use a bow, regardless of its size. You can use a composite longbow while mounted. All composite bows are made with a particular strength rating (that is, each requires a minimum Strength modifier to use with proficiency). If your Strength bonus is less than the strength rating of the composite bow, you can’t effectively use it, so you take a –2 penalty on attacks with it. The default composite longbow requires a Strength modifier of +0 or higher to use with proficiency. A composite longbow can be made with a high strength rating to take advantage of an above-average Strength score; this feature allows you to add your Strength bonus to damage, up to the maximum bonus indicated for the bow. Each point of Strength bonus granted by the bow adds 100 gp to its cost.\nFor purposes of weapon proficiency and similar feats, a composite longbow is treated as if it were a longbow.",
     cost: 200,
-    stock: 1,
+    stock: 19,
     weight: 3,
     image_link: "/img/Bow.png",
     image_alt_text: "Bow",
@@ -630,7 +632,7 @@ const productData = [
     description:
       "You need at least two hands to use a bow, regardless of its size. You can use a composite longbow while mounted. All composite bows are made with a particular strength rating (that is, each requires a minimum Strength modifier to use with proficiency). If your Strength bonus is less than the strength rating of the composite bow, you can’t effectively use it, so you take a –2 penalty on attacks with it. The default composite longbow requires a Strength modifier of +0 or higher to use with proficiency. A composite longbow can be made with a high strength rating to take advantage of an above-average Strength score; this feature allows you to add your Strength bonus to damage, up to the maximum bonus indicated for the bow. Each point of Strength bonus granted by the bow adds 100 gp to its cost.\nFor purposes of weapon proficiency and similar feats, a composite longbow is treated as if it were a longbow.",
     cost: 300,
-    stock: 5,
+    stock: 18,
     weight: 3,
     image_link: "/img/Bow.png",
     image_alt_text: "Bow",
@@ -654,7 +656,7 @@ const productData = [
     description:
       "You need at least two hands to use a bow, regardless of its size. You can use a composite longbow while mounted. All composite bows are made with a particular strength rating (that is, each requires a minimum Strength modifier to use with proficiency). If your Strength bonus is less than the strength rating of the composite bow, you can’t effectively use it, so you take a –2 penalty on attacks with it. The default composite longbow requires a Strength modifier of +0 or higher to use with proficiency. A composite longbow can be made with a high strength rating to take advantage of an above-average Strength score; this feature allows you to add your Strength bonus to damage, up to the maximum bonus indicated for the bow. Each point of Strength bonus granted by the bow adds 100 gp to its cost.\nFor purposes of weapon proficiency and similar feats, a composite longbow is treated as if it were a longbow.",
     cost: 400,
-    stock: 10,
+    stock: 7,
     weight: 3,
     image_link: "/img/Bow.png",
     image_alt_text: "Bow",
@@ -678,7 +680,7 @@ const productData = [
     description:
       "You need at least two hands to use a bow, regardless of its size. You can use a composite longbow while mounted. All composite bows are made with a particular strength rating (that is, each requires a minimum Strength modifier to use with proficiency). If your Strength bonus is less than the strength rating of the composite bow, you can’t effectively use it, so you take a –2 penalty on attacks with it. The default composite longbow requires a Strength modifier of +0 or higher to use with proficiency. A composite longbow can be made with a high strength rating to take advantage of an above-average Strength score; this feature allows you to add your Strength bonus to damage, up to the maximum bonus indicated for the bow. Each point of Strength bonus granted by the bow adds 100 gp to its cost.\nFor purposes of weapon proficiency and similar feats, a composite longbow is treated as if it were a longbow.",
     cost: 500,
-    stock: 17,
+    stock: 11,
     weight: 3,
     image_link: "/img/Bow.png",
     image_alt_text: "Bow",
@@ -726,7 +728,7 @@ const productData = [
     description:
       "You need at least two hands to use a bow, regardless of its size. You can use a composite shortbow while mounted. All composite bows are made with a particular strength rating (that is, each requires a minimum Strength modifier to use with proficiency). If your Strength bonus is lower than the strength rating of the composite bow, you can’t effectively use it, so you take a –2 penalty on attacks with it. The default composite shortbow requires a Strength modifier of +0 or higher to use with proficiency. A composite shortbow can be made with a high strength rating to take advantage of an above-average Strength score; this feature allows you to add your Strength bonus to damage, up to the maximum bonus indicated for the bow. Each point of Strength bonus granted by the bow adds 75 gp to its cost. \nFor purposes of weapon proficiency and similar feats, a composite shortbow is treated as if it were a shortbow.",
     cost: 225,
-    stock: 16,
+    stock: 19,
     weight: 2,
     image_link: "/img/Bow.png",
     image_alt_text: "Bow",
@@ -750,7 +752,7 @@ const productData = [
     description:
       "You need at least two hands to use a bow, regardless of its size. You can use a shortbow while mounted. If you have a penalty for low Strength, apply it to damage rolls when you use a shortbow. If you have a bonus for high Strength, you can apply it to damage rolls when you use a composite shortbow (see below) but not a regular shortbow.",
     cost: 30,
-    stock: 1,
+    stock: 19,
     weight: 2,
     image_link: "/img/Bow.png",
     image_alt_text: "Bow",
@@ -772,10 +774,10 @@ const productData = [
   {
     product_name: "Chain",
     cost: 5,
-    stock: 19,
+    stock: 1,
     weight: 5,
-    image_link: "/img/armorLight.png",
-    image_alt_text: "Light Armor",
+    image_link: "/img/rope.png",
+    image_alt_text: "Rope",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -795,10 +797,10 @@ const productData = [
     description:
       "A spiked chain has reach, so you can strike opponents 10 feet away with it. In addition, unlike most other weapons with reach, it can be used against an adjacent foe.\nYou can make trip attacks with the chain. If you are tripped during your own trip attempt, you can drop the chain to avoid being tripped.\nWhen using a spiked chain, you get a +2 bonus on opposed attack rolls made to disarm an opponent (including the roll to avoid being disarmed if such an attempt fails).\nYou can use the Weapon Finesse feat to apply your Dexterity modifier instead of your Strength modifier to attack rolls with a spiked chain sized for you, even though it isn’t a light weapon for you.",
     cost: 25,
-    stock: 3,
+    stock: 18,
     weight: 15,
-    image_link: "/img/armorMedium.png",
-    image_alt_text: "Medium Armor",
+    image_link: "/img/rope.png",
+    image_alt_text: "Rope",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -816,10 +818,10 @@ const productData = [
   {
     product_name: "Chain-and-Dagger",
     cost: -1,
-    stock: 18,
+    stock: 6,
     weight: 4,
-    image_link: "/img/armorMedium.png",
-    image_alt_text: "Medium Armor",
+    image_link: "/img/rope.png",
+    image_alt_text: "Rope",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -837,10 +839,10 @@ const productData = [
   {
     product_name: "Chakram",
     cost: 15,
-    stock: 8,
+    stock: 14,
     weight: 2,
-    image_link: "/img/armorMedium.png",
-    image_alt_text: "Medium Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -859,10 +861,10 @@ const productData = [
   {
     product_name: "Chatkcha",
     cost: -1,
-    stock: 11,
+    stock: 14,
     weight: 0.5,
-    image_link: "/img/armorMedium.png",
-    image_alt_text: "Medium Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -880,10 +882,10 @@ const productData = [
   {
     product_name: "Chijiriki",
     cost: 8,
-    stock: 18,
+    stock: 1,
     weight: 6,
-    image_link: "/img/armorMedium.png",
-    image_alt_text: "Medium Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -900,10 +902,10 @@ const productData = [
   {
     product_name: "Claw Bracer",
     cost: 30,
-    stock: 4,
+    stock: 6,
     weight: 2,
-    image_link: "/img/armorMedium.png",
-    image_alt_text: "Medium Armor",
+    image_link: "/img/gloves.png",
+    image_alt_text: "Gloves",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -921,10 +923,10 @@ const productData = [
   {
     product_name: "Claw, Panther",
     cost: -1,
-    stock: 12,
+    stock: 7,
     weight: 3,
-    image_link: "/img/armorMedium.png",
-    image_alt_text: "Medium Armor",
+    image_link: "/img/gloves.png",
+    image_alt_text: "Gloves",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -942,10 +944,10 @@ const productData = [
   {
     product_name: "Club",
     cost: -1,
-    stock: 5,
+    stock: 4,
     weight: 3,
-    image_link: "/img/armorMedium.png",
-    image_alt_text: "Medium Armor",
+    image_link: "/img/swordHeavy.png",
+    image_alt_text: "Heavy Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Simple",
@@ -964,10 +966,10 @@ const productData = [
   {
     product_name: "Club, Great",
     cost: 5,
-    stock: 6,
+    stock: 0,
     weight: 10,
-    image_link: "/img/armorMedium.png",
-    image_alt_text: "Medium Armor",
+    image_link: "/img/swordHeavy.png",
+    image_alt_text: "Heavy Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -985,10 +987,10 @@ const productData = [
   {
     product_name: "Crossbow, Great",
     cost: -1,
-    stock: 17,
+    stock: 16,
     weight: 15,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/Bow.png",
+    image_alt_text: "Bow",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -1009,7 +1011,7 @@ const productData = [
     description:
       "You can draw a hand crossbow back by hand. Loading a hand crossbow is a move action that provokes attacks of opportunity.\nYou can shoot, but not load, a hand crossbow with one hand at no penalty. You can shoot a hand crossbow with each hand, but you take a penalty on attack rolls as if attacking with two light weapons.",
     cost: 100,
-    stock: 17,
+    stock: 15,
     weight: 3,
     image_link: "/img/Bow.png",
     image_alt_text: "Bow",
@@ -1033,7 +1035,7 @@ const productData = [
     description:
       "You draw a heavy crossbow back by turning a small winch. Loading a heavy crossbow is a full-round action that provokes attacks of opportunity.\nNormally, operating a heavy crossbow requires two hands. However, you can shoot, but not load, a heavy crossbow with one hand at a –4 penalty on attack rolls. You can shoot a heavy crossbow with each hand, but you take a penalty on attack rolls as if attacking with two one-handed weapons. This penalty is cumulative with the penalty for one-handed firing.",
     cost: 50,
-    stock: 14,
+    stock: 6,
     weight: 9,
     image_link: "/img/Bow.png",
     image_alt_text: "Bow",
@@ -1057,7 +1059,7 @@ const productData = [
     description:
       "You draw a light crossbow back by pulling a lever. Loading a light crossbow is a move action that provokes attacks of opportunity.\nNormally, operating a light crossbow requires two hands. However, you can shoot, but not load, a light crossbow with one hand at a –2 penalty on attack rolls. You can shoot a light crossbow with each hand, but you take a penalty on attack rolls as if attacking with two light weapons. This penalty is cumulative with the penalty for one-handed firing.",
     cost: 35,
-    stock: 6,
+    stock: 15,
     weight: 6,
     image_link: "/img/Bow.png",
     image_alt_text: "Bow",
@@ -1081,7 +1083,7 @@ const productData = [
     description:
       "The repeating crossbow (whether heavy or light) holds 5 crossbow bolts. As long as it holds bolts, you can reload it by pulling the reloading lever (a free action). Loading a new case of 5 bolts is a full-round action that provokes attacks of opportunity.\nYou can fire a repeating crossbow with one hand or fire a repeating crossbow in each hand in the same manner as you would a normal crossbow of the same size. However, you must fire the weapon with two hands in order to use the reloading lever, and you must use two hands to load a new case of bolts.",
     cost: 400,
-    stock: 15,
+    stock: 13,
     weight: 16,
     image_link: "/img/Bow.png",
     image_alt_text: "Bow",
@@ -1105,7 +1107,7 @@ const productData = [
     description:
       "The repeating crossbow (whether heavy or light) holds 5 crossbow bolts. As long as it holds bolts, you can reload it by pulling the reloading lever (a free action). Loading a new case of 5 bolts is a full-round action that provokes attacks of opportunity.\nYou can fire a repeating crossbow with one hand or fire a repeating crossbow in each hand in the same manner as you would a normal crossbow of the same size. However, you must fire the weapon with two hands in order to use the reloading lever, and you must use two hands to load a new case of bolts.",
     cost: 250,
-    stock: 8,
+    stock: 12,
     weight: 16,
     image_link: "/img/Bow.png",
     image_alt_text: "Bow",
@@ -1127,10 +1129,10 @@ const productData = [
   {
     product_name: "Crusher, Orc",
     cost: -1,
-    stock: 12,
+    stock: 16,
     weight: 15,
-    image_link: "/img/armorMedium.png",
-    image_alt_text: "Medium Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -1147,10 +1149,10 @@ const productData = [
   {
     product_name: "Cutlass",
     cost: 15,
-    stock: 6,
+    stock: 1,
     weight: 3,
-    image_link: "/img/armorMedium.png",
-    image_alt_text: "Medium Armor",
+    image_link: "/img/swordMedium.png",
+    image_alt_text: "Medium Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -1192,7 +1194,7 @@ const productData = [
   {
     product_name: "Dagger, Punching",
     cost: 2,
-    stock: 6,
+    stock: 18,
     weight: 2,
     image_link: "/img/swordMedium.png",
     image_alt_text: "Medium Sword",
@@ -1213,7 +1215,7 @@ const productData = [
   {
     product_name: "Dagger, Triple",
     cost: -1,
-    stock: 1,
+    stock: 3,
     weight: 1,
     image_link: "/img/swordMedium.png",
     image_alt_text: "Medium Sword",
@@ -1234,7 +1236,7 @@ const productData = [
   {
     product_name: "Dai-kyu",
     cost: -1,
-    stock: 4,
+    stock: 3,
     weight: 3,
     image_link: "/img/swordMedium.png",
     image_alt_text: "Medium Sword",
@@ -1256,10 +1258,10 @@ const productData = [
   {
     product_name: "Dart",
     cost: 0.5,
-    stock: 9,
+    stock: 2,
     weight: 0.5,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/arrow.png",
+    image_alt_text: "Arrow",
     category_id: 1,
     additional_information: {
       weapon_type: "Simple",
@@ -1278,10 +1280,10 @@ const productData = [
   {
     product_name: "Die Tsuchi",
     cost: -1,
-    stock: 16,
+    stock: 12,
     weight: 12,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -1298,10 +1300,10 @@ const productData = [
   {
     product_name: "Duom",
     cost: -1,
-    stock: 19,
+    stock: 6,
     weight: 8,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -1318,10 +1320,10 @@ const productData = [
   {
     product_name: "Falchion",
     cost: 75,
-    stock: 16,
+    stock: 17,
     weight: 16,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/swordHeavy.png",
+    image_alt_text: "Heavy Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -1339,10 +1341,10 @@ const productData = [
   {
     product_name: "Fan, War",
     cost: -1,
-    stock: 14,
+    stock: 15,
     weight: 3,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -1361,10 +1363,10 @@ const productData = [
     description:
       "A dire flail is a double weapon. You can fight with it as if fighting with two weapons, but if you do, you incur all the normal attack penalties associated with fighting with two weapons, just as if you were using a one-handed weapon and a light weapon. A creature wielding a dire flail in one hand can’t use it as a double weapon— only one end of the weapon can be used in any given round.\nWhen using a dire flail, you get a +2 bonus on opposed attack rolls made to disarm an enemy (including the opposed attack roll to avoid being disarmed if such an attempt fails).\nYou can also use this weapon to make trip attacks. If you are tripped during your own trip attempt, you can drop the dire flail to avoid being tripped.",
     cost: 90,
-    stock: 5,
+    stock: 8,
     weight: 20,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -1384,10 +1386,10 @@ const productData = [
     description:
       "With a flail, you get a +2 bonus on opposed attack rolls made to disarm an enemy (including the roll to avoid being disarmed if such an attempt fails).\nYou can also use this weapon to make trip attacks. If you are tripped during your own trip attempt, you can drop the flail to avoid being tripped.",
     cost: 10,
-    stock: 10,
+    stock: 13,
     weight: 20,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -1407,10 +1409,10 @@ const productData = [
     description:
       "With a flail, you get a +2 bonus on opposed attack rolls made to disarm an enemy (including the roll to avoid being disarmed if such an attempt fails).\nYou can also use this weapon to make trip attacks. If you are tripped during your own trip attempt, you can drop the flail to avoid being tripped.",
     cost: 8,
-    stock: 0,
+    stock: 7,
     weight: 5,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -1428,10 +1430,10 @@ const productData = [
   {
     product_name: "Fukimi-Bari (Mouth Darts)",
     cost: -1,
-    stock: 6,
+    stock: 15,
     weight: 0.1,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/arrow.png",
+    image_alt_text: "Arrow",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -1449,10 +1451,10 @@ const productData = [
   {
     product_name: "Fullblade",
     cost: -1,
-    stock: 19,
+    stock: 3,
     weight: 23,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/swordHeavy.png",
+    image_alt_text: "Heavy Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -1472,10 +1474,10 @@ const productData = [
     description:
       "This metal glove lets you deal lethal damage rather than nonlethal damage with unarmed strikes. A strike with a gauntlet is otherwise considered an unarmed attack. The cost and weight given are for a single gauntlet. Medium and heavy armors (except breastplate) come with gauntlets.",
     cost: 2,
-    stock: 12,
+    stock: 5,
     weight: 1,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/gloves.png",
+    image_alt_text: "Gloves",
     category_id: 1,
     additional_information: {
       weapon_type: "Simple",
@@ -1495,8 +1497,8 @@ const productData = [
     cost: -1,
     stock: 15,
     weight: 4,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/gloves.png",
+    image_alt_text: "Gloves",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -1516,10 +1518,10 @@ const productData = [
     description:
       "Your opponent cannot use a disarm action to disarm you of spiked gauntlets. The cost and weight given are for a single gauntlet. An attack with a spiked gauntlet is considered an armed attack.",
     cost: 5,
-    stock: 8,
+    stock: 7,
     weight: 2,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/gloves.png",
+    image_alt_text: "Gloves",
     category_id: 1,
     additional_information: {
       weapon_type: "Simple",
@@ -1537,10 +1539,10 @@ const productData = [
   {
     product_name: "Gauntlet, Spring-Loaded",
     cost: -1,
-    stock: 16,
+    stock: 10,
     weight: 4,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/gloves.png",
+    image_alt_text: "Gloves",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -1561,10 +1563,10 @@ const productData = [
     description:
       "A glaive has reach. You can strike opponents 10 feet away with it, but you can’t use it against an adjacent foe.",
     cost: 8,
-    stock: 5,
+    stock: 13,
     weight: 15,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/spear.png",
+    image_alt_text: "Spear",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -1584,10 +1586,10 @@ const productData = [
     description:
       "A guisarme has reach. You can strike opponents 10 feet away with it, but you can’t use it against an adjacent foe.\nYou can also use it to make trip attacks. If you are tripped during your own trip attempt, you can drop the guisarme to avoid being tripped.",
     cost: 9,
-    stock: 6,
+    stock: 18,
     weight: 15,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/spear.png",
+    image_alt_text: "Spear",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -1605,10 +1607,10 @@ const productData = [
   {
     product_name: "Gyrspike",
     cost: -1,
-    stock: 11,
+    stock: 17,
     weight: 20,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -1626,10 +1628,10 @@ const productData = [
   {
     product_name: "Gythka",
     cost: -1,
-    stock: 19,
+    stock: 10,
     weight: 12,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -1649,10 +1651,10 @@ const productData = [
     description:
       "If you use a ready action to set a halberd against a charge, you deal double damage on a successful hit against a charging character.\nYou can use a halberd to make trip attacks. If you are tripped during your own trip attempt, you can drop the halberd to avoid being tripped.",
     cost: 10,
-    stock: 6,
+    stock: 11,
     weight: 15,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/spear.png",
+    image_alt_text: "Spear",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -1672,10 +1674,10 @@ const productData = [
     description:
       "A gnome hooked hammer is a double weapon. You can fight with it as if fighting with two weapons, but if you do, you incur all the normal attack penalties associated with fighting with two weapons, just as if you were using a one-handed weapon and a light weapon. The hammer’s blunt head is a bludgeoning weapon that deals 1d6 points of damage (crit x3). Its hook is a piercing weapon that deals 1d4 points of damage (crit x4). You can use either head as the primary weapon. The other head is the offhand weapon. A creature wielding a gnome hooked hammer in one hand can’t use it as a double weapon—only one end of the weapon can be used in any given round.\nYou can use a gnome hooked hammer to make trip attacks. If you are tripped during your own trip attempt, you can drop the gnome hooked hammer to avoid being tripped.\nGnomes treat gnome hooked hammers as martial weapons.",
     cost: 20,
-    stock: 16,
+    stock: 12,
     weight: 6,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/axe.png",
+    image_alt_text: "Axe",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -1692,10 +1694,10 @@ const productData = [
   {
     product_name: "Hammer, Light",
     cost: 1,
-    stock: 11,
+    stock: 6,
     weight: 2,
-    image_link: "/img/armorLight.png",
-    image_alt_text: "Light Armor",
+    image_link: "/img/axe.png",
+    image_alt_text: "Axe",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -1714,10 +1716,10 @@ const productData = [
   {
     product_name: "Hammer, War",
     cost: 12,
-    stock: 14,
+    stock: 2,
     weight: 8,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/axe.png",
+    image_alt_text: "Axe",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -1735,10 +1737,10 @@ const productData = [
   {
     product_name: "Harpoon",
     cost: -1,
-    stock: 15,
+    stock: 19,
     weight: 10,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/spear.png",
+    image_alt_text: "Spear",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -1757,7 +1759,7 @@ const productData = [
   {
     product_name: "Holy Water",
     cost: 25,
-    stock: 16,
+    stock: 10,
     weight: 1,
     image_link: "/img/clericShield.png",
     image_alt_text: "ClericShield",
@@ -1782,10 +1784,10 @@ const productData = [
     description:
       "Since it is not designed for melee, you are treated as non-proficient with it and take a –4 penalty on attack rolls if you use a javelin as a melee weapon.",
     cost: 1,
-    stock: 9,
+    stock: 4,
     weight: 2,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/spear.png",
+    image_alt_text: "Spear",
     category_id: 1,
     additional_information: {
       weapon_type: "Simple",
@@ -1804,10 +1806,10 @@ const productData = [
   {
     product_name: "Javelin, Spinning",
     cost: -1,
-    stock: 19,
+    stock: 4,
     weight: 2,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/spear.png",
+    image_alt_text: "Spear",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -1826,10 +1828,10 @@ const productData = [
   {
     product_name: "Jitte",
     cost: 0.5,
-    stock: 4,
+    stock: 9,
     weight: 2,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -1846,10 +1848,10 @@ const productData = [
   {
     product_name: "Jo",
     cost: -1,
-    stock: 7,
+    stock: 13,
     weight: 2,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Simple",
@@ -1868,10 +1870,10 @@ const productData = [
     description:
       "The kama is a special monk weapon. This designation gives a monk wielding a kama special options.\nYou can use a kama to make trip attacks. If you are tripped during your own trip attempt, you can drop the kama to avoid being tripped.",
     cost: 2,
-    stock: 14,
+    stock: 9,
     weight: 2,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/sword.png",
+    image_alt_text: "Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -1891,8 +1893,8 @@ const productData = [
     cost: 400,
     stock: 15,
     weight: 6,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/sword.png",
+    image_alt_text: "Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -1910,10 +1912,10 @@ const productData = [
   {
     product_name: "Kau Sin Ke",
     cost: 15,
-    stock: 13,
+    stock: 8,
     weight: 4,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -1930,10 +1932,10 @@ const productData = [
   {
     product_name: "Kawanaga",
     cost: 10,
-    stock: 1,
+    stock: 13,
     weight: 1,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -1950,10 +1952,10 @@ const productData = [
   {
     product_name: "Khopesh",
     cost: 20,
-    stock: 19,
+    stock: 3,
     weight: 12,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/swordMedium.png",
+    image_alt_text: "Medium Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -1971,10 +1973,10 @@ const productData = [
   {
     product_name: "Knife, Crescent",
     cost: -1,
-    stock: 17,
+    stock: 7,
     weight: 1,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/sword.png",
+    image_alt_text: "Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -1992,10 +1994,10 @@ const productData = [
   {
     product_name: "Knife, Stump",
     cost: -1,
-    stock: 7,
+    stock: 1,
     weight: 2,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/sword.png",
+    image_alt_text: "Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -2013,10 +2015,10 @@ const productData = [
   {
     product_name: "Kukri",
     cost: 8,
-    stock: 12,
+    stock: 0,
     weight: 3,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/swordMedium.png",
+    image_alt_text: "Medium Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -2033,10 +2035,10 @@ const productData = [
   {
     product_name: "Kusari-gama",
     cost: 10,
-    stock: 4,
+    stock: 8,
     weight: 3,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/spear.png",
+    image_alt_text: "Spear",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -2053,10 +2055,10 @@ const productData = [
   {
     product_name: "Lajatang",
     cost: 90,
-    stock: 5,
+    stock: 15,
     weight: 7,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/spear.png",
+    image_alt_text: "Spear",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -2077,8 +2079,8 @@ const productData = [
     cost: 10,
     stock: 7,
     weight: 10,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/spear.png",
+    image_alt_text: "Spear",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -2098,10 +2100,10 @@ const productData = [
     description:
       "A lance deals double damage when used from the back of a charging mount. It has reach, so you can strike opponents 10 feet away with it, but you can’t use it against an adjacent foe.\nWhile mounted, you can wield a lance with one hand.",
     cost: 6,
-    stock: 12,
+    stock: 6,
     weight: 5,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/spear.png",
+    image_alt_text: "Spear",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -2119,10 +2121,10 @@ const productData = [
   {
     product_name: "Mace, Heavy",
     cost: 12,
-    stock: 2,
+    stock: 9,
     weight: 12,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/swordHeavy.png",
+    image_alt_text: "Heavy Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Simple",
@@ -2140,10 +2142,10 @@ const productData = [
   {
     product_name: "Mace, Light",
     cost: 5,
-    stock: 16,
+    stock: 10,
     weight: 6,
-    image_link: "/img/armorLight.png",
-    image_alt_text: "Light Armor",
+    image_link: "/img/swordHeavy.png",
+    image_alt_text: "Heavy Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Simple",
@@ -2161,10 +2163,10 @@ const productData = [
   {
     product_name: "Mancatcher",
     cost: -1,
-    stock: 8,
+    stock: 6,
     weight: 8,
-    image_link: "/img/armorLight.png",
-    image_alt_text: "Light Armor",
+    image_link: "/img/spear.png",
+    image_alt_text: "Spear",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -2183,10 +2185,10 @@ const productData = [
   {
     product_name: "Manti",
     cost: -1,
-    stock: 6,
+    stock: 15,
     weight: 9,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -2203,10 +2205,10 @@ const productData = [
   {
     product_name: "Masa-kari",
     cost: -1,
-    stock: 10,
+    stock: 15,
     weight: 5,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -2223,10 +2225,10 @@ const productData = [
   {
     product_name: "Maul",
     cost: 15,
-    stock: 11,
+    stock: 7,
     weight: 20,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -2244,10 +2246,10 @@ const productData = [
   {
     product_name: "Morningstar",
     cost: 8,
-    stock: 16,
+    stock: 18,
     weight: 8,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Simple",
@@ -2265,10 +2267,10 @@ const productData = [
   {
     product_name: "Naga Blade",
     cost: -1,
-    stock: 7,
+    stock: 0,
     weight: 8,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/sword.png",
+    image_alt_text: "Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -2286,10 +2288,10 @@ const productData = [
   {
     product_name: "Nagamaki",
     cost: 8,
-    stock: 19,
+    stock: 8,
     weight: 10,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -2306,10 +2308,10 @@ const productData = [
   {
     product_name: "Nage-yari",
     cost: -1,
-    stock: 9,
+    stock: 12,
     weight: 3,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Simple",
@@ -2327,10 +2329,10 @@ const productData = [
   {
     product_name: "Naginata",
     cost: 10,
-    stock: 17,
+    stock: 10,
     weight: 15,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/spear.png",
+    image_alt_text: "Spear",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -2348,10 +2350,10 @@ const productData = [
   {
     product_name: "Nekode",
     cost: 2,
-    stock: 5,
+    stock: 12,
     weight: 2,
-    image_link: "/img/armorHeavy.png",
-    image_alt_text: "Heavy Armor",
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -2370,13 +2372,15 @@ const productData = [
     description:
       "A net is used to entangle enemies. When you throw a net, you make a ranged touch attack against your target. A net’s maximum range is 10 feet. If you hit, the target is entangled. An entangled creature takes a –2 penalty on attack rolls and a –4 penalty on Dexterity, can move at only half speed, and cannot charge or run. If you control the trailing rope by succeeding on an opposed Strength check while holding it, the entangled creature can move only within the limits that the rope allows. If the entangled creature attempts to cast a spell, it must make a DC 15 Concentration check or be unable to cast the spell.\nAn entangled creature can escape with a DC 20 Escape Artist check (a full-round action). The net has 5 hit points and can be burst with a DC 25 Strength check (also a full-round action).\nA net is useful only against creatures within one size category of you.\nA net must be folded to be thrown effectively. The first time you throw your net in a fight, you make a normal ranged touch attack roll. After the net is unfolded, you take a –4 penalty on attack rolls with it. It takes 2 rounds for a proficient user to fold a net and twice that long for a non-proficient one to do so.",
     cost: 20,
-    stock: 13,
+    stock: 2,
     weight: 10,
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
       ua_weapon_group: "Other",
-      damage: "d",
+      damage: "special",
       damage_type: "Slashing",
       special_damage: "Special",
       critical_range: -1,
@@ -2391,8 +2395,10 @@ const productData = [
   {
     product_name: "Ninja-to",
     cost: 10,
-    stock: 18,
+    stock: 10,
     weight: 3,
+    image_link: "/img/sword.png",
+    image_alt_text: "Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -2410,8 +2416,10 @@ const productData = [
   {
     product_name: "No-dachi",
     cost: -1,
-    stock: 5,
+    stock: 7,
     weight: 12,
+    image_link: "/img/spear.png",
+    image_alt_text: "Spear",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -2431,8 +2439,10 @@ const productData = [
     description:
       "The nunchaku is a special monk weapon. This designation gives a monk wielding a nunchaku special options. With a nunchaku, you get a +2 bonus on opposed attack rolls made to disarm an enemy (including the roll to avoid being disarmed if such an attempt fails).",
     cost: 2,
-    stock: 2,
+    stock: 13,
     weight: 2,
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -2449,8 +2459,10 @@ const productData = [
   {
     product_name: "Ono",
     cost: -1,
-    stock: 7,
+    stock: 15,
     weight: 10,
+    image_link: "/img/axe.png",
+    image_alt_text: "Axe",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -2467,8 +2479,10 @@ const productData = [
   {
     product_name: "Pick, Heavy",
     cost: 8,
-    stock: 10,
+    stock: 4,
     weight: 6,
+    image_link: "/img/axe.png",
+    image_alt_text: "Axe",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -2486,8 +2500,10 @@ const productData = [
   {
     product_name: "Pick, Light",
     cost: 4,
-    stock: 1,
+    stock: 12,
     weight: 4,
+    image_link: "/img/armorHeavy.png",
+    image_alt_text: "Heavy Armor",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -2505,8 +2521,10 @@ const productData = [
   {
     product_name: "Pipe, Machi-kanshisha",
     cost: -1,
-    stock: 2,
+    stock: 8,
     weight: 4,
+    image_link: "/img/spear.png",
+    image_alt_text: "Spear",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -2528,6 +2546,8 @@ const productData = [
     cost: 10,
     stock: 11,
     weight: 15,
+    image_link: "/img/spear.png",
+    image_alt_text: "Spear",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -2547,8 +2567,10 @@ const productData = [
     description:
       "You can use the Weapon Finesse feat to apply your Dexterity modifier instead of your Strength modifier to attack rolls with a rapier sized for you, even though it isn’t a light weapon for you. You can’t wield a rapier in two hands in order to apply 1-1/2 times your Strength bonus to damage.",
     cost: 20,
-    stock: 4,
+    stock: 10,
     weight: 3,
+    image_link: "/img/sword.png",
+    image_alt_text: "Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -2566,8 +2588,10 @@ const productData = [
   {
     product_name: "Rock",
     cost: -1,
-    stock: 14,
+    stock: 4,
     weight: 0.5,
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Simple",
@@ -2588,6 +2612,8 @@ const productData = [
     cost: 20,
     stock: 19,
     weight: 4,
+    image_link: "/img/swordMedium.png",
+    image_alt_text: "Medium Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -2607,8 +2633,10 @@ const productData = [
     description:
       "With a sai, you get a +4 bonus on opposed attack rolls made to disarm an enemy (including the roll to avoid being disarmed if such an attempt fails).\nThe sai is a special monk weapon. This designation gives a monk wielding a sai special options.",
     cost: 1,
-    stock: 15,
+    stock: 17,
     weight: 2,
+    image_link: "/img/sword.png",
+    image_alt_text: "Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -2628,6 +2656,8 @@ const productData = [
     cost: 95,
     stock: 14,
     weight: 10,
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -2646,6 +2676,8 @@ const productData = [
     cost: 1,
     stock: 0,
     weight: 3,
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -2664,8 +2696,10 @@ const productData = [
   {
     product_name: "Sasumata",
     cost: 8,
-    stock: 0,
+    stock: 2,
     weight: 8,
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -2683,8 +2717,10 @@ const productData = [
   {
     product_name: "Scimitar",
     cost: 15,
-    stock: 15,
+    stock: 9,
     weight: 4,
+    image_link: "/img/swordMedium.png",
+    image_alt_text: "Medium Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -2702,8 +2738,10 @@ const productData = [
   {
     product_name: "Scimitar, Double",
     cost: -1,
-    stock: 14,
+    stock: 13,
     weight: 15,
+    image_link: "/img/swordMedium.png",
+    image_alt_text: "Medium Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -2721,8 +2759,10 @@ const productData = [
   {
     product_name: "Scourge",
     cost: 20,
-    stock: 14,
+    stock: 2,
     weight: 2,
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -2742,8 +2782,10 @@ const productData = [
     description:
       "A scythe can be used to make trip attacks. If you are tripped during your own trip attempt, you can drop the scythe to avoid being tripped.",
     cost: 18,
-    stock: 15,
+    stock: 11,
     weight: 12,
+    image_link: "/img/spear.png",
+    image_alt_text: "Spear",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -2759,94 +2801,12 @@ const productData = [
     },
   },
   {
-    product_name: "Shield, Heavy",
-    description:
-      "You can bash with a shield instead of using it for defense. See Armor for details.",
-    cost: 20,
-    stock: 0,
-    weight: 15,
-    category_id: 1,
-    additional_information: {
-      weapon_type: "Martial",
-      ua_weapon_group: "Shield",
-      damage: "d4",
-      damage_type: "Bludgeoning",
-      critical_range: 20,
-      critical_multiplier: 2,
-      range_increment: -1,
-      melee_penalty: -1,
-      is_finesse: "false",
-      has_reach: "false",
-    },
-  },
-  {
-    product_name: "Shield, Light",
-    description:
-      "You can bash with a shield instead of using it for defense. See Armor for details.",
-    cost: 9,
-    stock: 11,
-    weight: 6,
-    category_id: 1,
-    additional_information: {
-      weapon_type: "Martial",
-      ua_weapon_group: "Shield",
-      damage: "d3",
-      damage_type: "Bludgeoning",
-      critical_range: 20,
-      critical_multiplier: 2,
-      range_increment: -1,
-      melee_penalty: -1,
-      is_finesse: "false",
-      has_reach: "false",
-    },
-  },
-  {
-    product_name: "Shield, Spiked Heavy",
-    description:
-      "You can bash with a shield instead of using it for defense. See Armor for details.",
-    cost: 10,
-    stock: 8,
-    weight: 5,
-    category_id: 1,
-    additional_information: {
-      weapon_type: "Martial",
-      ua_weapon_group: "Shield",
-      damage: "d6",
-      damage_type: "Piercing",
-      critical_range: 20,
-      critical_multiplier: 2,
-      range_increment: -1,
-      melee_penalty: -1,
-      is_finesse: "false",
-      has_reach: "false",
-    },
-  },
-  {
-    product_name: "Shield, Spiked Light",
-    description:
-      "You can bash with a shield instead of using it for defense. See Armor for details.",
-    cost: 10,
-    stock: 8,
-    weight: 5,
-    category_id: 1,
-    additional_information: {
-      weapon_type: "Martial",
-      ua_weapon_group: "Shield",
-      damage: "d3",
-      damage_type: "Piercing",
-      critical_range: 20,
-      critical_multiplier: 2,
-      range_increment: -1,
-      melee_penalty: -1,
-      is_finesse: "false",
-      has_reach: "false",
-    },
-  },
-  {
     product_name: "Shikomi-zue",
     cost: 12,
-    stock: 12,
+    stock: 14,
     weight: 5,
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -2863,8 +2823,10 @@ const productData = [
   {
     product_name: "Shotput, Orc",
     cost: -1,
-    stock: 18,
+    stock: 3,
     weight: 15,
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -2884,8 +2846,10 @@ const productData = [
     description:
       "A shuriken is a special monk weapon. This designation gives a monk wielding shuriken special options. A shuriken can’t be used as a melee weapon.\nAlthough they are thrown weapons, shuriken are treated as ammunition for the purposes of drawing them, crafting masterwork or otherwise special versions of them and what happens to them after they are thrown.",
     cost: 1,
-    stock: 14,
+    stock: 2,
     weight: 0.1,
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -2905,8 +2869,10 @@ const productData = [
     description:
       "The siangham is a special monk weapon. This designation gives a monk wielding a siangham special options.",
     cost: 3,
-    stock: 17,
+    stock: 19,
     weight: 1,
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -2925,8 +2891,10 @@ const productData = [
     description:
       "A sickle can be used to make trip attacks. If you are tripped during your own trip attempt, you can drop the sickle to avoid being tripped.",
     cost: 6,
-    stock: 16,
+    stock: 4,
     weight: 3,
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Simple",
@@ -2944,8 +2912,10 @@ const productData = [
   {
     product_name: "Skiprock, Halfling",
     cost: -1,
-    stock: 7,
+    stock: 1,
     weight: 0.25,
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -2965,8 +2935,10 @@ const productData = [
     description:
       "Bullets come in a leather pouch that holds 10 bullets. A bullet that hits its target is destroyed; one that misses has a 50% chance of being destroyed or lost.\nYour Strength modifier applies to damage rolls when you use a sling, just as it does for thrown weapons. You can fire, but not load, a sling with one hand. Loading a sling is a move action that requires two hands and provokes attacks of opportunity.\nYou can hurl ordinary stones with a sling, but stones are not as dense or as round as bullets. Thus, such an attack deals damage as if the weapon were designed for a creature one size category smaller than you and you take a –1 penalty on attack rolls.",
     cost: 0.05,
-    stock: 16,
+    stock: 10,
     weight: 0.5,
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Simple",
@@ -2985,8 +2957,10 @@ const productData = [
   {
     product_name: "Sodegarami",
     cost: 4,
-    stock: 12,
+    stock: 7,
     weight: 5,
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -3005,8 +2979,10 @@ const productData = [
     description:
       "A spear can be thrown. If you use a ready action to set a spear against a charge, you deal double damage on a successful hit against a charging character.",
     cost: 1,
-    stock: 6,
+    stock: 0,
     weight: 3,
+    image_link: "/img/spear.png",
+    image_alt_text: "Spear",
     category_id: 1,
     additional_information: {
       weapon_type: "Simple",
@@ -3027,8 +3003,10 @@ const productData = [
     description:
       "A longspear has reach. You can strike opponents 10 feet away with it, but you can’t use it against an adjacent foe. If you use a ready action to set a longspear against a charge, you deal double damage on a successful hit against a charging character.",
     cost: 5,
-    stock: 10,
+    stock: 15,
     weight: 9,
+    image_link: "/img/spear.png",
+    image_alt_text: "Spear",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -3048,8 +3026,10 @@ const productData = [
     description:
       "A shortspear is small enough to wield one-handed. It may also be thrown.",
     cost: 2,
-    stock: 8,
+    stock: 4,
     weight: 5,
+    image_link: "/img/spear.png",
+    image_alt_text: "Spear",
     category_id: 1,
     additional_information: {
       weapon_type: "Simple",
@@ -3068,8 +3048,10 @@ const productData = [
   {
     product_name: "Spikes, Ratling Tail",
     cost: 1,
-    stock: 3,
+    stock: 6,
     weight: 0.5,
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -3088,6 +3070,8 @@ const productData = [
     cost: -1,
     stock: 19,
     weight: 10,
+    image_link: "/img/spear.png",
+    image_alt_text: "Spear",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -3108,8 +3092,10 @@ const productData = [
     description:
       "A quarterstaff is a double weapon. You can fight with it as if fighting with two weapons, but if you do, you incur all the normal attack penalties associated with fighting with two weapons, just as if you were using a one-handed weapon and a light weapon. A creature wielding a quarterstaff in one hand can’t use it as a double weapon—only one end of the weapon can be used in any given round.\nThe quarterstaff is a special monk weapon. This designation gives a monk wielding a quarterstaff special options.",
     cost: -1,
-    stock: 16,
+    stock: 0,
     weight: 4,
+    image_link: "/img/spear.png",
+    image_alt_text: "Spear",
     category_id: 1,
     additional_information: {
       weapon_type: "Simple",
@@ -3127,8 +3113,10 @@ const productData = [
   {
     product_name: "Staff, Three-Section",
     cost: -1,
-    stock: 12,
+    stock: 4,
     weight: 8,
+    image_link: "/img/spear.png",
+    image_alt_text: "Spear",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -3147,8 +3135,10 @@ const productData = [
     description:
       "A bastard sword is too large to use in one hand without special training; thus, it is an exotic weapon. A character can use a bastard sword two-handed as a martial weapon.",
     cost: 35,
-    stock: 18,
+    stock: 17,
     weight: 10,
+    image_link: "/img/swordHeavy.png",
+    image_alt_text: "Heavy Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -3166,8 +3156,10 @@ const productData = [
   {
     product_name: "Sword, Butterfly",
     cost: 2,
-    stock: 9,
+    stock: 19,
     weight: 2,
+    image_link: "/img/swordMedium.png",
+    image_alt_text: "Medium Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -3185,8 +3177,10 @@ const productData = [
   {
     product_name: "Sword, Great",
     cost: 50,
-    stock: 5,
+    stock: 7,
     weight: 15,
+    image_link: "/img/swordHeavy.png",
+    image_alt_text: "Heavy Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -3204,8 +3198,10 @@ const productData = [
   {
     product_name: "Sword, Long",
     cost: 15,
-    stock: 14,
+    stock: 2,
     weight: 4,
+    image_link: "/img/swordMedium.png",
+    image_alt_text: "Medium Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -3223,8 +3219,10 @@ const productData = [
   {
     product_name: "Sword, Short",
     cost: 10,
-    stock: 7,
+    stock: 11,
     weight: 3,
+    image_link: "/img/sword.png",
+    image_alt_text: "Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -3244,8 +3242,10 @@ const productData = [
     description:
       "A two-bladed sword is a double weapon. You can fight with it as if fighting with two weapons, but if you do, you incur all the normal attack penalties associated with fighting with two weapons, just as if you were using a one-handed weapon and a light weapon. A creature wielding a two-bladed sword in one hand can’t use it as a double weapon—only one end of the weapon can be used in any given round.",
     cost: 100,
-    stock: 6,
+    stock: 16,
     weight: 30,
+    image_link: "/img/swordMedium.png",
+    image_alt_text: "Medium Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -3263,13 +3263,15 @@ const productData = [
   {
     product_name: "Tanglefoot Bag",
     cost: 50,
-    stock: 2,
+    stock: 8,
     weight: 4,
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Grenade",
       ua_weapon_group: "Alchemical",
-      damage: "d",
+      damage: "special",
       damage_type: "Entangle",
       special_damage: "Reflex DC (15)",
       critical_range: -1,
@@ -3284,8 +3286,10 @@ const productData = [
   {
     product_name: "Tankard",
     cost: 3,
-    stock: 3,
+    stock: 18,
     weight: 1,
+    image_link: "/img/wineglass.png",
+    image_alt_text: "Wineglass",
     category_id: 1,
     additional_information: {
       weapon_type: "Simple",
@@ -3303,8 +3307,10 @@ const productData = [
   {
     product_name: "Tanto",
     cost: -1,
-    stock: 4,
+    stock: 2,
     weight: 1,
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Simple",
@@ -3321,8 +3327,10 @@ const productData = [
   {
     product_name: "Tetsubo",
     cost: -1,
-    stock: 3,
+    stock: 9,
     weight: 15,
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -3340,8 +3348,10 @@ const productData = [
   {
     product_name: "Thinblade, Elvin",
     cost: -1,
-    stock: 9,
+    stock: 11,
     weight: 3,
+    image_link: "/img/sword.png",
+    image_alt_text: "Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -3359,13 +3369,15 @@ const productData = [
   {
     product_name: "Thunderstone",
     cost: 30,
-    stock: 12,
+    stock: 14,
     weight: 1,
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Grenade",
       ua_weapon_group: "Alchemical",
-      damage: "d",
+      damage: "special",
       damage_type: "Deafen",
       special_damage: "Fortitude DC (15)",
       critical_range: -1,
@@ -3380,8 +3392,10 @@ const productData = [
   {
     product_name: "Tonfa",
     cost: 0.5,
-    stock: 9,
+    stock: 15,
     weight: 2,
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -3399,8 +3413,10 @@ const productData = [
   {
     product_name: "Tortoise Blade, Gnome",
     cost: -1,
-    stock: 14,
+    stock: 5,
     weight: 1,
+    image_link: "/img/sword.png",
+    image_alt_text: "Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -3419,8 +3435,10 @@ const productData = [
     description:
       "This weapon can be thrown. If you use a ready action to set a trident against a charge, you deal double damage on a successful hit against a charging character.",
     cost: 15,
-    stock: 19,
+    stock: 10,
     weight: 5,
+    image_link: "/img/spear.png",
+    image_alt_text: "Spear",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -3441,8 +3459,10 @@ const productData = [
     description:
       "A dwarven urgrosh is a double weapon. You can fight with it as if fighting with two weapons, but if you do, you incur all the normal attack penalties associated with fighting with two weapons, just as if you were using a one-handed weapon and a light weapon. The urgrosh’s axe head is a slashing weapon that deals 1d8 points of damage. Its spear head is a piercing weapon that deals 1d6 points of damage. You can use either head as the primary weapon. The other is the off-hand weapon. A creature wielding a dwarven urgrosh in one hand can’t use it as a double weapon—only one end of the weapon can be used in any given round.\nIf you use a ready action to set an urgrosh against a charge, you deal double damage if you score a hit against a charging character. If you use an urgrosh against a charging character, the spear head is the part of the weapon that deals damage.\nDwarves treat dwarven urgroshes as martial weapons.",
     cost: 50,
-    stock: 7,
+    stock: 3,
     weight: 15,
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -3459,8 +3479,10 @@ const productData = [
   {
     product_name: "Vajra",
     cost: -1,
-    stock: 3,
+    stock: 10,
     weight: 6,
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -3479,6 +3501,8 @@ const productData = [
     cost: 300,
     stock: 5,
     weight: 3,
+    image_link: "/img/sword.png",
+    image_alt_text: "Sword",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -3498,8 +3522,10 @@ const productData = [
     description:
       "A whip deals nonlethal damage. It deals no damage to any creature with an armor bonus of +1 or higher or a natural armor bonus of +3 or higher. The whip is treated as a melee weapon with 15-foot reach, though you don’t threaten the area into which you can make an attack. In addition, unlike most other weapons with reach, you can use it against foes anywhere within your reach (including adjacent foes).\nUsing a whip provokes an attack of opportunity, just as if you had used a ranged weapon.\nYou can make trip attacks with a whip. If you are tripped during your own trip attempt, you can drop the whip to avoid being tripped.\nWhen using a whip, you get a +2 bonus on opposed attack rolls made to disarm an opponent (including the roll to keep from being disarmed if the attack fails).\nYou can use the Weapon Finesse feat to apply your Dexterity modifier instead of your Strength modifier to attack rolls with a whip sized for you, even though it isn’t a light weapon for you.",
     cost: 1,
-    stock: 16,
+    stock: 10,
     weight: 2,
+    image_link: "/img/rope.png",
+    image_alt_text: "Rope",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -3518,8 +3544,10 @@ const productData = [
   {
     product_name: "Whip Dagger",
     cost: -1,
-    stock: 3,
+    stock: 18,
     weight: 3,
+    image_link: "/img/rope.png",
+    image_alt_text: "Rope",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -3537,8 +3565,10 @@ const productData = [
   {
     product_name: "Whip Dagger, Mighty (+1)",
     cost: -1,
-    stock: 3,
+    stock: 18,
     weight: 4,
+    image_link: "/img/rope.png",
+    image_alt_text: "Rope",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -3556,8 +3586,10 @@ const productData = [
   {
     product_name: "Whip Dagger, Mighty (+2)",
     cost: -1,
-    stock: 4,
+    stock: 7,
     weight: 5,
+    image_link: "/img/rope.png",
+    image_alt_text: "Rope",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -3575,8 +3607,10 @@ const productData = [
   {
     product_name: "Whip Dagger, Mighty (+3)",
     cost: -1,
-    stock: 18,
+    stock: 6,
     weight: 6,
+    image_link: "/img/rope.png",
+    image_alt_text: "Rope",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -3594,8 +3628,10 @@ const productData = [
   {
     product_name: "Whip Dagger, Mighty (+4)",
     cost: -1,
-    stock: 5,
+    stock: 6,
     weight: 7,
+    image_link: "/img/rope.png",
+    image_alt_text: "Rope",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -3615,8 +3651,10 @@ const productData = [
     description:
       "A whip deals nonlethal damage. It deals no damage to any creature with an armor bonus of +1 or higher or a natural armor bonus of +3 or higher. The whip is treated as a melee weapon with 15-foot reach, though you don’t threaten the area into which you can make an attack. In addition, unlike most other weapons with reach, you can use it against foes anywhere within your reach (including adjacent foes).\nUsing a whip provokes an attack of opportunity, just as if you had used a ranged weapon.\nYou can make trip attacks with a whip. If you are tripped during your own trip attempt, you can drop the whip to avoid being tripped.\nWhen using a whip, you get a +2 bonus on opposed attack rolls made to disarm an opponent (including the roll to keep from being disarmed if the attack fails).\nYou can use the Weapon Finesse feat to apply your Dexterity modifier instead of your Strength modifier to attack rolls with a whip sized for you, even though it isn’t a light weapon for you.",
     cost: -1,
-    stock: 3,
+    stock: 9,
     weight: 3,
+    image_link: "/img/rope.png",
+    image_alt_text: "Rope",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -3637,8 +3675,10 @@ const productData = [
     description:
       "A whip deals nonlethal damage. It deals no damage to any creature with an armor bonus of +1 or higher or a natural armor bonus of +3 or higher. The whip is treated as a melee weapon with 15-foot reach, though you don’t threaten the area into which you can make an attack. In addition, unlike most other weapons with reach, you can use it against foes anywhere within your reach (including adjacent foes).\nUsing a whip provokes an attack of opportunity, just as if you had used a ranged weapon.\nYou can make trip attacks with a whip. If you are tripped during your own trip attempt, you can drop the whip to avoid being tripped.\nWhen using a whip, you get a +2 bonus on opposed attack rolls made to disarm an opponent (including the roll to keep from being disarmed if the attack fails).\nYou can use the Weapon Finesse feat to apply your Dexterity modifier instead of your Strength modifier to attack rolls with a whip sized for you, even though it isn’t a light weapon for you.",
     cost: -1,
-    stock: 15,
+    stock: 2,
     weight: 4,
+    image_link: "/img/rope.png",
+    image_alt_text: "Rope",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -3659,8 +3699,10 @@ const productData = [
     description:
       "A whip deals nonlethal damage. It deals no damage to any creature with an armor bonus of +1 or higher or a natural armor bonus of +3 or higher. The whip is treated as a melee weapon with 15-foot reach, though you don’t threaten the area into which you can make an attack. In addition, unlike most other weapons with reach, you can use it against foes anywhere within your reach (including adjacent foes).\nUsing a whip provokes an attack of opportunity, just as if you had used a ranged weapon.\nYou can make trip attacks with a whip. If you are tripped during your own trip attempt, you can drop the whip to avoid being tripped.\nWhen using a whip, you get a +2 bonus on opposed attack rolls made to disarm an opponent (including the roll to keep from being disarmed if the attack fails).\nYou can use the Weapon Finesse feat to apply your Dexterity modifier instead of your Strength modifier to attack rolls with a whip sized for you, even though it isn’t a light weapon for you.",
     cost: -1,
-    stock: 18,
+    stock: 15,
     weight: 5,
+    image_link: "/img/rope.png",
+    image_alt_text: "Rope",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -3681,8 +3723,10 @@ const productData = [
     description:
       "A whip deals nonlethal damage. It deals no damage to any creature with an armor bonus of +1 or higher or a natural armor bonus of +3 or higher. The whip is treated as a melee weapon with 15-foot reach, though you don’t threaten the area into which you can make an attack. In addition, unlike most other weapons with reach, you can use it against foes anywhere within your reach (including adjacent foes).\nUsing a whip provokes an attack of opportunity, just as if you had used a ranged weapon.\nYou can make trip attacks with a whip. If you are tripped during your own trip attempt, you can drop the whip to avoid being tripped.\nWhen using a whip, you get a +2 bonus on opposed attack rolls made to disarm an opponent (including the roll to keep from being disarmed if the attack fails).\nYou can use the Weapon Finesse feat to apply your Dexterity modifier instead of your Strength modifier to attack rolls with a whip sized for you, even though it isn’t a light weapon for you.",
     cost: -1,
-    stock: 19,
+    stock: 15,
     weight: 6,
+    image_link: "/img/rope.png",
+    image_alt_text: "Rope",
     category_id: 1,
     additional_information: {
       weapon_type: "Exotic",
@@ -3701,8 +3745,10 @@ const productData = [
   {
     product_name: "Yari",
     cost: -1,
-    stock: 18,
+    stock: 17,
     weight: 5,
+    image_link: "/img/specialItems.png",
+    image_alt_text: "Special Items",
     category_id: 1,
     additional_information: {
       weapon_type: "Simple",
@@ -3719,8 +3765,10 @@ const productData = [
   {
     product_name: "Yumi, Long",
     cost: -1,
-    stock: 14,
+    stock: 17,
     weight: 3,
+    image_link: "/img/Bow.png",
+    image_alt_text: "Bow",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
@@ -3739,8 +3787,10 @@ const productData = [
   {
     product_name: "Yumi, Short",
     cost: -1,
-    stock: 18,
+    stock: 10,
     weight: 2,
+    image_link: "/img/Bow.png",
+    image_alt_text: "Bow",
     category_id: 1,
     additional_information: {
       weapon_type: "Martial",
