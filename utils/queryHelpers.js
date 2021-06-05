@@ -8,4 +8,13 @@ module.exports = {
       return { limit, offset };
     }
   },
+
+  /** If the user isn't logged in, redirect them to the login route */
+  withAuth: (req, res, next) => {
+    if (!req.session.logged_in) {
+      res.redirect("/login");
+    } else {
+      next();
+    }
+  },
 };

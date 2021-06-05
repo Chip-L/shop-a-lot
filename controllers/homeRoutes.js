@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const { Product, Category, Backpack, User } = require("../models");
-const { doPagination } = require("../utils/queryHelpers");
+const { doPagination, withAuth } = require("../utils/queryHelpers");
 const { Op } = require("sequelize");
 const { compareSync } = require("bcrypt");
 
@@ -73,7 +73,7 @@ router.get("/product/:id", async (req, res) => {
   }
 });
 
-router.get("/backpack", async (req, res) => {
+router.get("/backpack", withAuth, async (req, res) => {
   try {
     console.log("\n\n ------------------ Backpack  Start ------------------\n");
     console.log("userUserId: ", req.session.user_id);
@@ -105,7 +105,7 @@ router.get("/backpack", async (req, res) => {
   }
 });
 
-router.get("/cart", async (req, res) => {
+router.get("/cart", withAuth, async (req, res) => {
   try {
     res.render("cart", {
       logged_in: req.session.logged_in,
