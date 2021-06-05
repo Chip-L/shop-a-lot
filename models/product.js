@@ -49,6 +49,9 @@ Product.init(
     image_link: {
       type: DataTypes.STRING,
     },
+    image_alt_text: {
+      type: DataTypes.STRING,
+    },
     additional_information: {
       type: DataTypes.JSON,
       allowNull: true,
