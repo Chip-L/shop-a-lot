@@ -2,6 +2,7 @@ const router = require("express").Router();
 const { Product, Category, Backpack, User } = require("../models");
 const { doPagination } = require("../utils/queryHelpers");
 const { Op } = require("sequelize");
+const { compareSync } = require("bcrypt");
 
 // http://localhost:3001+
 
@@ -77,19 +78,25 @@ router.get("/backpack", async (req, res) => {
     console.log("\n\n ------------------ Backpack  Start ------------------\n");
     console.log("userUserId: ", req.session.user_id);
 
-    const rawBackPackData = await Backpack.findAll({
-      where: { userUserId: req.session.user_id },
-      // include: [{ model: Product }, { model: User }],
+    const user = await User.findByPk(req.session.user_id);
+
+    console.log(user.get({ plain: true }));
+
+    const rawProducts = await user.getProducts();
+
+    const products = rawProducts.map((product) => product.get({ plain: true }));
+
+    const itemList = products.map((product) => {
+      return {
+        product_name: product.product_name,
+        product_id: product.product_id,
+        quantity: product.backpack.quantity,
+      };
     });
 
-    const backpackData = rawBackPackData.map((bpData) =>
-      bpData.get({ plain: true })
-    );
-    //Serialized BackPack Data with Products Attached to the User
-    console.log(backpackData);
-
+    console.log(itemList);
     res.render("backpack", {
-      backpackData,
+      items: itemList,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
