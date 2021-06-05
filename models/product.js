@@ -58,7 +58,6 @@ Product.init(
     },
     category_id: {
       type: DataTypes.INTEGER,
-      // autoIncrement: true,
       references: {
         model: "category",
         key: "id",

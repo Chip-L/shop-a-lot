@@ -1,6 +1,6 @@
 const router = require("express").Router();
-const { Product, Category } = require("../models");
-const { doPagination } = require("../utils/queryHelpers");
+const { Product, Category, Backpack, User } = require("../models");
+const { doPagination, withAuth } = require("../utils/queryHelpers");
 const { Op } = require("sequelize");
 
 // http://localhost:3001+
@@ -72,29 +72,44 @@ router.get("/product/:id", async (req, res) => {
   }
 });
 
-router.get("/backpack", async (req, res) => {
+router.get("/backpack", withAuth, async (req, res) => {
   try {
-    const rawBackPackData = await Backpack.findAll({
-      where: { userUserId: req.session.user_id },
-      include: [{ model: Product }, { model: User }],
-    });
+    let noProductFound = false;
+    let itemList;
 
-    const backpackData = rawBackPackData.map((bpData) =>
-      bpData.get({ plain: true })
-    );
-    //Serialized BackPack Data with Products Attached to the User
-    console.log(backpackData);
+    const user = await User.findByPk(req.session.user_id);
+
+    const rawProducts = await user.getProducts();
+
+    noProductFound = rawProducts.length < 1;
+
+    if (rawProducts) {
+      const products = rawProducts.map((product) =>
+        product.get({ plain: true })
+      );
+
+      // include fields for the page display
+      itemList = products.map((product) => {
+        return {
+          product_name: product.product_name,
+          product_id: product.product_id,
+          quantity: product.backpack.quantity,
+        };
+      });
+    }
 
     res.render("backpack", {
-      backpackData,
+      items: itemList,
       logged_in: req.session.logged_in,
+      noProductFound: noProductFound,
     });
   } catch (err) {
+    console.log(err);
     res.status(500).json(err);
   }
 });
 
-router.get("/cart", async (req, res) => {
+router.get("/cart", withAuth, async (req, res) => {
   try {
     res.render("cart", {
       logged_in: req.session.logged_in,
