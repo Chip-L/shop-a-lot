@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { Product, Category } = require("../models");
+const { Product, Category, Backpack, User } = require("../models");
 const { doPagination } = require("../utils/queryHelpers");
 const { Op } = require("sequelize");
 
@@ -68,9 +68,12 @@ router.get("/product/:id", async (req, res) => {
 
 router.get("/backpack", async (req, res) => {
   try {
+    console.log("\n\n ------------------ Backpack  Start ------------------\n");
+    console.log("userUserId: ", req.session.user_id);
+
     const rawBackPackData = await Backpack.findAll({
       where: { userUserId: req.session.user_id },
-      include: [{ model: Product }, { model: User }],
+      // include: [{ model: Product }, { model: User }],
     });
 
     const backpackData = rawBackPackData.map((bpData) =>
@@ -84,6 +87,7 @@ router.get("/backpack", async (req, res) => {
       logged_in: req.session.logged_in,
     });
   } catch (err) {
+    console.log(err);
     res.status(500).json(err);
   }
 });

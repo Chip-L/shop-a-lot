@@ -61,7 +61,7 @@ Product.init(
       // autoIncrement: true,
       references: {
         model: "category",
-        key: "id",
+        key: "category_id",
       },
     },
   },
