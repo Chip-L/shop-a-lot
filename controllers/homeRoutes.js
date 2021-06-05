@@ -68,18 +68,19 @@ router.get("/product/:id", async (req, res) => {
 
 router.get("/backpack", async (req, res) => {
   try {
-    const backPackData = await Backpack.findAll({
+    const rawBackPackData = await Backpack.findAll({
+      where: { userUserId: req.session.user_id },
       include: [{ model: Product }, { model: User }],
     });
 
-    const backPackSerData = backPackData.map((blog) =>
-      blog.get({ plain: true })
+    const backpackData = rawBackPackData.map((bpData) =>
+      bpData.get({ plain: true })
     );
     //Serialized BackPack Data with Products Attached to the User
-    console.log(backPackSerData);
+    console.log(backpackData);
 
     res.render("backpack", {
-      blogs,
+      backpackData,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
