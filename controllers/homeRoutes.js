@@ -1,5 +1,4 @@
 const router = require("express").Router();
-// const { seedAll } = require("../seeds");
 const { Product, Category } = require("../models");
 const { doPagination } = require("../utils/queryHelpers");
 const { Op } = require("sequelize");
@@ -8,6 +7,15 @@ router.get("/", async (req, res) => {
   res.render("homepage", {
     loggedIn: req.session.loggedIn,
   });
+});
+
+router.get("/login", async (req, res) => {
+  if (req.session.logged_in) {
+    res.redirect("/");
+    return;
+  }
+
+  res.render("login");
 });
 
 router.get("/category/:categoryId", async (req, res) => {

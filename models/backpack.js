@@ -6,22 +6,26 @@ class Backpack extends Model {}
 Backpack.init(
   {
     // Model attributes are defined here
-    user_id: {
+    quantity: {
       type: DataTypes.INTEGER,
-      references: {
-        model: "users",
-        key: "user_id",
-        unique: false,
-      },
+      // allowNull: false,
     },
-    product_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "products",
-        key: "product_id",
-        unique: false,
-      },
-    },
+    // user_id: {
+    //   type: DataTypes.INTEGER,
+    //   references: {
+    //     model: "users",
+    //     key: "user_id",
+    //     unique: false,
+    //   },
+    // },
+    // product_id: {
+    //   type: DataTypes.INTEGER,
+    //   references: {
+    //     model: "products",
+    //     key: "product_id",
+    //     unique: false,
+    //   },
+    // },
   },
   {
     // Other model options go here
