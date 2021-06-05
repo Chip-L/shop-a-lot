@@ -3,9 +3,11 @@ const { Product, Category, Backpack, User } = require("../models");
 const { doPagination } = require("../utils/queryHelpers");
 const { Op } = require("sequelize");
 
+// http://localhost:3001+
+
 router.get("/", async (req, res) => {
   res.render("homepage", {
-    loggedIn: req.session.loggedIn,
+    logged_in: req.session.logged_in,
   });
 });
 
@@ -18,6 +20,7 @@ router.get("/login", async (req, res) => {
   res.render("login");
 });
 
+/** This route does not return a no product found page, if there is no category, we have issues! */
 router.get("/category/:categoryId", async (req, res) => {
   try {
     const rawData = await Product.findAll({
@@ -34,7 +37,7 @@ router.get("/category/:categoryId", async (req, res) => {
 
     res.render("category", {
       products: data,
-      loggedIn: req.session.loggedIn,
+      logged_in: req.session.logged_in,
     });
   } catch (err) {
     console.log(err);
@@ -42,23 +45,26 @@ router.get("/category/:categoryId", async (req, res) => {
   }
 });
 
+/** If the product ID is not valid (manually entered) then it will return noProductFound=true variable */
 router.get("/product/:id", async (req, res) => {
   try {
+    let noProductFound = false;
+    let data;
     const rawProduct = await Product.findByPk(req.params.id, {
       include: Category,
     });
 
-    if (!rawProduct) {
-      res.status(404).json({ message: "No products found." });
+    noProductFound = !rawProduct;
+    if (rawProduct) {
+      data = rawProduct.get({ plain: true });
     }
 
-    const data = rawProduct.get({ plain: true });
-
-    // data.add_info = JSON.parse(data.additional_information);
-    console.log("data:\n", data);
+    // console.log(noProductFound);
+    // console.log("data:\n", data);
     res.render("product", {
       ...data,
-      loggedIn: req.session.loggedIn,
+      logged_in: req.session.logged_in,
+      noProductFound: noProductFound,
     });
   } catch (err) {
     console.log(err);
@@ -102,25 +108,32 @@ router.get("/cart", async (req, res) => {
   }
 });
 
+/** If the search does mpt return values, then it will return noProductFound=true variable */
 router.get("/search/:value", async (req, res) => {
   try {
+    let noProductFound = false;
+    let data;
     const value = req.params.value;
+
     const rawData = await Product.findAll({
       include: [Category],
       ...doPagination(req.query),
       where: { product_name: { [Op.like]: `%${value}%` } },
     });
-    console.log({ [Op.like]: value });
-    if (!rawData) {
-      res.status(404).json({ message: "No products found." });
+
+    noProductFound = rawData.length < 1;
+    if (rawData) {
+      data = rawData.map((prod) => prod.get({ plain: true }));
     }
 
-    const data = rawData.map((prod) => prod.get({ plain: true }));
+    // console.log("\n ------------------------------------------------", data);
+    // console.log(noProductFound);
 
-    console.log(data, "\n ------------------------------------------------");
     res.render("category", {
       products: data,
-      loggedIn: req.session.loggedIn,
+      logged_in: req.session.logged_in,
+      noProductFound: noProductFound,
+      value: value,
     });
   } catch (err) {
     console.log(err);
