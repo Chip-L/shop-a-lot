@@ -2641,6 +2641,7 @@ const gearData = [
     cost: -1,
     stock: 3,
     weight: -1,
+
     image_link: "/img/specialitems.png",
     image_alt_text: "Special Substances",
     category_id: 3,
