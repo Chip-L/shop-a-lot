@@ -3,14 +3,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Shop a Lot</title>
+
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- styles -->
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/style.css" />
-    <title>Shop a Lot</title>
+    <link rel="stylesheet" href="/css/navbar.css" />
+
+    <!-- favicon -->
     <link
       rel="shortcut icon"
       type="image/png"
@@ -19,15 +31,12 @@
   </head>
   <body>
     <header>
-      <nav>
-        <a href="/"><h3 class="navItem" id="pageTitle">Shop A Lot</h3></a>
+      <div>
+        <a href="/"><h3 class="logo" id="pageTitle">Shop A Lot</h3>
+        </a>
+
         <a href="/#categories"><p class="navItem">Browse Categories</p></a>
-        <div id="searchArea" class="navItem">
-          <form class="search-form" id="search">
-            <input type="text" id="productSearch" name="productSearch" />
-            <button type="submit">Search</button>
-          </form>
-        </div>
+
         {{#if logged_in}}
           <a href="/logout"><p class="navItem">Logout</p></a>
           <a href="/backpack"><p class="navItem">Backpack</p></a>
@@ -36,11 +45,21 @@
           <a href="/login"><p class="navItem">Login</p></a>
           <a href="/newUsers"><p class="navItem">Sign Up</p></a>
         {{/if}}
-      </nav>
+      </div>
+      <div id="searchArea" class="navItem">
+        <form class="search-form" id="search">
+          <input type="text" id="productSearch" name="productSearch" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+
+      <a href="javascript:void(0)" class="icon"><i class="fa fa-bars"></i></a>
     </header>
+
     <main>
       {{{body}}}
     </main>
+
     <footer>
       <a href="https://icons8.com/icon/MfxutvOVx8n4/castle">Castle icon by
         Icons8</a>
@@ -51,6 +70,8 @@
       <a href="https://icons8.com/icon/MfxutvOVx8n4/castle">Castle icon by
         Icons8</a>
     </footer>
+
+    <script src="/js/main.js"></script>
     <script src="/js/searchBar.js"></script>
   </body>
 </html>

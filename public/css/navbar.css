@@ -1,0 +1,39 @@
+header {
+  padding: 0 1rem;
+  border-bottom: 2px solid var(--dark-purple);
+  background-color: var(--dark-green);
+  overflow: hidden;
+
+  color: var(--lemon-meringue);
+  font-family: var(--title-font);
+}
+
+.logo {
+  font-size: 2.5rem;
+}
+.navItem {
+  font-size: 2rem;
+}
+
+/* #searchArea {
+  width: 40%;
+} */
+
+.search-form button {
+  width: 10%;
+  margin-top: 1rem;
+  min-width: 10rem;
+}
+/* 
+#productSearch {
+  width: 80%;
+} */
+
+@media screen and (min-width: 425px) {
+  .navItem {
+    font-size: 1.8rem;
+  }
+  /* #searchArea {
+    width: 25%;
+  } */
+}
