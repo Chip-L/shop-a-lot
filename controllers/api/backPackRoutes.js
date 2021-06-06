@@ -6,39 +6,40 @@ const { Category, Product, Backpack, User } = require("../../models");
  */
 router.post("/", async (req, res) => {
   try {
-    const { user_id, cart } = req.body;
+    const user_id = req.session.user_id;
+    const cart = req.body;
     let newItemValue = [];
     let itemStock = [];
 
     // add to backpack from cart
     for (const item of cart) {
       let thisItemValue;
-      const { product_id, quantity } = item;
+      const { item_id, item_quantity } = item;
 
       const itemList = await Backpack.findOne({
         where: {
-          productProductId: product_id,
+          productProductId: item_id,
           userUserId: user_id,
         },
       });
       if (!itemList) {
         thisItemValue = await Backpack.create({
           userUserId: user_id,
-          productProductId: product_id,
-          quantity: quantity,
+          productProductId: item_id,
+          quantity: item_quantity,
         });
       } else {
         const current = itemList.get({ plain: true });
         thisItemValue = await itemList.update({
-          quantity: quantity + current.quantity,
+          quantity: item_quantity + current.quantity,
         });
       }
       newItemValue.push(thisItemValue);
 
       // decrement stock
       const thisItemStock = await Product.decrement("stock", {
-        by: quantity,
-        where: { product_id: product_id },
+        by: item_quantity,
+        where: { product_id: item_id },
       });
 
       const [a, b] = thisItemStock;
