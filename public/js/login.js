@@ -15,7 +15,10 @@ const loginFormHandler = async (event) => {
       body: JSON.stringify({ email, password }),
       headers: { "Content-Type": "application/json" },
     });
-    console.log(response , "\n -----------------------------------------------response------");
+    console.log(
+      response,
+      "\n -----------------------------------------------response------"
+    );
 
     if (response.ok) {
       document.location.replace("/");
@@ -26,5 +29,5 @@ const loginFormHandler = async (event) => {
 };
 
 document
-  .querySelector(".login-form")
+  .querySelector("#login-form")
   .addEventListener("submit", loginFormHandler);

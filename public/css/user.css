@@ -1,0 +1,41 @@
+.title {
+  width: 100%;
+  font-size: 4rem;
+  font-family: var(--title-font);
+  color: var(--dark-purple);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card {
+  font-size: 1.6rem;
+  background-color: var(--lemon-meringue);
+  border: 1px var(--dark-purple) solid;
+  padding: 1rem 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formRow {
+  margin: 0.5rem;
+}
+
+label {
+  margin-right: 0.2rem;
+}
+
+@media screen and (min-width: 456px) {
+  .loginRenderArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    border-radius: 2rem;
+    padding: 1rem 5rem;
+  }
+}
