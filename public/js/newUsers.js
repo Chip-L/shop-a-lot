@@ -21,7 +21,7 @@ const signupFormHandler = async (event) => {
       body: JSON.stringify({ user_name, email, password, character_name }),
       headers: { "Content-Type": "application/json" },
     });
-    console.log(response);
+    console.log("Server response to user creation: " + response);
 
     if (response.ok) {
       document.location.replace("/");
