@@ -5,28 +5,31 @@
 </div>
 {{#if logged_in}}
   <div class="featuredArea">
-    <div class="featuredProduct">
+    <a href="/product/{{random_prod.product_id}}" class="featuredProduct">
       <div class="cardtitle">
         <h3 class="cardTitleText">Featured for You</h3>
       </div>
       <div class="cardImg">
-        <img src="/img/magic_potion.png" alt="A healing potion" />
+        <img
+          src="/img/{{random_prod.product_image}}"
+          alt="Featured item for user"
+        />
       </div>
       <div class="cardBody">
-        <p class="bodyText">Healing Potion</p>
+        <p class="bodyText">{{random_prod.product_name}}</p>
       </div>
-    </div>
-    <div class="previousOrders">
+    </a>
+    <a href="/backpack" class="previousOrders">
       <div class="cardtitle">
         <h3 class="cardTitleText">Your Previous Order</h3>
       </div>
       <div class="cardImg">
-        <img src="/img/magic_potion.png" alt="A healing potion" />
+        <img src="/img/tools&skillsKit.png" alt="A healing potion" />
       </div>
       <div class="cardBody">
-        <p class="bodyText">Placed {{last_purchase}}</p>
+        <p class="bodyText">Behold: Your Stuff!</p>
       </div>
-    </div>
+    </a>
   </div>
 {{/if}}
 <h2 class="categoryTitle">Categories</h2>
