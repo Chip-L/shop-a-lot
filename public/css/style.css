@@ -111,6 +111,10 @@ main {
   border-radius: 10px;
 }
 
+.cardImg img {
+  padding: 1.5rem;
+}
+
 .cardTitleText {
   border-bottom: 1px solid var(--dark-purple);
 }
