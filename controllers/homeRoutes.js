@@ -6,18 +6,23 @@ const { Op } = require("sequelize");
 // http://localhost:3001+
 
 router.get("/", async (req, res) => {
+  console.log(req.session.random_product);
   // add this to session
-  const productCount = await Product.count();
-  console.log(productCount);
+  if (!req.session.random_product) {
+    const productCount = await Product.count();
 
-  const randomVal = Math.floor(Math.random * productCount) + 1;
-  console.log(randomVal);
+    const randomVal = Math.floor(Math.random() * productCount) + 1;
 
-  const random_product = Product.findByPk({ where: randomVal });
+    const rawProduct = await Product.findByPk(randomVal);
+
+    req.session.random_product = rawProduct.get({ plain: true });
+  }
+
+  console.log(req.session.random_product);
 
   res.render("homepage", {
     logged_in: req.session.logged_in,
-    random_product: random_product,
+    random_prod: { ...req.session.random_product },
   });
 });
 
