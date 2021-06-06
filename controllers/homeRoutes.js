@@ -130,5 +130,13 @@ router.get("/search/:value", async (req, res) => {
 router.get("/newUsers", (req, res) => {
   res.render("newUsers");
 });
-
+router.get("/logout", (req, res) => {
+  if (req.session.logged_in) {
+    req.session.destroy(() => {
+      res.redirect("/");
+    });
+  } else {
+    res.status(404).end();
+  }
+});
 module.exports = router;
