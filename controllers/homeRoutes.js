@@ -127,5 +127,8 @@ router.get("/search/:value", async (req, res) => {
     res.status(500).json(err);
   }
 });
+router.get("/newUsers", (req, res) => {
+  res.render("newUsers");
+});
 
 module.exports = router;
