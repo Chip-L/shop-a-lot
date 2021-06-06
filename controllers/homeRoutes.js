@@ -20,6 +20,15 @@ router.get("/login", async (req, res) => {
   res.render("login");
 });
 
+router.get("/newUsers", async (req, res) => {
+  if (req.session.logged_in) {
+    res.redirect("/");
+    return;
+  }
+
+  res.render("newUsers");
+});
+
 /** This route does not return a no product found page, if there is no category, we have issues! */
 router.get("/category/:categoryId", async (req, res) => {
   try {
