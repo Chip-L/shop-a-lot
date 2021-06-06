@@ -1,3 +1,30 @@
+// const nodemailer = require("nodemailer");
+
+// const transport = nodemailer.createTransport({
+//   service: "gmail",
+//   auth: {
+//     user: process.env.EMAIL,
+//     pass: process.env.EMAIL_PASS,
+//   },
+// });
+
+// function sendMail(userEmail) {
+//   const mailOptions = {
+//     from: process.env.EMAIL,
+//     to: mailList,
+//     subject: "Account Creation",
+//     text: "You have succesfully created a an account on Shop a Lot. Thanks for checking us out!",
+//   };
+
+//   transport.sendMail(mailOptions, function (error, info) {
+//     if (error) {
+//       console.log(error);
+//     } else {
+//       console.log("Email sent: " + info.response);
+//     }
+//   });
+// }
+
 const signupFormHandler = async (event) => {
   console.log(signupFormHandler, "\n -------------------------------");
   event.preventDefault();
@@ -21,7 +48,7 @@ const signupFormHandler = async (event) => {
       body: JSON.stringify({ user_name, email, password, character_name }),
       headers: { "Content-Type": "application/json" },
     });
-    console.log(response);
+    console.log("Server response to user creation: " + response);
 
     if (response.ok) {
       document.location.replace("/");
