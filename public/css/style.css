@@ -7,6 +7,10 @@
   --dark-green: #6c756b;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 a {
   text-decoration: none;
   color: var(--dark-purple);
@@ -15,34 +19,34 @@ a {
 nav {
   display: flex;
   flex-direction: row;
-  padding: 2vh 0;
+  padding: 2rem 0;
   border-bottom: 2px solid var(--dark-purple);
   background-color: var(--dark-green);
   align-items: center;
 }
 
 .navItem {
-  margin: 0 1.5vw;
+  margin: 0 2.5rem;
   color: var(--lemon-meringue);
-  font-size: 20px;
+  font-size: 2rem;
   font-family: var(--title-font);
 }
 
 #pageTitle {
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 
 nav form {
-  margin: 0 14vw;
+  margin: 0 25rem;
 }
 
 nav form input {
-  width: 30vw;
+  width: 55rem;
 }
 
 main {
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-top: 13rem;
+  padding-bottom: 10rem;
   width: 100%;
   background-color: var(--dark-green);
   min-height: 100%;
@@ -88,7 +92,7 @@ main {
   border-radius: 10px;
 }
 
-.cardTitle,
+.cardTitleText,
 .cardHeader {
   border-bottom: 1px solid var(--dark-purple);
 }
@@ -97,6 +101,9 @@ main {
   color: var(--dark-purple);
   font-size: 30px;
   font-family: var(--title-font);
+  width: 80%;
+  margin-left: 10%;
+  padding-bottom: 2rem;
 }
 
 .cardImg img,
@@ -107,7 +114,7 @@ main {
 
 .bodyText {
   font-family: var(--text-font);
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .cardBody {
@@ -115,14 +122,14 @@ main {
 }
 
 .categoryTitle {
-  font-size: 40px;
+  font-size: 4rem;
   font-family: var(--title-font);
   text-align: center;
-  margin-top: 3vh;
+  margin-top: 4rem;
 }
 
 .categories {
-  padding-top: 3vh;
+  padding-top: 3rem;
   width: 90%;
   margin-left: 5%;
   text-align: center;
@@ -133,10 +140,10 @@ main {
 }
 
 .categoryCard {
-  width: 15%;
+  width: 28rem;
   background-color: var(--lemon-meringue);
   border: 2px solid var(--dark-purple);
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 footer {
@@ -164,13 +171,14 @@ footer a {
   justify-content: center;
   align-items: center;
   border: 2px solid var(--dark-purple);
-  border-radius: 20px;
+  border-radius: 2rem;
   margin-right: 10vw;
 }
 
 .productImageArea img {
   width: 75%;
   height: auto;
+  padding: 2.5rem;
 }
 
 .productInfoArea {
@@ -179,10 +187,12 @@ footer a {
   border: 2px solid var(--dark-purple);
   border-radius: 20px;
   padding: 2vh 2vw;
+  font-size: 2rem;
 }
 
 .productInfoArea h2 {
   font-family: var(--title-font);
+  font-size: 2.5rem;
 }
 
 .productDescArea {
@@ -193,15 +203,42 @@ footer a {
   margin-top: 5vh;
   font-family: var(--text-font);
   padding: 2vh 2vw;
+  font-size: 2rem;
 }
 
 #productTitle {
   width: 100%;
-  font-size: 40px;
+  font-size: 5rem;
   font-family: var(--title-font);
   color: var(--dark-purple);
   text-align: center;
-  margin-bottom: 5vh;
+  margin-bottom: 5rem;
+}
+
+#quantityForm {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#quantity {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+#textInput {
+  width: 3rem;
+  margin-top: 2rem;
+}
+
+#sliderLabel {
+  width: 100%;
+}
+
+#quantityForm button {
+  width: 50%;
+  margin-top: 10%;
+  margin-left: 25%;
 }
 
 .categoryList {
