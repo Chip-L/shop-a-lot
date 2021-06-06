@@ -47,7 +47,12 @@ try {
     // Need to post backpack info to the right route
     fetch("/api/backpack", {
       method: "POST",
-      body: cart,
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(cart),
+    }).then(() => {
+      localStorage.removeItem("cart");
     });
   });
 } catch (err) {

@@ -16,6 +16,6 @@ In seriousness, we are a group of nerds dedicated to creating a more accesible, 
 - (coming soon) Custom images for more of the items
 - (coming soon) Allow DM's to create a custom shop for their players
 - (coming soon) DM's will create homebrew and custom items for their campaign
-- Search bar is missing functionality
+- (coming soon) Responsive design for mobile devices and smaller screens
 
 ## Finished Product
