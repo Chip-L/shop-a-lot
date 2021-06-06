@@ -28,25 +28,39 @@ nav {
   border-bottom: 2px solid var(--dark-purple);
   background-color: var(--dark-green);
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .navItem {
-  margin: 0 2.5rem;
   color: var(--lemon-meringue);
   font-size: 2rem;
   font-family: var(--title-font);
 }
 
+#searchArea {
+  width: 40%;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.search-form button {
+  width: 10%;
+  margin-top: 1rem;
+  min-width: 10rem;
+}
+
+#productSearch {
+  width: 80%;
+}
+
 #pageTitle {
   font-size: 2.5rem;
-}
-
-nav form {
-  margin: 0 25rem;
-}
-
-nav form input {
-  width: 55rem;
 }
 
 main {
@@ -81,7 +95,7 @@ main {
 
 .featuredArea {
   margin-left: 20%;
-  margin-top: 10vh;
+  margin-top: 10rem;
   width: 60%;
   display: flex;
   flex-direction: row;
@@ -90,15 +104,14 @@ main {
 
 .featuredProduct,
 .previousOrders {
-  width: 25%;
+  width: 30rem;
   text-align: center;
   background-color: var(--lemon-meringue);
   border: 2px solid var(--dark-purple);
   border-radius: 10px;
 }
 
-.cardTitleText,
-.cardHeader {
+.cardTitleText {
   border-bottom: 1px solid var(--dark-purple);
 }
 
@@ -270,12 +283,18 @@ footer a {
 }
 
 .productCard {
-  width: 15vw;
+  width: 30rem;
   background-color: var(--lemon-meringue);
-  border-radius: 20px;
+  border-radius: 2rem;
   border: 1px var(--dark-purple) solid;
-  margin-bottom: 3vh;
   text-align: center;
+  margin: 0 1rem;
+  margin-bottom: 4rem;
+}
+
+.cardHeader {
+  font-family: var(--title-font);
+  font-size: 2.5rem;
 }
 
 .cardBody {
@@ -284,12 +303,14 @@ footer a {
 }
 
 .cardBody img {
+  padding-top: 2rem;
   width: 100%;
-  height: 200px;
+  height: 20rem;
 }
 
 .cardFooter {
   padding-bottom: 20px;
+  font-size: 2rem;
 }
 
 .backpackArea {
@@ -423,4 +444,13 @@ footer {
   font-size: 25px;
   background-color: var(--lemon-meringue);
   color: var(--dark-purple);
+}
+
+@media screen and (max-width: 1100px) {
+  .navItem {
+    font-size: 1.8rem;
+  }
+  #searchArea {
+    width: 25%;
+  }
 }
