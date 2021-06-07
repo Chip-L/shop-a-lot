@@ -38,12 +38,11 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  margin: 0 15%;
-  margin-bottom: 5vh;
-  font-size: 30px;
+  margin: 5vh 15%;
+  font-size: 3rem;
   font-family: var(--text-font);
-  border: 2px solid var(--dark-purple);
-  border-radius: 10px;
+  border: 0.2rem solid var(--dark-purple);
+  border-radius: 1rem;
   background-color: var(--lemon-meringue);
   color: var(--dark-purple);
 }

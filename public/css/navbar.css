@@ -1,39 +1,125 @@
-header {
-  padding: 0 1rem;
-  border-bottom: 2px solid var(--dark-purple);
-  background-color: var(--dark-green);
-  overflow: hidden;
+* {
+  box-sizing: border-box;
+}
 
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--dark-green);
   color: var(--lemon-meringue);
   font-family: var(--title-font);
+
+  margin: 0;
+  padding: 0;
 }
 
-.logo {
-  font-size: 2.5rem;
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-.navItem {
+
+nav {
+  flex: auto;
+  padding: 0 1.5rem;
+  width: 100%;
+}
+
+a {
   font-size: 2rem;
 }
 
-/* #searchArea {
-  width: 40%;
-} */
-
-.search-form button {
-  width: 10%;
-  margin-top: 1rem;
-  min-width: 10rem;
+.logo a {
+  font-size: 3rem;
 }
-/* 
-#productSearch {
-  width: 80%;
+
+.menu {
+  list-style-type: none;
+}
+
+.item {
+  padding: 1rem;
+}
+
+form {
+  flex: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+
+  padding: 0 1.5rem;
+}
+
+form button {
+  margin-left: 0.5rem;
+}
+
+/* Mobile menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu a {
+  display: block;
+  padding: 1.5rem 1rem;
+}
+
+.toggle {
+  order: 1;
+  font-size: 2rem;
+}
+
+.item {
+  order: 2;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+.active .item {
+  display: block;
+}
+
+/* Tablet menu */
+@media all and (min-width: 700px) {
+  /* .menu {
+    justify-content: center;
+  }
+
+  .logo {
+    flex: 1;
+  }
+
+  .toggle {
+    flex: 1;
+    text-align: right;
+  }
 } */
 
-@media screen and (min-width: 425px) {
-  .navItem {
-    font-size: 1.8rem;
+  .menu {
+    flex-wrap: nowrap;
+    background: none;
   }
-  /* #searchArea {
-    width: 25%;
-  } */
+  .logo {
+    flex: 1;
+  }
+  .item {
+    display: block;
+    flex: 1;
+  }
+  .menu .toggle {
+    display: none;
+  }
+}
+
+/* Desktop menu */
+@media all and (min-width: 960px) {
+  header {
+    flex-direction: row;
+  }
 }

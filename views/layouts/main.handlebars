@@ -30,36 +30,12 @@
     />
   </head>
   <body>
-    <header>
-      <div>
-        <a href="/"><h3 class="logo" id="pageTitle">Shop A Lot</h3>
-        </a>
-
-        <a href="/#categories"><p class="navItem">Browse Categories</p></a>
-
-        {{#if logged_in}}
-          <a href="/logout"><p class="navItem">Logout</p></a>
-          <a href="/backpack"><p class="navItem">Backpack</p></a>
-          <a href="/cart"><p class="navItem">Cart</p></a>
-        {{else}}
-          <a href="/login"><p class="navItem">Login</p></a>
-          <a href="/newUsers"><p class="navItem">Sign Up</p></a>
-        {{/if}}
-      </div>
-      <div id="searchArea" class="navItem">
-        <form class="search-form" id="search">
-          <input type="text" id="productSearch" name="productSearch" />
-          <button type="submit">Search</button>
-        </form>
-      </div>
-
-      <a href="javascript:void(0)" class="icon"><i class="fa fa-bars"></i></a>
-    </header>
+    {{> navbar}}    
 
     <main>
       {{{body}}}
     </main>
-
+{{!-- 
     <footer>
       <a href="https://icons8.com/icon/MfxutvOVx8n4/castle">Castle icon by
         Icons8</a>
@@ -69,9 +45,9 @@
       <a href="https://pngtree.com/so/shield">shield png from pngtree.com</a>
       <a href="https://icons8.com/icon/MfxutvOVx8n4/castle">Castle icon by
         Icons8</a>
-    </footer>
+    </footer> --}}
 
-    <script src="/js/main.js"></script>
+    {{!-- <script src="/js/main.js"></script> --}}
     <script src="/js/searchBar.js"></script>
   </body>
 </html>
