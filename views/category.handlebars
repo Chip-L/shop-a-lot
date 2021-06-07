@@ -1,0 +1,22 @@
+<div class="productRenderArea">
+  {{#if noProductFound}}
+    <h1 id="productTitle" data-id="{{product_id}}">No products were found while
+      searching on "{{value}}".</h1>
+  {{else}}
+    {{#each products}}
+      <a href="/product/{{this.product_id}}">
+        <div class="productCard">
+          <div class="cardHeader">
+            <h3>{{this.product_name}}</h3>
+          </div>
+          <div class="cardBody">
+            <img src="{{this.image_link}}" alt="The product image" />
+          </div>
+          <div class="cardFooter">
+            <p>{{this.product_name}} - {{this.cost}}</p>
+          </div>
+        </div>
+      </a>
+    {{/each}}
+  {{/if}}
+</div>

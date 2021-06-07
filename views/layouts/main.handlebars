@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Shop a Lot</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://img.icons8.com/nolan/64/castle.png"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/"><h3 class="navItem" id="pageTitle">Shop A Lot</h3></a>
+        <a href="/#categories"><p class="navItem">Browse Categories</p></a>
+        <div id="searchArea" class="navItem">
+          <form class="search-form" id="search">
+            <input type="text" id="productSearch" name="productSearch" />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+        {{#if logged_in}}
+          <a href="/logout"><p class="navItem">Logout</p></a>
+          <a href="/backpack"><p class="navItem">Backpack</p></a>
+          <a href="/cart"><p class="navItem">Cart</p></a>
+        {{else}}
+          <a href="/login"><p class="navItem">Login</p></a>
+          <a href="/newUsers"><p class="navItem">Sign Up</p></a>
+        {{/if}}
+      </nav>
+    </header>
+    <main>
+      {{{body}}}
+    </main>
+    <footer>
+      <a href="https://icons8.com/icon/MfxutvOVx8n4/castle">Castle icon by
+        Icons8</a>
+      <a href="https://pngtree.com/so/magic-clipart">magic clipart png from
+        pngtree.com</a>
+      <a href="https://pngtree.com/so/sword">sword png from pngtree.com</a>
+      <a href="https://pngtree.com/so/shield">shield png from pngtree.com</a>
+      <a href="https://icons8.com/icon/MfxutvOVx8n4/castle">Castle icon by
+        Icons8</a>
+    </footer>
+    <script src="/js/searchBar.js"></script>
+  </body>
+</html>

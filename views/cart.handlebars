@@ -1,0 +1,20 @@
+<h1 class="cart">Your Cart</h1>
+<div class="cartArea">
+  <div class="itemDisplay"></div>
+  <div class="priceDisplay">
+    <p class="priceLine total subTotal">Subtotal:
+      <span id="subTotal"></span></p>
+    <p class="priceLine">Delivery Fee: <span id="deliveryFee"></span></p>
+    <p class="priceLine">Taxes: <span id="taxes"></span></p>
+    <p class="priceLine">Discount: 0</p>
+    <p class="priceLine">Coupons: 0</p>
+    <p class="priceLine total grandTotal">Grand Total:
+      <span id="grandTotal"></span></p>
+  </div>
+</div>
+
+{{#if logged_in}}
+  <button type="button" id="sendToBackpack">Add to Backpack</button>
+{{/if}}
+
+<script src="/js/cartRender.js"></script>

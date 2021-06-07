@@ -1,0 +1,16 @@
+<div class="backpackArea">
+  <h1>Backpack</h1>
+  <p>Purchase History</p>
+  <div class="productList">
+    {{#if noProductFound}}
+      <p>There is nothing in your backpack! You need to go shopping!!!</p>
+      <a href="/"><button>Go Shopping</button></a>
+    {{else}}
+      <ul>
+        {{#each items as |item|}}
+          <li>{{item.product_name}}</li>
+        {{/each}}
+      </ul>
+    {{/if}}
+  </div>
+</div>
