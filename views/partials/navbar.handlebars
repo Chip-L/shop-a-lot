@@ -1,0 +1,31 @@
+{{! <head>
+  <link rel="stylesheet" href="/css/navbar2.css" />
+</head> }}
+
+<header class="sticky">
+  <nav>
+    <div class="menu">
+      <li class="logo" id="home"><a href="/">Shop A Lot</a></li>
+      <li class="item" id="/#categories"><a href="/#categories">Browse
+          Categories</a></li>
+
+      {{#if logged_in}}
+        <li class="item" id="logout"><a href="/logout">Logout</a></li>
+        <li class="item" id="backpack"><a href="/backpack">Backpack</a></li>
+        <li class="item" id="cart"><a href="/cart">Cart</a></li>
+      {{else}}
+        <li class="item" id="login"><a href="/login">Login</a></li>
+        <li class="item" id="newUsers"><a href="/newUsers">Sign Up</a></li>
+      {{/if}}
+
+      <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+    </div>
+  </nav>
+
+  <form class="search-form" id="search">
+    <input type="text" id="productSearch" name="productSearch" />
+    <button type="submit">Search</button>
+  </form>
+</header>
+
+<script src="/js/navbar.js"></script>
