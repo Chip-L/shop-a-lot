@@ -37,7 +37,7 @@ Got more issues? Report them on GitHub so that we can fix it!
 
 ## Finished Product
 
-Deployed App: [Shop A Lot]()
+Deployed App: [Shop A Lot](https://shop-a-lot.herokuapp.com/)
 
 ## Technologies Utilized
 
